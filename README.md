@@ -14,10 +14,13 @@ This repository is a validation edition. It is not published to Google Play, F-D
 
 ## Build
 
-Use Android Studio's bundled JDK and the checked-in local Gradle launcher:
+JDK 21 is required. On macOS, Linux, or Windows through Git Bash, run the tracked Gradle wrapper:
 
-    $env:JAVA_HOME = 'C:\Program Files\Android\Android Studio\jbr'
-    .\.codex-gradle\gradle-9.5.1\bin\gradle.bat :smartautoclicker:assembleFDroidDebug --no-daemon
+```bash
+./gradlew :smartautoclicker:assembleFDroidDebug --no-daemon
+```
+
+Windows users may run the equivalent Gradle task through Android Studio's Gradle tool window.
 
 The F-Droid debug APK uses application ID io.github.eei14wat.tapflow.debug; release variants use io.github.eei14wat.tapflow. The source namespace remains com.buzbuz.smartautoclicker intentionally to avoid an unsafe mass refactor. Existing Smart AutoClicker/Klick'r installations are not migrated or modified.
 

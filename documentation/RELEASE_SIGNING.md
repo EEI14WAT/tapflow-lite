@@ -2,12 +2,13 @@
 
 ## Unsigned verification build
 
-Use Android Studio's bundled JDK and run:
+JDK 21 is required. On macOS, Linux, or Windows through Git Bash, run the tracked Gradle wrapper:
 
-```powershell
-$env:JAVA_HOME = 'C:\Program Files\Android\Android Studio\jbr'
-.\.codex-gradle\gradle-9.5.1\bin\gradle.bat :smartautoclicker:assembleFDroidRelease --no-daemon --no-parallel -Dkotlin.compiler.execution.strategy=in-process --console=plain
+```bash
+./gradlew :smartautoclicker:assembleFDroidRelease --no-daemon --no-parallel -Dkotlin.compiler.execution.strategy=in-process --console=plain
 ```
+
+Windows users may run the equivalent Gradle task through Android Studio's Gradle tool window.
 
 Without explicit signing properties this produces an unsigned F-Droid Release. It never falls back to the Android debug key.
 

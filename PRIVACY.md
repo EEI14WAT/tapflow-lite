@@ -31,4 +31,4 @@ The F-Droid/GitHub edition contains no advertising SDK, analytics SDK, Firebase,
 
 Contact EEIWAT@outlook.com with privacy questions. Material policy changes will be published in the source repository before release. Future advertising or network SDK integration requires a new disclosure before release.
 
-The publication URL is https://github.com/EEI14WAT/tapflow-lite/blob/main/PRIVACY.md. The repository is currently private; it becomes publicly accessible only when made public immediately before release.
+The publication URL is https://github.com/EEI14WAT/tapflow-lite/blob/main/PRIVACY.md. This policy is published with the corresponding TapFlow Lite source release.
