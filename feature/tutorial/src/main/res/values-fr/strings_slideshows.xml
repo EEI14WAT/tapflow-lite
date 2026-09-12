@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_slideshow_button_next">Suivant</string>
+    <string name="tutorial_slideshow_button_close">Fermer</string>
+
+
+    <!-- Image Condition Capture slideshow -->
+    <string name="tutorial_slideshow_image_condition_capture_title">Capture d\'image</string>
+    <string name="tutorial_slideshow_image_condition_capture_desc">Conseils pour une capture d\'image optimale</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_1_text">Lors d\'une capture pour une condition d\'image,
+        vous devez éviter les parties changeantes telles que l\'arrière-plan. La capture doit ressembler le plus possible à ce qui
+        sera affiché lors de la détection.\n\nEssayez de toujours capturer aussi près que possible de la cible que vous souhaitez faire correspondre
+        tout en conservant suffisamment de détails pour la détection.\n\nNote : Vous pouvez pincer pour zoomer sur la capture et contrôler plus
+        précisément la zone.</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_2_text">Soyez prudent avec les images contenant des zones transparentes.
+        Si l\'arrière-plan derrière la surface transparente change, l\'algorithme de détection détectera les changements
+        de couleur ou de forme et ne le considérera pas comme détecté. \n\nEssayez d\'éviter les parties transparentes dans votre condition
+        tout en conservant suffisamment de détails statiques pour la détection. Vous pouvez également modifier la tolérance de détection afin de
+        compenser les éventuels changements dans les petites zones transparentes. \n\nS\'il y a un texte dans la cible que vous
+        souhaitez faire correspondre, vous pourriez envisager d\'utiliser une Condition de texte, car elles sont moins impactées par le bruit de
+        changement d\'arrière-plan.</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_3_text">La détection d\'image est plus précise lorsqu\'elle est appliquée
+        à des éléments à détecter ayant beaucoup de contours. Elle est également plus rapide si l\'image est plus petite, mais perdra
+        en fiabilité si l\'image est trop petite et manque de détails. Essayez de garder cela à l\'esprit lors de la création de nouvelles conditions
+        d\'image.\n\nSi vous essayez de détecter de très petites choses, vous pourriez vouloir utiliser une ou plusieurs Conditions de couleur
+        à la place, elles sont plus fiables pour ces cas, et bien plus rapides.</string>
+
+
+    <!-- Image Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_image_condition_area_title">Zone de détection</string>
+    <string name="tutorial_slideshow_image_condition_area_desc">Apprenez l\'impact sur les performances de votre scénario</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_1_text">Lors de la création d\'une Condition d\'image, vous pouvez définir
+        où la détection aura lieu sur l\'écran en modifiant le type de détection.\n\nPar défaut, une nouvelle Condition d\'image
+        détectera toujours au même endroit que la capture. C\'est la façon la plus rapide de détecter une image.
+        \n\nSi l\'image que vous devez détecter peut être affichée à plusieurs endroits, vous devez alors utiliser l\'une des autres
+        options.</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_2_text">En sélectionnant \"Dans une zone\", le champ de sélection de zone
+        s\'activera, vous permettant de définir une zone de détection.\n\nPar défaut, la zone sera la même que la zone de capture
+        mais vous pouvez la déplacer et l\'agrandir. Plus la zone est grande, plus la détection sera lente, essayez donc d\'inclure uniquement
+        les parties intéressantes de l\'écran.</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_3_text">La dernière option, \"Tout l\'écran\" changera la
+        zone de détection à tout l\'affichage. \n\nC\'est de loin le type de détection le plus lent et vous ne devriez l\'utiliser que
+        en dernier recours.</string>
+
+
+    <!-- Text Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_text_condition_area_title">Zone de détection de texte</string>
+    <string name="tutorial_slideshow_text_condition_area_desc">Conseils pour une détection de texte optimale</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_1_text">Lors de la détection d\'un texte à l\'écran, vous devez
+        définir une zone de détection qui sera analysée pour le texte lors de la détection. \n\nPour la détection de texte statique,
+        vous voulez que la zone soit proche du texte tout en conservant une petite marge autour. Le texte ne doit pas toucher les
+        bords de la zone, sinon la fiabilité de la détection chutera significativement. \n\nNote : pour les textes très petits,
+        vous devrez peut-être augmenter la qualité de détection de votre scénario, car une résolution plus élevée aidera à la détection
+        de ceux-ci. </string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_2_text">Lors de la détection d\'un texte pouvant apparaître à plusieurs
+        positions, utilisez la zone de détection la plus petite possible. Plus la zone de détection est grande, plus la détection
+        sera lente. \n\nSi les différentes positions sont connues et non aléatoires, il peut être plus rapide d\'utiliser des conditions de texte séparées
+        pour chaque position plutôt qu\'une seule avec une très grande zone. Vous pouvez tester vos timings à l\'aide du rapport de débogage
+        si vous souhaitez optimiser en profondeur les timings de votre scénario.</string>
+
+
+    <!-- Number Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_number_condition_area_title">Zone de détection des nombres</string>
+    <string name="tutorial_slideshow_number_condition_area_desc">Conseils pour une détection optimale des nombres</string>
+
+    <string name="tutorial_slideshow_number_condition_area_step_1_text">Les conseils ici sont les mêmes que pour la Condition de texte :
+        lors de la détection d\'un nombre à l\'écran, vous devez définir une zone de détection qui sera analysée pour les nombres
+        lors de la détection. \n\nPour la détection d\'un nombre statique, vous voulez que la zone soit proche du nombre tout en
+        conservant une petite marge autour. Le nombre ne doit pas toucher les bords de la zone, sinon la fiabilité de la détection
+        chutera significativement. \n\nNote : pour les nombres très petits, vous devrez peut-être augmenter la qualité de détection
+        de votre scénario, car une résolution plus élevée aidera à la détection de ceux-ci. </string>
+
+    <!--Screen Condition type selection -->
+    <string name="tutorial_slideshow_screen_condition_type_title">Types de conditions d\'écran</string>
+    <string name="tutorial_slideshow_screen_condition_type_desc">Découvrez laquelle utiliser selon votre cas d\'utilisation</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_1_text">La condition de couleur est le moyen le plus rapide de détecter
+        avec Klick\'r. Elle vérifie simplement la couleur d\'un pixel sur votre écran. \n\nCette condition est pratique lorsqu\'on
+        essaie de détecter des éléments d\'interface simples tels qu\'une couleur de bouton ou la complétion d\'une barre de
+        progression, ou de petits changements.</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_2_text">La condition d\'image est plus lente qu\'une condition de couleur,
+        mais elle permet plus de flexibilité pour la détection du contenu d\'écran. Le temps d\'exécution est assez bas lors d\'une
+        détection dans une petite zone, mais peut considérablement augmenter lorsque la zone est plus grande. \n\nCette condition est
+        pratique lorsqu\'on essaie de détecter des formes et des couleurs claires, comme le contenu d\'une carte ou une icône.</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_3_text">Les conditions de texte et les conditions de nombre utilisent
+        toutes deux le même processus de détection. \n\nLa détection de texte est le type de détection le plus lent, mais contrairement
+        à la détection d\'image, elle n\'est pas sensible à la transparence et permet plus de précision dans les scènes de détection
+        complexes. Le temps d\'exécution augmente avec la taille de la zone de détection et dépend également de l\'alphabet sélectionné.
+        \n\nCette condition est pratique lorsqu\'on essaie de détecter un texte ou un nombre indépendamment de la façon dont il est
+        affiché.</string>
+
+    <!-- Detection confidence slideshow -->
+    <string name="tutorial_slideshow_screen_condition_threshold_title">Fiabilité de détection</string>
+    <string name="tutorial_slideshow_screen_condition_threshold_desc">Conseils sur la fiabilité de détection</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_1_text">Klick\'r effectue beaucoup de pré-traitement avant de
+        rechercher votre condition d\'écran afin d\'accélérer le processus et réduire l\'impact sur la batterie. Cela crée des
+        incertitudes et des approximations dans les résultats qui sont exprimées sous forme de score de fiabilité. \n\nPour vous
+        assurer que vos conditions fonctionnent comme prévu, vous pouvez les tester individuellement en appuyant sur le bouton
+        flèche de lecture tout en vous concentrant sur une condition de la liste des conditions d\'écran.</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_2_text">Lors du test d\'une condition d\'écran, le score de
+        fiabilité de détection sera affiché, et vous pouvez modifier directement ici la différence tolérée, vous permettant de
+        vous débarrasser des faux positifs ou d\'être plus flexible avec les résultats autorisés.</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_3_text">Les résultats de détection sont également impactés par la
+        résolution de détection. Disponible dans le dialogue Scénario, elle vous permet de modifier la quantité de réduction d\'échelle
+        du contenu de votre écran avant traitement par Klick\'r. \n\nCela peut impacter le score de fiabilité de toutes vos conditions
+        d\'écran, une résolution plus élevée signifiant une meilleure détection, mais aussi un temps d\'exécution plus lent.</string>
+
+
+
+    <!-- Broadcast received slideshow -->
+    <string name="tutorial_slideshow_broadcast_received_title">À la réception d\'un Broadcast</string>
+    <string name="tutorial_slideshow_broadcast_received_desc">Écoutez les broadcasts des autres applications</string>
+
+    <string name="tutorial_slideshow_broadcast_received_step_1_text">Sur Android, lorsque des applications souhaitent partager leur
+        état avec d\'autres apps, elles utilisent un Broadcast Intent. \n\nAvec la condition \"À la réception d\'un Broadcast\", vous pouvez
+        surveiller ces états et réagir avec une action dans Klick\'r. Des valeurs par défaut pour l\'état du système Android sont
+        fournies, mais gardez à l\'esprit que les conditions de broadcast s\'adressent davantage aux développeurs, car les maîtriser
+        requiert des connaissances en développement Android.</string>
+
+    <!-- Counter Reached slideshow -->
+    <string name="tutorial_slideshow_counter_reached_title">Quand un Compteur est atteint</string>
+    <string name="tutorial_slideshow_counter_reached_desc">Réagissez aux valeurs des compteurs de votre scénario</string>
+
+    <string name="tutorial_slideshow_counter_reached_step_1_text">Les compteurs sont des variables déclarées dans votre scénario
+        qui peuvent être modifiées, affichées ou vérifiées pendant son exécution. \n\nAvec la condition \"Quand un Compteur est atteint\",
+        vous pouvez vérifier la valeur actuelle d\'un compteur pour déclencher des actions. Tous les opérateurs de comparaison
+        mathématiques sont disponibles pour personnaliser la vérification. \n\nLes compteurs peuvent être utilisés de nombreuses façons
+        et utiliser une seule condition ou action liée à un compteur est souvent insuffisant pour les utiliser correctement. Des tutoriels
+        interactifs couvrant la fonctionnalité Compteur sont disponibles dans leur section dédiée.</string>
+
+    <!-- Pause Action slideshow -->
+    <string name="tutorial_slideshow_pause_action_title">Action Pause</string>
+    <string name="tutorial_slideshow_pause_action_desc">Apprenez comment la pause affecte l\'exécution des actions et la détection</string>
+    <string name="tutorial_slideshow_pause_action_step_1_text">Une Action Pause suspend l\'intégralité du scénario
+        pendant une durée configurée : pendant ce temps, aucune action ne s\'exécute et aucune détection d\'écran
+        n\'a lieu.\n\nUn cas d\'usage très courant est d\'ajouter une Pause à la fin de votre liste d\'actions.
+        Lorsque vous cliquez quelque part, l\'application cliquée a besoin de temps pour traiter le clic et afficher
+        le résultat — et vous souhaitez généralement attendre ce moment avant que Klick\'r ne recommence à analyser
+        l\'écran.\n\nUne pause entre deux actions est également valide, mais en ajouter une à la fin de la liste est
+        souvent le besoin le plus important.</string>
+
+    <!-- Swipe Action slideshow -->
+    <string name="tutorial_slideshow_swipe_action_title">Action Glissement</string>
+    <string name="tutorial_slideshow_swipe_action_desc">Apprenez comment le geste de glissement est effectué</string>
+    <string name="tutorial_slideshow_swipe_action_step_1_text">Une Action Glissement effectue un geste de glisser en
+        ligne droite d\'une position de départ à une position d\'arrivée. Les deux coordonnées sont fixes et définies
+        lors de la configuration de l\'action.\n\nLa durée du glissement contrôle le temps que met le geste pour
+        parcourir le trajet : une durée plus courte produit un glissement plus rapide, tandis qu\'une durée plus
+        longue produit un glissement plus lent et plus contrôlé.</string>
+
+    <!-- Click Action Offset slideshow -->
+    <string name="tutorial_slideshow_click_action_offset_title">Décalage du clic</string>
+    <string name="tutorial_slideshow_click_action_offset_desc">Apprenez à affiner la position du clic sur une condition détectée</string>
+    <string name="tutorial_slideshow_click_action_offset_step_1_text">Lorsque vous cliquez sur une condition
+        détectée, le clic est par défaut appliqué au centre de la zone détectée.\n\nLe décalage du clic vous permet
+        de déplacer cette position d\'un nombre fixe de pixels le long des axes X et Y, par rapport au centre de la
+        condition. Cela est utile lorsque l\'élément sur lequel vous souhaitez appuyer est proche — mais pas
+        exactement — du centre de la zone détectée.</string>
+
+    <!-- Click Action Target slideshow -->
+    <string name="tutorial_slideshow_click_action_target_title">Cible du clic</string>
+    <string name="tutorial_slideshow_click_action_target_desc">Apprenez à configurer où le clic sera appliqué</string>
+    <string name="tutorial_slideshow_click_action_target_step_1_text">Une Action Clic peut cibler deux types de
+        positions : une position statique toujours identique, ou la position d\'une condition détectée.\n\nChoisissez
+        votre méthode de ciblage dans le sélecteur de cible du dialogue de configuration de l\'action.</string>
+    <string name="tutorial_slideshow_click_action_target_step_2_text">Avec une position statique, le clic se produit
+        toujours aux mêmes coordonnées exactes, quelle que soit la situation à l\'écran.\n\nGardez à l\'esprit que
+        ces coordonnées sont sensibles à la rotation de l\'écran : si l\'appareil pivote, le clic peut se retrouver
+        à une position inattendue ou même en dehors des limites de l\'écran.</string>
+    <string name="tutorial_slideshow_click_action_target_step_3_text">Avec une position de condition, le clic est
+        appliqué au centre d\'une Condition d\'image détectée. Cela permet au clic de suivre la cible où qu\'elle
+        apparaisse à l\'écran.\n\nLorsque l\'opérateur de l\'événement est ET, toutes les conditions doivent être
+        remplies, donc chaque Condition d\'image possède une position disponible. Vous pouvez choisir librement
+        l\'une d\'elles comme cible, et affiner éventuellement avec un décalage.</string>
+    <string name="tutorial_slideshow_click_action_target_step_4_text">Lorsque l\'opérateur de l\'événement est OU,
+        seule la première condition remplie est évaluée, les autres étant ignorées. De ce fait, Klick\'r ne peut pas
+        savoir à l\'avance quelle condition sera détectée.\n\nEn conséquence, avec l\'opérateur OU, vous ne pouvez
+        pas choisir une condition spécifique comme cible du clic : le clic sera toujours appliqué sur la première
+        condition détectée, quelle qu\'elle soit lors de l\'exécution.</string>
+
+    <!-- Combine Conditions Ordering slideshow -->
+    <string name="tutorial_slideshow_combine_conditions_ordering_title">Ordre des conditions et vitesse</string>
+    <string name="tutorial_slideshow_combine_conditions_ordering_desc">Comment l\'ordre de vos conditions influence la
+        vitesse de vérification de l\'événement</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_1_text">L\'ordre des conditions dans la liste a
+        un impact sur la vitesse de vérification de l\'événement.\n\nAvec l\'opérateur ET, la vérification s\'arrête
+        dès que la première condition non remplie est trouvée. Mettre en premier les conditions les moins probables
+        permet à l\'application de sauter les suivantes plus tôt, rendant votre événement plus rapide.</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_2_text">Avec l\'opérateur OU, la vérification
+        s\'arrête dès que la première condition remplie est trouvée. Mettre en premier les conditions les plus
+        probables permet à l\'application de terminer plus tôt, sans vérifier le reste.\n\nDans les deux cas, mettre la
+        condition la plus importante en haut de la liste est un moyen simple de garder votre scénario rapide.</string>
+
+
+    <!-- Events State Basics slideshow -->
+    <string name="tutorial_slideshow_events_state_basics_title">État des événements</string>
+    <string name="tutorial_slideshow_events_state_basics_desc">Apprenez à activer et désactiver des événements pendant
+        l\'exécution d\'un scénario</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_1_text">Chaque événement de votre scénario (Événements
+        Écran et Événements Déclencheur) possède un état : il est soit <b>activé</b>, soit
+        <b>désactivé</b>.\n\nLorsqu\'il est activé, l\'événement s\'exécute normalement et vérifie ses conditions comme
+        d\'habitude. Lorsqu\'il est désactivé, il est entièrement ignoré, comme s\'il n\'existait pas.\n\nPar défaut,
+        chaque événement démarre activé. Vous pouvez modifier cela avec le champ <b>État initial</b> dans les
+        paramètres de l\'événement.</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_2_text">Pendant l\'exécution d\'un scénario, vous pouvez
+        modifier l\'état de n\'importe quel événement avec l\'action <b>Changer l\'état d\'un événement</b>. Cette
+        action permet d\'activer, de désactiver ou de basculer l\'état d\'un ou plusieurs événements.\n\nCela ouvre de
+        nombreuses possibilités : des événements qui s\'activent les uns après les autres, des événements qui se
+        désactivent après s\'être déclenchés une fois, ou des groupes d\'événements dont un seul est
+        actif à la fois.</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_3_text">Lorsque <b>tous les événements du scénario sont
+        désactivés</b>, le scénario s\'arrête tout seul. Il n\'y a plus rien à faire, donc Klick\'r s\'arrête
+        automatiquement.\n\nC\'est une façon simple de terminer un scénario : il suffit que le dernier événement
+        désactive tous les autres une fois son rôle accompli, et tout s\'arrête par lui-même.</string>
+
+
+    <!-- Actions List slideshow -->
+    <string name="tutorial_slideshow_actions_list_title">Liste d\'actions</string>
+    <string name="tutorial_slideshow_actions_list_desc">Apprenez comment la liste d\'actions est exécutée</string>
+    <string name="tutorial_slideshow_actions_list_step_1_text">Les actions sont exécutées dans l\'ordre, l\'une après
+        l\'autre. Vous pouvez modifier l\'ordre d\'une action à l\'aide des boutons &lt;&lt; et &gt;&gt;, ou en appuyant
+        directement sur son numéro d\'index.\n\nEssayez de garder vos listes d\'actions courtes. Un autoclicker classique
+        n\'effectue qu\'une action par événement — c\'est le modèle à suivre. Si vous vous retrouvez à ajouter beaucoup
+        d\'actions à un seul événement, c\'est généralement le signe que le travail devrait être réparti sur plusieurs
+        événements, chacun réagissant à ce qui est réellement affiché à l\'écran. C\'est la philosophie voir-et-agir
+        de Klick\'r : détecter d\'abord, puis agir.</string>
+
+    <!-- Write Text Action slideshow -->
+    <string name="tutorial_slideshow_write_text_action_title">Action Écrire du texte</string>
+    <string name="tutorial_slideshow_write_text_action_desc">Apprenez à saisir du texte dans un champ de saisie actif</string>
+    <string name="tutorial_slideshow_write_text_action_step_1_text">Avant que l\'action Écrire du texte s\'exécute, le
+        champ de saisie cible doit déjà être focalisé, comme si vous l\'aviez appuyé pour faire apparaître le clavier.
+        \n\nPour y parvenir, ajoutez une action Clic sur ce champ avant l\'action Écrire du texte. Si une animation de
+        transition se produit après le clic, une action Attente entre les deux peut aider à s\'assurer que le champ est
+        prêt.\n\nL\'action dispose également d\'une option Valider : lorsqu\'elle est activée, elle appuie automatiquement
+        sur Entrée après la saisie du texte, confirmant ou soumettant la valeur.</string>
+    <string name="tutorial_slideshow_write_text_action_step_2_text">Vous pouvez insérer la valeur d\'un compteur dans
+        le texte à écrire. Appuyez sur le bouton Ajouter un compteur dans la configuration de l\'action pour choisir un
+        compteur : il insérera le marqueur <b>{nomDuCompteur}</b> à la position actuelle du curseur.\n\nÀ l\'exécution,
+        chaque marqueur <b>{nomDuCompteur}</b> est remplacé par la valeur actuelle du compteur avant que le texte ne soit
+        collé dans le champ. Par exemple, si un compteur nommé <i>pommes</i> a la valeur 18, le texte
+        \"J\'ai {pommes} pommes\" devient \"J\'ai 18 pommes\".</string>
+
+    <!-- System Action slideshow -->
+    <string name="tutorial_slideshow_system_action_title">Action Système</string>
+    <string name="tutorial_slideshow_system_action_desc">Apprenez à déclencher des actions de navigation Android</string>
+    <string name="tutorial_slideshow_system_action_step_1_text">Une Action Système exécute l\'une des actions de
+        navigation intégrées d\'Android : Retour, Accueil ou Applications récentes.\n\nCe sont les mêmes actions que
+        les boutons de navigation en bas de votre écran. Elles ne nécessitent aucune coordonnée et fonctionnent au
+        niveau du système, quelle que soit l\'application actuellement ouverte.</string>
+
+    <!-- Change Counter Action slideshow -->
+    <string name="tutorial_slideshow_change_counter_action_title">Action Modifier le compteur</string>
+    <string name="tutorial_slideshow_change_counter_action_desc">Apprenez à modifier la valeur d\'un compteur</string>
+    <string name="tutorial_slideshow_change_counter_action_step_1_text">Une action Modifier le compteur applique une
+        opération à un compteur à l\'aide d\'une valeur statique prédéfinie. Trois opérations sont disponibles : ajouter
+        la valeur au compteur (+), la soustraire du compteur (−) ou définir le compteur à cette valeur exacte (=).\n\nC\'est
+        la façon la plus courante de mettre à jour un compteur — par exemple, ajouter 1 chaque fois qu\'une condition est
+        détectée, ou le réinitialiser à 0 lorsqu\'un objectif est atteint.</string>
+    <string name="tutorial_slideshow_change_counter_action_step_2_text">Au lieu d\'une valeur statique, vous pouvez
+        utiliser la valeur actuelle d\'un autre compteur comme opérande. Les mêmes trois opérations (+, −, =) s\'appliquent,
+        mais le montant est lu depuis le compteur sélectionné à l\'exécution plutôt qu\'étant fixé lors de la configuration.
+        \n\nCela vous permet de construire des scénarios dynamiques où les compteurs interagissent entre eux.</string>
+
+    <!-- Notification Action slideshow -->
+    <string name="tutorial_slideshow_notification_action_title">Action Notification</string>
+    <string name="tutorial_slideshow_notification_action_desc">Apprenez à afficher une notification pendant votre scénario</string>
+    <string name="tutorial_slideshow_notification_action_step_1_text">Une action Notification affiche une notification
+        Android avec un titre et un message de votre choix.\n\nVous pouvez insérer la valeur actuelle d\'un compteur dans
+        le texte de la notification à l\'aide du bouton Ajouter un compteur, ou en tapant directement le marqueur
+        <b>{nomDuCompteur}</b>. À l\'exécution, il est remplacé par la valeur du compteur — par exemple,
+        \"J\'ai {pommes} pommes\" devient \"J\'ai 18 pommes\".</string>
+    <string name="tutorial_slideshow_notification_action_step_2_text">Le niveau d\'importance de la notification
+        contrôle le degré d\'intrusion avec lequel elle est présentée. Les niveaux élevés peuvent afficher une bannière
+        et jouer un son, tandis que les niveaux faibles sont livrés silencieusement dans le tiroir des notifications.
+        \n\nLe comportement exact dépend de l\'appareil et peut être personnalisé dans les paramètres de notifications
+        Android de Klick\'r.</string>
+
+    <!-- Toggle Event Action slideshow -->
+    <string name="tutorial_slideshow_toggle_event_action_title">Action Changer l\'état d\'un événement</string>
+    <string name="tutorial_slideshow_toggle_event_action_desc">Apprenez à activer et désactiver des événements à l\'exécution</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_1_text">Un événement désactivé est complètement ignoré
+        pendant la boucle du scénario — ses conditions ne sont jamais vérifiées et ses actions ne s\'exécutent jamais.
+        Il ne consomme donc aucun temps de traitement.\n\nDésactiver les événements que vous n\'utilisez pas est un
+        excellent moyen d\'améliorer les performances. Par exemple, dans un scénario qui alterne entre une phase menu et
+        une phase jeu, désactiver tous les événements liés au menu pendant la phase jeu (et vice versa) permet de ne
+        garder actifs que les événements pertinents à chaque instant.</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_2_text">Lors de la configuration de l\'action, vous
+        pouvez choisir de modifier l\'état de tous les événements du scénario en une seule fois, ou définir un nouvel
+        état pour chaque événement individuellement.\n\nTrois changements d\'état sont disponibles pour chaque événement :
+        l\'activer, le désactiver, ou basculer depuis sa valeur actuelle — un événement activé devient désactivé et un
+        événement désactivé devient activé.</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_3_text">Si tous les événements du scénario se retrouvent
+        désactivés en même temps, le scénario s\'arrête automatiquement, car il ne reste rien à exécuter.\n\nCela peut
+        être utilisé intentionnellement comme moyen propre de terminer un scénario une fois un objectif atteint : une
+        dernière action Changer l\'état d\'un événement qui désactive tous les événements mettra fin au scénario.</string>
+
+    <!-- Intent Action slideshow -->
+    <string name="tutorial_slideshow_intent_action_title">Action Intent</string>
+    <string name="tutorial_slideshow_intent_action_desc">Apprenez à communiquer avec d\'autres applications</string>
+    <string name="tutorial_slideshow_intent_action_step_1_text">Les Intents sont la façon dont les applications
+        communiquent entre elles sur Android. L\'action Intent vous permet d\'utiliser ce système directement depuis
+        votre scénario.\n\nUn ensemble de modèles prédéfinis est disponible pour faciliter cela. Le plus courant est
+        Démarrer une application, qui lance une autre application sur votre appareil exactement comme si vous aviez
+        appuyé sur son icône depuis le lanceur.</string>
+    <string name="tutorial_slideshow_intent_action_step_2_text">L\'onglet Avancé vous permet de définir un Intent brut
+        manuellement, vous donnant un contrôle total sur l\'action, la catégorie, les données et les extras. Cela n\'est
+        pas recommandé pour les utilisateurs réguliers — c\'est destiné aux développeurs Android qui savent déjà comment
+        fonctionnent les Intents.\n\nDavantage de modèles prêts à l\'emploi seront ajoutés dans les futures mises à jour
+        pour faciliter les cas d\'utilisation courants sans recourir aux options avancées.</string>
+
+
+    <!-- Event priority slideshow -->
+    <string name="tutorial_slideshow_events_priority_title">Priorité des événements</string>
+    <string name="tutorial_slideshow_events_priority_desc">Apprenez comment l\'ordre des événements dans votre liste influence leur exécution</string>
+    <string name="tutorial_slideshow_events_priority_step_1_text">Chaque image capturée depuis votre écran est traitée en vérifiant vos événements <b>un par un, de haut en bas</b>.\n\nLa position d\'un événement dans votre liste détermine à quel moment il a la chance de s\'exécuter. Par défaut, dès qu\'un événement voit ses conditions remplies et ses actions exécutées, <b>l\'image est considérée comme traitée</b>. Le traitement s\'arrête pour cette image et la suivante repart depuis le premier événement de la liste.\n\nCela signifie qu\'un seul événement peut s\'exécuter par image par défaut.</string>
+    <string name="tutorial_slideshow_events_priority_step_2_text">Vous pouvez modifier ce comportement via le champ <b>Continuer l\'éxécution</b> dans les paramètres de l\'événement. Lorsqu\'il est activé, après l\'exécution de cet événement, le traitement <b>passe à l\'événement suivant</b> dans la liste au lieu de s\'arrêter.\n\nCela permet à plusieurs événements de s\'exécuter sur la même image.\n\n<b>Exemple :</b> votre liste contient l\'Événement A suivi de l\'Événement B. Si l\'Événement A est toujours détecté et que <b>Continuer l\'éxécution</b> n\'est pas activé, il s\'exécutera à chaque image et l\'Événement B n\'aura jamais la chance de s\'exécuter.\n\nActivez <b>Continuer l\'éxécution</b> sur l\'Événement A et les deux événements seront vérifiés à chaque image.\n\nUn tutoriel interactif est également disponible pour pratiquer ce concept.</string>
+
+
+    <!-- Events reloading slideshow -->
+    <string name="tutorial_slideshow_events_reloading_title">Rechargement d\'un événement</string>
+    <string name="tutorial_slideshow_events_reloading_desc">Apprenez comment le rechargement d\'un événement se comporte dans votre scénario</string>
+    <string name="tutorial_slideshow_events_reloading_step_1_text">Le paramètre de rechargement d\'événement vous permet
+        d\'ignorer un événement pendant une durée donnée une fois qu\'il est déclenché. \n\nUn événement en état de
+        rechargement est toujours considéré comme activé : le rechargement et l\'état de l\'événement sont indépendants.
+        \n\nSi l\'événement est désactivé pendant son rechargement, le minuteur de rechargement sera effacé, ce qui
+        signifie que le délai ne s\'applique plus lorsque l\'événement est réactivé.</string>
+
+
+    <!-- Counters value usages slideshow -->
+    <string name="tutorial_slideshow_counters_value_usages_title">Utiliser les valeurs de compteur</string>
+    <string name="tutorial_slideshow_counters_value_usages_desc">Découvrez les différentes façons d\'afficher et d\'utiliser les valeurs de compteur dans votre scénario</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_1_text">Vous pouvez afficher la valeur actuelle d\'un
+        compteur dans une action Notification. C\'est utile pour surveiller la progression pendant l\'exécution de
+        votre scénario, ou pour afficher un résumé à la fin.\n\nPour insérer un compteur, appuyez sur le bouton
+        Ajouter un compteur dans la configuration de l\'action. Cela ajoute un espace réservé comme
+        <b>{counterName}</b> dans votre texte. À l\'exécution, cet espace réservé est remplacé par la valeur
+        actuelle du compteur. Par exemple, si un compteur nommé <i>score</i> a la valeur 42, le texte
+        \"Score actuel : {score}\" devient \"Score actuel : 42\".</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_2_text">Vous pouvez également insérer la valeur d\'un
+        compteur dans une action Écrire du texte, afin que le texte saisi inclue la valeur actuelle au moment où
+        l\'action s\'exécute.\n\nL\'espace réservé fonctionne de la même façon que dans l\'action Notification :
+        appuyez sur le bouton Ajouter un compteur ou tapez directement <b>{counterName}</b>. Par exemple, si un
+        compteur nommé <i>score</i> a la valeur 42, le texte \"Mon score est {score}\" devient
+        \"Mon score est 42\".</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_3_text">Les valeurs des compteurs sont enregistrées
+        dans le rapport de débogage. Si quelque chose ne fonctionne pas comme prévu dans votre scénario, capturer
+        un rapport de débogage vous montrera exactement comment vos compteurs ont évolué, ce qui facilitera la
+        recherche du problème.</string>
+
+</resources>

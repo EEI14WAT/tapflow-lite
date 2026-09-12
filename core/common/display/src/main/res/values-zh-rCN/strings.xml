@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title_media_projection_disclosure">用于图片检测的屏幕捕获</string>
+    <string name="message_media_projection_disclosure">TapFlow Lite 仅为本地图片检测而请求屏幕捕获。接下来 Android 会显示自己的授权提示。捕获的画面仅在本机处理，不会上传给 EEI14WAT。您可以取消此请求。</string>
+    <string name="button_media_projection_continue">继续</string>
+    <string name="button_media_projection_cancel">取消</string>
+</resources>

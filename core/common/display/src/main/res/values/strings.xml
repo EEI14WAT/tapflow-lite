@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title_media_projection_disclosure">Screen capture for image detection</string>
+    <string name="message_media_projection_disclosure">TapFlow Lite needs screen capture only for local image detection. Android will show its own authorization prompt next. Captured frames are processed locally and are not uploaded to EEI14WAT. You can cancel this request.</string>
+    <string name="button_media_projection_continue">Continue</string>
+    <string name="button_media_projection_cancel">Cancel</string>
+</resources>

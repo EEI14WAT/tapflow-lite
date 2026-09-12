@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_slideshow_button_next">下一步</string>
+    <string name="tutorial_slideshow_button_close">關閉</string>
+
+
+    <!-- Image Condition Capture slideshow -->
+    <string name="tutorial_slideshow_image_condition_capture_title">圖像擷取</string>
+    <string name="tutorial_slideshow_image_condition_capture_desc">關於最佳圖像擷取的提示</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_1_text">在為圖像條件進行擷取時，
+        需要避免背景等會發生變化的部分。擷取內容需要盡可能接近偵測時所顯示的內容。\n\n盡量在盡可能靠近您想要比對的目標位置進行擷取，
+        同時保留足夠的細節以供偵測。\n\n注意：您可以透過捏合手勢縮放擷取區域，以更精確地控制範圍。</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_2_text">請注意含有透明區域的圖像。
+        如果透明表面後面的背景發生變化，偵測演算法將偵測到顏色或形狀的變化，
+        並不會將其視為已偵測到。\n\n盡量避免在條件中出現透明部分，同時保留足夠的靜態細節用於偵測。
+        您也可以更改偵測容差，以補償小型透明區域中可能發生的變化。\n\n如果您想比對的目標內包含文字，
+        可以考慮使用文字條件，因為文字條件受背景變化雜訊的影響較小。</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_3_text">圖像偵測在應用於具有大量邊緣的目標時更為準確。
+        圖像越小速度也越快，但如果圖像太小且缺乏細節，則會降低信心度。建立新圖像條件時請牢記這一點。\n\n如果您嘗試偵測非常小的物體，
+        可以考慮改用一個或多個顏色條件，它們在此類情況下更加可靠，而且速度更快。</string>
+
+
+    <!-- Image Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_image_condition_area_title">偵測區域</string>
+    <string name="tutorial_slideshow_image_condition_area_desc">了解對您的情境效能的影響</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_1_text">建立圖像條件時，您可以透過更改偵測類型來定義
+        偵測將在螢幕上的哪個位置進行。\n\n預設情況下，新的圖像條件始終會在與擷取相同的位置進行偵測。
+        這是偵測圖像最快的方式。\n\n如果您需要偵測的圖像可能在多個位置顯示，則需要使用其他選項之一。</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_2_text">選擇「在區域內」時，區域選擇欄位將啟用，
+        允許您定義偵測區域。\n\n預設情況下，區域與擷取區域相同，但您可以移動和擴大它。
+        區域越大，偵測速度越慢，因此請盡量只包含螢幕上感興趣的部分。</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_3_text">最後一個選項「整個螢幕」將把偵測區域更改為整個顯示器。
+        \n\n這是迄今為止最慢的偵測類型，您應該僅在萬不得已時使用它。</string>
+
+
+    <!-- Text Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_text_condition_area_title">文字偵測區域</string>
+    <string name="tutorial_slideshow_text_condition_area_desc">關於最佳文字偵測的提示</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_1_text">在偵測螢幕上的文字時，您需要定義一個偵測區域，
+        該區域將在偵測過程中掃描文字。\n\n偵測靜態文字時，您希望該區域靠近文字並在其周圍保留小邊距。
+        文字不應觸及區域邊界，否則偵測信心度將顯著下降。\n\n注意：對於非常小的文字，
+        您可能需要提高情境的偵測品質，因為更高的解析度將有助於偵測這些文字。</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_2_text">偵測可能出現在多個位置的文字時，請使用盡可能小的偵測區域。
+        偵測區域越大，偵測速度越慢。\n\n如果不同位置是已知的且非隨機的，為每個位置使用個別的文字條件
+        可能比使用一個面積非常大的條件更快。如果您需要深度最佳化情境時序，可以使用偵錯報告來測試時序。</string>
+
+
+    <!-- Number Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_number_condition_area_title">數字偵測區域</string>
+    <string name="tutorial_slideshow_number_condition_area_desc">關於最佳數字偵測的提示</string>
+
+    <string name="tutorial_slideshow_number_condition_area_step_1_text">這裡的提示與文字條件相同：在偵測螢幕上的數字時，您需要定義一個
+        偵測區域，該區域將在偵測過程中掃描數字。\n\n偵測靜態數字時，您希望該區域靠近數字並在其周圍保留小邊距。數字不應觸及
+        區域邊界，否則偵測信心度將顯著下降。\n\n注意：對於非常小的數字，您可能需要提高情境的偵測品質，因為更高的解析度將有助於
+        偵測這些數字。</string>
+
+    <!--Screen Condition type selection -->
+    <string name="tutorial_slideshow_screen_condition_type_title">螢幕條件類型</string>
+    <string name="tutorial_slideshow_screen_condition_type_desc">根據您的使用情境了解選擇哪種類型</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_1_text">顏色條件是使用 Klick\'r 偵測最快的方式。它僅驗證螢幕上某個
+        像素的顏色。\n\n當嘗試偵測簡單的 UI 元素（如按鈕顏色或進度條完成情況）或細微變化時，此條件非常方便。</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_2_text">圖像條件比顏色條件慢，但對螢幕內容偵測提供了更多彈性。
+        在小區域內偵測時執行時間相當短，但當區域較大時可能會大幅增加。\n\n當嘗試偵測清晰的形狀和顏色（如卡片內容或圖示）時，
+        此條件非常方便。</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_3_text">文字條件和數字條件使用相同的偵測過程。\n\n文字偵測是最慢的
+        偵測類型，但與圖像偵測不同，它對透明度不敏感，並且在複雜偵測場景中精度更高。執行時間隨偵測區域大小增加，還取決於所選
+        字母表。\n\n當嘗試偵測文字或數字（無論其如何顯示）時，此條件非常方便。</string>
+
+    <!-- Detection confidence slideshow -->
+    <string name="tutorial_slideshow_screen_condition_threshold_title">偵測信心度</string>
+    <string name="tutorial_slideshow_screen_condition_threshold_desc">關於偵測信心度的提示</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_1_text">Klick\'r 在搜尋您的螢幕條件之前會進行大量預處理，以加快
+        過程並減少電池消耗。這會在結果中產生不確定性和近似值，以信心度分數表示。\n\n為確保您的條件按預期工作，您可以在螢幕條件
+        清單中聚焦某個條件時，按下播放箭頭按鈕來單獨測試它們。</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_2_text">測試螢幕條件時，將顯示偵測信心度分數，您可以直接在此
+        修改允許的差異，從而消除誤報或對允許的結果更加彈性。</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_3_text">偵測結果還受偵測解析度影響。在情境對話框中可用，它允許
+        您更改 Klick\'r 在處理之前對螢幕內容的縮小程度。\n\n這可能會影響所有螢幕條件的信心度分數，解析度越高意味著偵測越好，
+        但執行時間也越慢。</string>
+
+
+
+    <!-- Broadcast received slideshow -->
+    <string name="tutorial_slideshow_broadcast_received_title">收到廣播時</string>
+    <string name="tutorial_slideshow_broadcast_received_desc">監聽其他應用程式的廣播</string>
+
+    <string name="tutorial_slideshow_broadcast_received_step_1_text">在 Android 上，當應用程式想與其他應用程式共享狀態時，
+        會使用 Broadcast Intent。\n\n透過「收到廣播時」條件，您可以監聽這些狀態並在 Klick\'r 中觸發相應動作。
+        系統提供了一些 Android 系統狀態的預設值，但請注意，廣播條件更適合開發者，因為完全掌握它需要
+        Android 開發知識。</string>
+
+    <!-- Counter Reached slideshow -->
+    <string name="tutorial_slideshow_counter_reached_title">計數器達到值時</string>
+    <string name="tutorial_slideshow_counter_reached_desc">對情境計數器的值做出回應</string>
+
+    <string name="tutorial_slideshow_counter_reached_step_1_text">計數器是在情境中宣告的變數，可在執行過程中
+        修改、顯示或驗證。\n\n透過「計數器達到值時」條件，您可以檢查計數器的當前值以觸發動作。所有數學比較
+        運算子均可用於自訂驗證。\n\n計數器可以多種方式使用，僅使用單個與計數器相關的條件或動作通常不足以
+        正確使用它們。涵蓋計數器功能的互動教學可在其專屬章節中找到。</string>
+
+    <!-- Pause Action slideshow -->
+    <string name="tutorial_slideshow_pause_action_title">等待動作</string>
+    <string name="tutorial_slideshow_pause_action_desc">了解等待如何影響動作執行和偵測</string>
+    <string name="tutorial_slideshow_pause_action_step_1_text">等待動作會將整個情境暫停設定的時間：在此期間，
+        不會執行任何動作，也不會進行任何螢幕偵測。\n\n非常常見的用法是在動作清單末尾新增一個等待。當您點擊
+        某個地方時，被點擊的應用程式需要時間來處理點擊並顯示結果——通常您會希望等待這個時刻，然後再讓
+        Klick\'r 重新開始分析螢幕。\n\n在兩個動作之間新增等待也是有效的，但在清單末尾新增等待通常是更重要的
+        需求。</string>
+
+    <!-- Swipe Action slideshow -->
+    <string name="tutorial_slideshow_swipe_action_title">滑動動作</string>
+    <string name="tutorial_slideshow_swipe_action_desc">了解滑動手勢的執行方式</string>
+    <string name="tutorial_slideshow_swipe_action_step_1_text">滑動動作沿直線從起始位置到結束位置執行拖曳手勢。
+        兩個座標都是固定的，在動作設定中指定。\n\n持續時間控制手勢從開始到結束所需的時間：較短的持續時間產生
+        更快的滑動，較長的持續時間產生更慢、更受控的滑動。</string>
+
+    <!-- Click Action Offset slideshow -->
+    <string name="tutorial_slideshow_click_action_offset_title">點擊偏移</string>
+    <string name="tutorial_slideshow_click_action_offset_desc">了解如何調整對偵測到的條件的點擊位置</string>
+    <string name="tutorial_slideshow_click_action_offset_step_1_text">點擊偵測到的條件時，預設情況下點擊會應用於
+        偵測區域的中心。\n\n點擊偏移允許您將該位置相對於條件中心沿 X 軸和 Y 軸移動固定數量的像素。當您想要
+        點擊的元素接近但不完全位於偵測區域中心時，這非常有用。</string>
+
+    <!-- Click Action Target slideshow -->
+    <string name="tutorial_slideshow_click_action_target_title">點擊目標</string>
+    <string name="tutorial_slideshow_click_action_target_desc">了解如何設定點擊將應用的位置</string>
+    <string name="tutorial_slideshow_click_action_target_step_1_text">點擊動作可以針對兩種位置：始終相同的靜態
+        位置，或偵測到的條件的位置。\n\n在動作設定對話框的目標選擇器中選擇您的瞄準方式。</string>
+    <string name="tutorial_slideshow_click_action_target_step_2_text">使用靜態位置時，無論螢幕上顯示什麼內容，
+        點擊都始終發生在相同的精確座標處。\n\n請注意，這些座標對旋轉敏感：如果裝置旋轉，點擊可能會落在意外
+        位置甚至超出螢幕邊界。</string>
+    <string name="tutorial_slideshow_click_action_target_step_3_text">使用條件位置時，點擊會應用於偵測到的圖片
+        條件的中心，無論目標出現在螢幕的哪個位置都會跟蹤它。\n\n使用 AND 運算子時，所有條件都必須滿足，因此
+        每個圖片條件都有一個可用位置。您可以自由選擇任意一個並透過偏移量進行微調。</string>
+    <string name="tutorial_slideshow_click_action_target_step_4_text">使用 OR 運算子時，只有第一個滿足的條件會被
+        評估，其餘條件將被忽略。因此，Klick\'r 無法提前知道哪個條件會被偵測到。\n\n因此，使用 OR 運算子時無法
+        選擇特定條件作為目標：點擊始終會應用於執行時第一個偵測到的條件，無論它是哪個。</string>
+
+    <!-- Combine Conditions Ordering slideshow -->
+    <string name="tutorial_slideshow_combine_conditions_ordering_title">條件順序與速度</string>
+    <string name="tutorial_slideshow_combine_conditions_ordering_desc">條件的順序如何影響事件檢查速度</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_1_text">列表中條件的順序會影響事件的檢查速度。\n\n使用 AND
+        運算子時，一旦找到第一個未滿足的條件，檢查就會停止。將最不可能滿足的條件放在最前面，可以讓應用程式更早跳過其餘條件，使事件更快。</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_2_text">使用 OR
+        運算子時，一旦找到第一個滿足的條件，檢查就會停止。將最可能滿足的條件放在最前面，可以讓應用程式更早完成，而無需檢查其餘條件。\n\n在兩種情況下，將最重要的條件放在列表頂部，都是保持場景快速運行的簡單方法。</string>
+
+
+    <!-- Events State Basics slideshow -->
+    <string name="tutorial_slideshow_events_state_basics_title">事件狀態</string>
+    <string name="tutorial_slideshow_events_state_basics_desc">了解如何在場景執行時啟用和停用事件</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_1_text">場景中的每個事件（螢幕事件和觸發事件）都有一個狀態：<b>啟用</b>或<b>停用</b>。\n\
+        n啟用時，事件正常執行並檢查其條件。停用時，它會被完全跳過，就像不存在一樣。\n\n預設情況下，每個事件都以啟用狀態開始。你可以透過事件設定中的<b>初始狀態</b>欄位來變更此設定。</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_2_text">在場景執行時，可以使用<b>變更事件狀態</b>動作來變更任何事件的狀態。該動作可以啟用、停用或切
+        換一個或多個事件的狀態。\n\n這開啟了很多可能性：一個接一個相互開啟的事件、執行一次後自動關閉的事件，或者同一時間只有一個處於活動狀態的事件組。</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_3_text">當<b>場景中的所有事件都被停用</b>時，場景會自動停止。沒有更多事情要做，因此
+        Klick\'r 會自動停止。\n\n這是結束場景的簡單方法：讓最後一個事件在完成任務後停用所有其他事件，一切都會自動停止。</string>
+
+
+    <!-- Actions List slideshow -->
+    <string name="tutorial_slideshow_actions_list_title">動作清單</string>
+    <string name="tutorial_slideshow_actions_list_desc">了解動作清單的執行方式</string>
+    <string name="tutorial_slideshow_actions_list_step_1_text">動作按順序依次執行。您可以使用 &lt;&lt; 和 &gt;&gt;
+        按鈕更改動作的順序，或直接點擊其索引編號。\n\n請盡量保持動作清單簡短。一般自動點擊器每個事件只執行一個動作——這就是
+        應該遵循的模式。如果您發現自己在單一事件中添加了很多動作，通常表示應該將工作拆分為多個事件，每個事件回應螢幕上
+        實際顯示的內容。這就是 Klick\'r 的「看見即行動」理念：先偵測，再行動。</string>
+
+    <!-- Write Text Action slideshow -->
+    <string name="tutorial_slideshow_write_text_action_title">輸入文字動作</string>
+    <string name="tutorial_slideshow_write_text_action_desc">了解如何向已獲焦點的輸入欄位輸入文字</string>
+    <string name="tutorial_slideshow_write_text_action_step_1_text">在輸入文字動作執行之前，目標輸入欄位必須已獲得焦點，
+        就像您點擊它以調出鍵盤一樣。\n\n為此，在輸入文字動作之前新增一個點擊該輸入欄位的點擊動作。如果點擊後有過渡動畫，
+        在兩者之間新增一個等待動作可以確保輸入欄位準備就緒。\n\n該動作還有一個「確認」選項：啟用後，它會在設定文字後自動按
+        Enter 鍵，確認或提交輸入內容。</string>
+    <string name="tutorial_slideshow_write_text_action_step_2_text">您可以將計數器的值插入要輸入的文字中。在動作設定中
+        按「附加計數器」按鈕選擇一個計數器：它會在文字欄位當前游標位置插入佔位符 <b>{計數器名稱}</b>。\n\n在執行時，文字
+        被貼上到輸入欄位之前，每個 <b>{計數器名稱}</b> 佔位符都會被替換為計數器的當前值。例如，如果名為 <i>蘋果</i> 的
+        計數器的值為 18，文字「我有 {蘋果} 個蘋果」就會變成「我有 18 個蘋果」。</string>
+
+    <!-- System Action slideshow -->
+    <string name="tutorial_slideshow_system_action_title">系統動作</string>
+    <string name="tutorial_slideshow_system_action_desc">了解如何觸發 Android 導覽動作</string>
+    <string name="tutorial_slideshow_system_action_step_1_text">系統動作執行 Android 內建導覽動作之一：返回、主畫面或最近
+        應用程式。\n\n這些與螢幕底部導覽按鈕的動作相同。它們不需要座標，無論目前開啟哪個應用程式都能在系統層面運作。</string>
+
+    <!-- Change Counter Action slideshow -->
+    <string name="tutorial_slideshow_change_counter_action_title">修改計數器動作</string>
+    <string name="tutorial_slideshow_change_counter_action_desc">了解如何修改計數器的值</string>
+    <string name="tutorial_slideshow_change_counter_action_step_1_text">修改計數器動作使用預定義的靜態值對計數器執行操作。
+        有三種操作可用：將該值加到計數器（+）、從計數器中減去它（−），或將計數器設定為該精確值（=）。\n\n這是更新計數器最
+        常見的方式——例如，每次偵測到條件時加 1，或在達到目標時重置為 0。</string>
+    <string name="tutorial_slideshow_change_counter_action_step_2_text">除了靜態值，您還可以使用另一個計數器的當前值作為
+        運算元。同樣的三種操作（+、−、=）均適用，但操作量在執行時從所選計數器讀取，而不是在設定時固定。\n\n這讓您可以建構
+        計數器之間相互互動的動態情境。</string>
+
+    <!-- Notification Action slideshow -->
+    <string name="tutorial_slideshow_notification_action_title">通知動作</string>
+    <string name="tutorial_slideshow_notification_action_desc">了解如何在情境執行時顯示通知</string>
+    <string name="tutorial_slideshow_notification_action_step_1_text">通知動作顯示帶有您自訂標題和訊息的 Android 通知。
+        \n\n您可以使用「附加計數器」按鈕，或直接輸入佔位符 <b>{計數器名稱}</b>，將計數器的當前值插入通知文字。執行時它會被
+        替換為計數器的值——例如，「我有 {蘋果} 個蘋果」變為「我有 18 個蘋果」。</string>
+    <string name="tutorial_slideshow_notification_action_step_2_text">通知重要性等級控制通知顯示的醒目程度。較高的重要性
+        等級可能顯示橫幅並播放聲音，而較低等級則靜默地傳送到通知抽屜。\n\n確切行為取決於裝置，可在 Android 通知設定中針對
+        Klick\'r 進一步自訂。</string>
+
+    <!-- Toggle Event Action slideshow -->
+    <string name="tutorial_slideshow_toggle_event_action_title">變更事件狀態動作</string>
+    <string name="tutorial_slideshow_toggle_event_action_desc">了解如何在執行時啟用和停用事件</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_1_text">停用的事件在情境循環中被完全跳過——其條件從不檢查，
+        其動作也從不執行。這意味著它完全不消耗處理時間。\n\n停用當前不使用的事件是提升效能的好方法。例如，在菜單階段和遊戲
+        階段交替的情境中，在遊戲階段停用所有菜單事件（反之亦然），可以在任何時刻只保持相關事件處於活動狀態。</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_2_text">設定動作時，您可以選擇一次性變更情境中所有事件的
+        狀態，或分別為每個事件定義新狀態。\n\n每個事件可用三種狀態變更：啟用它、停用它，或從其當前值切換——已啟用的事件變為
+        停用，已停用的事件變為啟用。</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_3_text">如果情境中的所有事件同時被停用，情境將自動停止，
+        因為沒有任何內容可以執行。\n\n這可以有意作為在達到目標後終止情境的乾淨方式：一個停用所有事件的最終變更事件狀態
+        動作將使情境停止執行。</string>
+
+    <!-- Intent Action slideshow -->
+    <string name="tutorial_slideshow_intent_action_title">Intent 動作</string>
+    <string name="tutorial_slideshow_intent_action_desc">了解如何與其他應用程式通訊</string>
+    <string name="tutorial_slideshow_intent_action_step_1_text">Intent 是 Android 上應用程式之間相互通訊的方式。Intent
+        動作讓您可以直接從情境中利用這個系統。\n\n提供了一組預定義範本以簡化操作。最常用的是「啟動應用程式」，它在您的
+        裝置上啟動另一個應用程式，就像您從啟動器點擊其圖示一樣。</string>
+    <string name="tutorial_slideshow_intent_action_step_2_text">「進階」選項卡允許您手動定義原始 Intent，讓您完全控制
+        動作、類別、資料和 extras。這不建議一般使用者使用——面向已了解 Intent 運作方式的 Android 開發者。\n\n未來更新中將
+        新增更多開箱即用的範本，以便在不使用進階選項的情況下更輕鬆地設定常見用例。</string>
+
+
+    <!-- Event priority slideshow -->
+    <string name="tutorial_slideshow_events_priority_title">事件優先順序</string>
+    <string name="tutorial_slideshow_events_priority_desc">了解清單中事件的順序如何影響哪些事件執行</string>
+    <string name="tutorial_slideshow_events_priority_step_1_text">從螢幕擷取的每一幀都透過<b>由上到下逐一</b>檢查事件來處理。\n\n事件在清單中的位置決定了它何時有機會執行。預設情況下，一旦事件的條件滿足並執行了其動作，<b>該幀即視為處理完畢</b>。該幀的處理停止，下一幀從清單中的第一個事件重新開始。\n\n這意味著預設情況下每幀只能執行一個事件。</string>
+    <string name="tutorial_slideshow_events_priority_step_2_text">你可以透過事件設定中的<b>繼續執行</b>欄位來改變此行為。啟用後，該事件執行之後，處理會<b>繼續到清單中的下一個事件</b>而不是停止。\n\n這允許多個事件在同一幀中執行。\n\n<b>範例：</b>你的清單包含事件A，後面是事件B。如果事件A持續被偵測到且沒有啟用<b>繼續執行</b>，它將在每幀執行，而事件B永遠沒有機會執行。\n\n在事件A上啟用<b>繼續執行</b>，兩個事件將在每幀都被檢查。\n\n還有一個互動教學可供練習此概念。</string>
+
+
+    <!-- Events reloading slideshow -->
+    <string name="tutorial_slideshow_events_reloading_title">事件重新裝填</string>
+    <string name="tutorial_slideshow_events_reloading_desc">了解情境中事件重新裝填的行為</string>
+    <string name="tutorial_slideshow_events_reloading_step_1_text">事件重新裝填參數允許您在事件觸發後的一段時間內跳過該事件。
+        \n\n處於重新裝填狀態的事件仍被視為啟用：重新裝填與事件狀態相互獨立。 \n\n如果事件在重新裝填狀態下被停用，重新裝填
+        計時器將被清除，因此當事件重新啟用時冷卻不再適用。</string>
+
+
+    <!-- Counters value usages slideshow -->
+    <string name="tutorial_slideshow_counters_value_usages_title">使用計數器的值</string>
+    <string name="tutorial_slideshow_counters_value_usages_desc">了解在情境中顯示和使用計數器值的不同方法</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_1_text">您可以在通知動作中顯示計數器的目前值。這對於在情境執行期間追蹤進度，或在結束時顯示摘要非常有用。\n\n要插入計數器，請在動作設定中按下「新增計數器」按鈕。這會在您的文字中加入類似 <b>{counterName}</b> 的占位符。執行時，該占位符將被計數器的實際值取代。例如，如果名為 <i>score</i> 的計數器值為 42，則文字「目前分數：{score}」將變為「目前分數：42」。</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_2_text">您也可以在寫入文字動作中插入計數器的值，這樣輸入的文字將在動作執行時包含目前值。\n\n占位符的使用方式與通知動作相同：按下「新增計數器」按鈕，或直接輸入 <b>{counterName}</b>。例如，如果名為 <i>score</i> 的計數器值為 42，則文字「我的分數是 {score}」將變為「我的分數是 42」。</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_3_text">計數器的值會被記錄在除錯報告中。如果您的情境出現了意外情況，擷取除錯報告將幫助您確切了解計數器的變化過程，從而更容易找到問題所在。</string>
+
+</resources>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_slideshow_button_next">Avanti</string>
+    <string name="tutorial_slideshow_button_close">Chiudi</string>
+
+
+    <!-- Image Condition Capture slideshow -->
+    <string name="tutorial_slideshow_image_condition_capture_title">Acquisizione immagine</string>
+    <string name="tutorial_slideshow_image_condition_capture_desc">Suggerimenti per un\'acquisizione ottimale delle immagini</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_1_text">Quando si acquisisce per una condizione immagine,
+        è necessario evitare le parti che cambiano, come lo sfondo. L\'acquisizione deve assomigliare il più possibile a ciò che
+        verrà visualizzato durante il rilevamento.\n\nProva sempre ad acquisire il più vicino possibile all\'obiettivo che vuoi abbinare
+        mantenendo sufficienti dettagli per il rilevamento.\n\nNota: Puoi eseguire il pizzico per zoomare sull\'acquisizione e controllare con più
+        precisione l\'area.</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_2_text">Fai attenzione con le immagini contenenti aree trasparenti.
+        Se lo sfondo dietro la superficie trasparente cambia, l\'algoritmo di rilevamento rileverà i cambiamenti
+        di colore o forma e non lo considererà rilevato. \n\nProva ad evitare le parti trasparenti nella tua condizione
+        mantenendo sufficienti dettagli statici per il rilevamento. Puoi anche modificare la tolleranza di rilevamento per
+        compensare le possibili variazioni in piccole aree trasparenti. \n\nSe c\'è un testo all\'interno dell\'obiettivo che
+        vuoi abbinare, potresti voler considerare l\'uso di una Condizione Testo, poiché sono meno influenzate dalle
+        variazioni del rumore di sfondo.</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_3_text">Il rilevamento delle immagini è più accurato quando applicato
+        a oggetti da rilevare che hanno molti bordi. È anche più veloce se l\'immagine è più piccola, ma perderà
+        affidabilità se l\'immagine è troppo piccola e manca di dettagli. Cerca di tenerlo a mente quando crei nuove condizioni
+        immagine.\n\nSe stai cercando di rilevare cose molto piccole, potresti voler usare una o più Condizioni Colore
+        invece, sono più affidabili per tali casi, e molto più veloci.</string>
+
+
+    <!-- Image Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_image_condition_area_title">Area di rilevamento</string>
+    <string name="tutorial_slideshow_image_condition_area_desc">Scopri l\'impatto sulle prestazioni del tuo scenario</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_1_text">Quando si crea una Condizione Immagine, è possibile definire
+        dove avverrà il rilevamento sullo schermo modificando il tipo di rilevamento.\n\nPer impostazione predefinita, una nuova Condizione Immagine
+        rileverà sempre nello stesso punto dell\'acquisizione. Questo è il modo più veloce per rilevare un\'immagine.
+        \n\nSe l\'immagine che devi rilevare può essere visualizzata in più punti, devi quindi utilizzare una delle altre
+        opzioni.</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_2_text">Selezionando \"In area\", il campo di selezione area
+        si abiliterà; permettendoti di definire un\'area di rilevamento.\n\nPer impostazione predefinita, l\'area sarà uguale all\'area di acquisizione
+        ma puoi spostarla e ampliarla. Più grande è l\'area, più lento sarà il rilevamento, quindi cerca di includere solo
+        le parti interessanti dello schermo.</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_3_text">L\'ultima opzione, \"Schermo intero\" cambierà
+        l\'area di rilevamento a tutto il display. \n\nQuesto è di gran lunga il tipo di rilevamento più lento e dovresti usarlo solo
+        come ultima risorsa.</string>
+
+
+    <!-- Text Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_text_condition_area_title">Area di rilevamento testo</string>
+    <string name="tutorial_slideshow_text_condition_area_desc">Suggerimenti per un rilevamento ottimale del testo</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_1_text">Quando si rileva un testo sullo schermo, è necessario
+        definire un\'area di rilevamento che verrà analizzata per il testo durante il rilevamento. \n\nQuando si rileva testo statico,
+        si vuole che l\'area sia vicina al testo mantenendo un piccolo margine intorno. Il testo non deve toccare i
+        bordi dell\'area altrimenti l\'affidabilità del rilevamento diminuirà significativamente. \n\nNota: per testi molto piccoli,
+        potrebbe essere necessario aumentare la qualità di rilevamento del proprio scenario, poiché una risoluzione più alta aiuterà il rilevamento
+        di questi. </string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_2_text">Quando si rileva un testo che può apparire in più
+        posizioni, usa l\'area di rilevamento più piccola possibile. Più grande è l\'area di rilevamento, più lento sarà il rilevamento.
+        \n\nSe le diverse posizioni sono note e non casuali, potrebbe essere più veloce usare condizioni di testo separate
+        per ciascuna posizione piuttosto che una sola con un\'area molto grande. Puoi testare i tuoi tempi usando il report di debug
+        se sei interessato all\'ottimizzazione approfondita dei tempi del tuo scenario.</string>
+
+
+    <!-- Number Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_number_condition_area_title">Area di rilevamento dei numeri</string>
+    <string name="tutorial_slideshow_number_condition_area_desc">Suggerimenti per un rilevamento ottimale dei numeri</string>
+
+    <string name="tutorial_slideshow_number_condition_area_step_1_text">I suggerimenti qui sono gli stessi della Condizione Testo:
+        quando si rileva un numero sullo schermo, è necessario definire un\'area di rilevamento che verrà analizzata per i numeri
+        durante il rilevamento. \n\nQuando si rileva un numero statico, si vuole che l\'area sia vicina al numero mantenendo un
+        piccolo margine intorno. Il numero non deve toccare i bordi dell\'area altrimenti l\'affidabilità del rilevamento diminuirà
+        significativamente. \n\nNota: per numeri molto piccoli, potrebbe essere necessario aumentare la qualità di rilevamento del
+        proprio scenario, poiché una risoluzione più alta aiuterà il rilevamento di questi. </string>
+
+    <!--Screen Condition type selection -->
+    <string name="tutorial_slideshow_screen_condition_type_title">Tipi di condizione schermo</string>
+    <string name="tutorial_slideshow_screen_condition_type_desc">Scopri quale usare in base al tuo caso d\'uso</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_1_text">La condizione colore è il modo più veloce di rilevare con Klick\'r.
+        Verifica semplicemente il colore di un pixel sullo schermo. \n\nQuesta condizione è utile quando si tenta di rilevare elementi
+        dell\'interfaccia utente semplici come il colore di un pulsante o il completamento di una barra di avanzamento,
+        o piccoli cambiamenti.</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_2_text">La condizione immagine è più lenta di una condizione colore,
+        ma consente maggiore flessibilità per il rilevamento del contenuto dello schermo. Il tempo di esecuzione è piuttosto basso
+        quando si rileva in un\'area piccola, ma può aumentare notevolmente quando l\'area è più grande. \n\nQuesta condizione è
+        utile quando si tenta di rilevare forme e colori chiari, come il contenuto di una scheda o un\'icona.</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_3_text">Le condizioni di testo e le condizioni di numero utilizzano
+        entrambe lo stesso processo di rilevamento. \n\nIl rilevamento del testo è il tipo di rilevamento più lento, ma a differenza
+        del rilevamento delle immagini, non è sensibile alla trasparenza e consente maggiore precisione in scene di rilevamento
+        complesse. Il tempo di esecuzione aumenta con le dimensioni dell\'area di rilevamento e dipende anche dall\'alfabeto
+        selezionato. \n\nQuesta condizione è utile quando si tenta di rilevare un testo o un numero indipendentemente da come
+        viene visualizzato.</string>
+
+    <!-- Detection confidence slideshow -->
+    <string name="tutorial_slideshow_screen_condition_threshold_title">Affidabilità del rilevamento</string>
+    <string name="tutorial_slideshow_screen_condition_threshold_desc">Suggerimenti sull\'affidabilità del rilevamento</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_1_text">Klick\'r esegue molte pre-elaborazioni prima di cercare
+        la tua condizione schermo per velocizzare il processo e ridurre l\'impatto sulla batteria. Questo crea incertezze e
+        approssimazioni nei risultati che vengono espresse come punteggio di affidabilità. \n\nPer assicurarti che le tue condizioni
+        funzionino come previsto, puoi testarle individualmente premendo il pulsante freccia di riproduzione mentre ci si concentra
+        su una condizione nell\'elenco delle condizioni schermo.</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_2_text">Durante il test di una condizione schermo, verrà
+        visualizzato il punteggio di affidabilità del rilevamento, e puoi modificare direttamente qui la differenza tollerata,
+        permettendoti di eliminare i falsi positivi o essere più flessibile con i risultati consentiti.</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_3_text">I risultati del rilevamento sono influenzati anche dalla
+        risoluzione di rilevamento. Disponibile nella finestra di dialogo Scenario, ti permette di cambiare quanto Klick\'r ridimensiona
+        il contenuto dello schermo prima di elaborarlo. \n\nQuesto può influire sul punteggio di affidabilità di tutte le tue condizioni
+        schermo, con una risoluzione più alta che significa un rilevamento migliore, ma anche un tempo di esecuzione più lento.</string>
+
+
+
+    <!-- Broadcast received slideshow -->
+    <string name="tutorial_slideshow_broadcast_received_title">Alla ricezione di un Broadcast</string>
+    <string name="tutorial_slideshow_broadcast_received_desc">Ascolta i broadcast di altre applicazioni</string>
+
+    <string name="tutorial_slideshow_broadcast_received_step_1_text">Su Android, quando le applicazioni vogliono condividere il loro
+        stato con altre app, usano un Broadcast Intent. \n\nCon la condizione \"Alla ricezione di un Broadcast\", puoi
+        monitorare questi stati e reagire con un\'azione in Klick\'r. Vengono forniti alcuni valori predefiniti per lo stato del
+        sistema Android, ma tieni presente che le condizioni di broadcast sono più orientate agli sviluppatori, poiché
+        padroneggiarle richiede conoscenze di sviluppo Android.</string>
+
+    <!-- Counter Reached slideshow -->
+    <string name="tutorial_slideshow_counter_reached_title">Quando un Contatore è raggiunto</string>
+    <string name="tutorial_slideshow_counter_reached_desc">Reagisci ai valori dei contatori del tuo scenario</string>
+
+    <string name="tutorial_slideshow_counter_reached_step_1_text">I contatori sono variabili dichiarate nel tuo scenario
+        che possono essere modificate, visualizzate o verificate durante la sua esecuzione. \n\nCon la condizione \"Quando un Contatore
+        è raggiunto\", puoi verificare il valore corrente di un contatore per attivare azioni. Tutti gli operatori di confronto
+        matematici sono disponibili per personalizzare la verifica. \n\nI contatori possono essere usati in vari modi e usare
+        una singola condizione o azione correlata a un contatore spesso non è sufficiente per usarli correttamente. Tutorial
+        interattivi che coprono la funzione Contatore sono disponibili nella loro sezione dedicata.</string>
+
+    <!-- Pause Action slideshow -->
+    <string name="tutorial_slideshow_pause_action_title">Azione Attendi</string>
+    <string name="tutorial_slideshow_pause_action_desc">Scopri come l\'attesa influisce sull\'esecuzione delle azioni e sul rilevamento</string>
+    <string name="tutorial_slideshow_pause_action_step_1_text">Un\'Azione Attendi sospende l\'intero scenario per una
+        durata configurata: durante quel tempo non viene eseguita nessuna azione e non avviene nessun rilevamento
+        dello schermo.\n\nUn caso d\'uso molto comune è aggiungere un\'Attesa alla fine della lista delle azioni.
+        Quando si tocca qualcosa, l\'app toccata ha bisogno di tempo per elaborare il tocco e mostrare il risultato
+        — e di solito si vuole aspettare quel momento prima che Klick\'r riprenda ad analizzare lo schermo.\n\nUn\'attesa
+        tra due azioni è ugualmente valida, ma aggiungerne una alla fine della lista è spesso la necessità più
+        importante.</string>
+
+    <!-- Swipe Action slideshow -->
+    <string name="tutorial_slideshow_swipe_action_title">Azione Scorrimento</string>
+    <string name="tutorial_slideshow_swipe_action_desc">Scopri come viene eseguito il gesto di scorrimento</string>
+    <string name="tutorial_slideshow_swipe_action_step_1_text">Un\'Azione Scorrimento esegue un gesto di trascinamento
+        in linea retta da una posizione iniziale a una finale. Entrambe le coordinate sono fisse e impostate nella
+        configurazione.\n\nLa durata controlla quanto tempo impiega il gesto dall\'inizio alla fine: una durata
+        minore produce uno scorrimento più rapido, mentre una maggiore produce uno scorrimento più lento e
+        controllato.</string>
+
+    <!-- Click Action Offset slideshow -->
+    <string name="tutorial_slideshow_click_action_offset_title">Offset del clic</string>
+    <string name="tutorial_slideshow_click_action_offset_desc">Scopri come affinare la posizione del clic su una condizione rilevata</string>
+    <string name="tutorial_slideshow_click_action_offset_step_1_text">Quando si fa clic su una condizione rilevata,
+        il clic viene applicato per impostazione predefinita al centro dell\'area rilevata.\n\nL\'offset del clic
+        consente di spostare quella posizione di un numero fisso di pixel lungo gli assi X e Y, relativo al centro
+        della condizione. È utile quando l\'elemento da toccare è vicino — ma non esattamente — al centro dell\'area
+        rilevata.</string>
+
+    <!-- Click Action Target slideshow -->
+    <string name="tutorial_slideshow_click_action_target_title">Obiettivo del clic</string>
+    <string name="tutorial_slideshow_click_action_target_desc">Scopri come configurare dove verrà applicato il clic</string>
+    <string name="tutorial_slideshow_click_action_target_step_1_text">Un\'Azione Clic può mirare a due tipi di
+        posizioni: una posizione statica sempre identica, o la posizione di una condizione rilevata.\n\nScegli il
+        metodo di mira nel selettore di obiettivo nel dialogo di configurazione dell\'azione.</string>
+    <string name="tutorial_slideshow_click_action_target_step_2_text">Con una posizione statica, il clic avviene
+        sempre alle stesse coordinate esatte, indipendentemente da cosa c\'è sullo schermo.\n\nTieni presente che
+        quelle coordinate sono sensibili alla rotazione: se il dispositivo ruota, il clic potrebbe finire in una
+        posizione inaspettata o persino fuori dai bordi dello schermo.</string>
+    <string name="tutorial_slideshow_click_action_target_step_3_text">Con una posizione di condizione, il clic viene
+        applicato al centro di una Condizione immagine rilevata, seguendo il bersaglio ovunque appaia sullo
+        schermo.\n\nCon l\'operatore AND, tutte le condizioni devono essere soddisfatte, quindi ogni Condizione
+        immagine ha una posizione disponibile. Puoi scegliere liberamente quale usare e affinarla con un offset.</string>
+    <string name="tutorial_slideshow_click_action_target_step_4_text">Con l\'operatore OR, viene valutata solo la
+        prima condizione soddisfatta e le altre vengono ignorate. Pertanto Klick\'r non può sapere in anticipo quale
+        condizione sarà rilevata.\n\nDi conseguenza, con l\'operatore OR non puoi scegliere una condizione specifica
+        come obiettivo: il clic verrà sempre applicato sulla prima condizione rilevata, qualunque essa sia a runtime.</string>
+
+    <!-- Combine Conditions Ordering slideshow -->
+    <string name="tutorial_slideshow_combine_conditions_ordering_title">Ordine delle condizioni e velocità</string>
+    <string name="tutorial_slideshow_combine_conditions_ordering_desc">Come l\'ordine delle condizioni influenza la
+        velocità di controllo dell\'evento</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_1_text">L\'ordine delle condizioni nell\'elenco
+        influisce sulla velocità di controllo dell\'evento.\n\nCon l\'operatore E, il controllo si interrompe non
+        appena viene trovata la prima condizione NON soddisfatta. Mettere prima le condizioni meno probabili permette
+        all\'app di saltare le successive prima, rendendo il tuo evento più veloce.</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_2_text">Con l\'operatore O, il controllo si
+        interrompe non appena viene trovata la prima condizione soddisfatta. Mettere prima le condizioni più probabili
+        permette all\'app di terminare prima, senza controllare il resto.\n\nIn entrambi i casi, mettere la condizione
+        più importante in cima alla lista è un modo semplice per mantenere veloce il tuo scenario.</string>
+
+
+    <!-- Events State Basics slideshow -->
+    <string name="tutorial_slideshow_events_state_basics_title">Stato degli eventi</string>
+    <string name="tutorial_slideshow_events_state_basics_desc">Impara ad abilitare e disabilitare gli eventi mentre uno
+        scenario è in esecuzione</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_1_text">Ogni evento del tuo scenario (Eventi Schermo ed
+        Eventi Trigger) ha uno stato: è <b>abilitato</b> o <b>disabilitato</b>.\n\nQuando è abilitato, l\'evento viene
+        eseguito normalmente e controlla le sue condizioni come al solito. Quando è disabilitato, viene completamente
+        ignorato, come se non esistesse.\n\nPer impostazione predefinita, ogni evento inizia abilitato. Puoi cambiarlo
+        tramite il campo <b>Stato iniziale</b> nelle impostazioni dell\'evento.</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_2_text">Mentre uno scenario è in esecuzione, puoi
+        modificare lo stato di qualsiasi evento con l\'azione <b>Cambia stato evento</b>. Questa azione ti consente di
+        abilitare, disabilitare o alternare lo stato di uno o più eventi.\n\nQuesto apre molte possibilità: eventi che
+        si attivano uno dopo l\'altro, eventi che si disabilitano da soli dopo essere stati eseguiti una volta, o
+        gruppi di eventi in cui solo uno è attivo alla volta.</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_3_text">Quando <b>tutti gli eventi dello scenario sono
+        disabilitati</b>, lo scenario si ferma da solo. Non c\'è più nulla da fare, quindi Klick\'r si ferma
+        automaticamente.\n\nÈ un modo semplice per terminare uno scenario: fai in modo che l\'ultimo evento disabiliti
+        tutti gli altri una volta completato il suo compito, e tutto si ferma da solo.</string>
+
+
+    <!-- Actions List slideshow -->
+    <string name="tutorial_slideshow_actions_list_title">Lista azioni</string>
+    <string name="tutorial_slideshow_actions_list_desc">Scopri come viene eseguita la lista delle azioni</string>
+    <string name="tutorial_slideshow_actions_list_step_1_text">Le azioni vengono eseguite in ordine, una dopo l\'altra.
+        Puoi cambiare l\'ordine di un\'azione usando i pulsanti &lt;&lt; e &gt;&gt;, o toccando direttamente il suo
+        numero di indice.\n\nCerca di mantenere le liste di azioni brevi. Un autoclicker normale esegue un\'azione per
+        evento — questo è il modello da seguire. Se ti trovi ad aggiungere molte azioni a un singolo evento, è
+        generalmente un segnale che il lavoro dovrebbe essere suddiviso in più eventi, ciascuno che reagisce a ciò che
+        è effettivamente sullo schermo. Questa è la filosofia vedi-e-agisci di Klick\'r: rileva prima, poi agisci.</string>
+
+    <!-- Write Text Action slideshow -->
+    <string name="tutorial_slideshow_write_text_action_title">Azione Scrivi testo</string>
+    <string name="tutorial_slideshow_write_text_action_desc">Scopri come inserire testo in un campo di input attivo</string>
+    <string name="tutorial_slideshow_write_text_action_step_1_text">Prima che l\'azione Scrivi testo venga eseguita,
+        il campo di input target deve essere già focalizzato, proprio come lo toccheresti per far apparire la tastiera.
+        \n\nPer farlo, aggiungi un\'azione Clic su quel campo prima dell\'azione Scrivi testo. Se dopo il clic viene
+        riprodotta un\'animazione di transizione, un\'azione Attendi tra le due può aiutare a garantire che il campo
+        sia pronto.\n\nL\'azione dispone anche di un\'opzione Valida: quando abilitata, preme automaticamente Invio
+        dopo l\'impostazione del testo, confermando o inviando il valore.</string>
+    <string name="tutorial_slideshow_write_text_action_step_2_text">Puoi inserire il valore di un contatore nel testo
+        da scrivere. Premi il pulsante Aggiungi contatore nella configurazione dell\'azione per selezionare un contatore:
+        inserirà il segnaposto <b>{nomeContatore}</b> nella posizione corrente del cursore.\n\nA runtime, ogni segnaposto
+        <b>{nomeContatore}</b> viene sostituito dal valore attuale del contatore prima che il testo venga incollato nel
+        campo. Ad esempio, se un contatore chiamato <i>mele</i> ha il valore 18, il testo \"Ho {mele} mele\" diventa
+        \"Ho 18 mele\".</string>
+
+    <!-- System Action slideshow -->
+    <string name="tutorial_slideshow_system_action_title">Azione di sistema</string>
+    <string name="tutorial_slideshow_system_action_desc">Scopri come attivare le azioni di navigazione di Android</string>
+    <string name="tutorial_slideshow_system_action_step_1_text">Un\'Azione di sistema esegue una delle azioni di
+        navigazione integrate di Android: Indietro, Home o App recenti.\n\nSono le stesse azioni dei pulsanti di
+        navigazione in fondo allo schermo. Non richiedono coordinate e funzionano a livello di sistema, indipendentemente
+        dall\'app attualmente aperta.</string>
+
+    <!-- Change Counter Action slideshow -->
+    <string name="tutorial_slideshow_change_counter_action_title">Azione Modifica contatore</string>
+    <string name="tutorial_slideshow_change_counter_action_desc">Scopri come modificare il valore di un contatore</string>
+    <string name="tutorial_slideshow_change_counter_action_step_1_text">Un\'azione Modifica contatore applica
+        un\'operazione a un contatore usando un valore statico predefinito. Sono disponibili tre operazioni: aggiungere
+        il valore al contatore (+), sottrarlo dal contatore (−) o impostare il contatore a quel valore esatto (=).
+        \n\nQuesto è il modo più comune per aggiornare un contatore — ad esempio, aggiungere 1 ogni volta che una
+        condizione viene rilevata, o azzerarlo quando un obiettivo è raggiunto.</string>
+    <string name="tutorial_slideshow_change_counter_action_step_2_text">Invece di un valore statico, puoi usare il
+        valore attuale di un altro contatore come operando. Le stesse tre operazioni (+, −, =) si applicano, ma
+        l\'importo viene letto dal contatore selezionato a runtime anziché essere fisso alla configurazione.\n\nQuesto
+        ti permette di costruire scenari dinamici in cui i contatori interagiscono tra loro.</string>
+
+    <!-- Notification Action slideshow -->
+    <string name="tutorial_slideshow_notification_action_title">Azione Notifica</string>
+    <string name="tutorial_slideshow_notification_action_desc">Scopri come visualizzare una notifica durante il tuo scenario</string>
+    <string name="tutorial_slideshow_notification_action_step_1_text">Un\'azione Notifica visualizza una notifica
+        Android con un titolo e un messaggio a tua scelta.\n\nPuoi inserire il valore attuale di un contatore nel testo
+        della notifica usando il pulsante Aggiungi contatore, o digitando direttamente il segnaposto
+        <b>{nomeContatore}</b>. A runtime viene sostituito dal valore del contatore — ad esempio, \"Ho {mele} mele\"
+        diventa \"Ho 18 mele\".</string>
+    <string name="tutorial_slideshow_notification_action_step_2_text">Il livello di importanza della notifica
+        controlla quanto intrusivamente viene presentata. I livelli più alti possono mostrare un banner e riprodurre
+        un suono, mentre quelli più bassi vengono consegnati silenziosamente nel cassetto delle notifiche.\n\nIl
+        comportamento esatto dipende dal dispositivo e può essere personalizzato nelle impostazioni di notifica Android
+        per Klick\'r.</string>
+
+    <!-- Toggle Event Action slideshow -->
+    <string name="tutorial_slideshow_toggle_event_action_title">Azione Cambia stato evento</string>
+    <string name="tutorial_slideshow_toggle_event_action_desc">Scopri come abilitare e disabilitare eventi a runtime</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_1_text">Un evento disabilitato viene completamente
+        saltato durante il ciclo dello scenario — le sue condizioni non vengono mai verificate e le sue azioni non
+        vengono mai eseguite. Ciò significa che non consuma alcun tempo di elaborazione.\n\nDisabilitare gli eventi che
+        non stai usando è un ottimo modo per migliorare le prestazioni. Ad esempio, in uno scenario che alterna tra una
+        fase menu e una fase gioco, disabilitare tutti gli eventi del menu durante la fase gioco (e viceversa) mantiene
+        attivi solo gli eventi rilevanti in un dato momento.</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_2_text">Durante la configurazione dell\'azione, puoi
+        scegliere di cambiare lo stato di tutti gli eventi dello scenario in una volta, o definire un nuovo stato per
+        ogni evento individualmente.\n\nSono disponibili tre cambiamenti di stato per ogni evento: abilitarlo,
+        disabilitarlo o alternarlo dal suo valore attuale — un evento abilitato diventa disabilitato e uno disabilitato
+        diventa abilitato.</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_3_text">Se tutti gli eventi dello scenario risultano
+        disabilitati contemporaneamente, lo scenario si interrompe automaticamente, poiché non c\'è più nulla da
+        eseguire.\n\nQuesto può essere usato intenzionalmente come modo pulito per terminare uno scenario una volta
+        raggiunto un obiettivo: un\'ultima azione Cambia stato evento che disabilita tutti gli eventi fermerà lo
+        scenario.</string>
+
+    <!-- Intent Action slideshow -->
+    <string name="tutorial_slideshow_intent_action_title">Azione Intent</string>
+    <string name="tutorial_slideshow_intent_action_desc">Scopri come comunicare con altre applicazioni</string>
+    <string name="tutorial_slideshow_intent_action_step_1_text">Gli Intent sono il modo in cui le applicazioni
+        comunicano tra loro su Android. L\'azione Intent ti permette di sfruttare questo sistema direttamente dal
+        tuo scenario.\n\nÈ disponibile un set di modelli predefiniti per semplificare questa operazione. Il più comune
+        è Avvia applicazione, che lancia un\'altra app sul tuo dispositivo esattamente come se avessi toccato la sua
+        icona dal launcher.</string>
+    <string name="tutorial_slideshow_intent_action_step_2_text">La scheda Avanzate ti permette di definire manualmente
+        un Intent grezzo, dandoti pieno controllo sull\'azione, la categoria, i dati e gli extra. Non è consigliato
+        per gli utenti normali — è rivolto agli sviluppatori Android che sanno già come funzionano gli Intent.\n\nAltri
+        modelli pronti all\'uso saranno aggiunti nei futuri aggiornamenti per rendere più semplici i casi d\'uso comuni
+        senza dover ricorrere alle opzioni avanzate.</string>
+
+
+    <!-- Event priority slideshow -->
+    <string name="tutorial_slideshow_events_priority_title">Priorità degli eventi</string>
+    <string name="tutorial_slideshow_events_priority_desc">Scopri come l\'ordine degli eventi nella tua lista influisce su quali vengono eseguiti</string>
+    <string name="tutorial_slideshow_events_priority_step_1_text">Ogni fotogramma catturato dal tuo schermo viene elaborato verificando gli eventi <b>uno per uno, dall\'alto verso il basso</b>.\n\nLa posizione di un evento nella lista determina quando ottiene la possibilità di essere eseguito. Per impostazione predefinita, non appena le condizioni di un evento sono soddisfatte e le sue azioni vengono eseguite, <b>il fotogramma è considerato completo</b>. L\'elaborazione si ferma per quel fotogramma e il successivo riparte dal primo evento della lista.\n\nQuesto significa che per impostazione predefinita un solo evento può essere eseguito per fotogramma.</string>
+    <string name="tutorial_slideshow_events_priority_step_2_text">Puoi modificare questo comportamento usando il campo <b>Continuare a eseguire</b> nelle impostazioni dell\'evento. Quando è abilitato, dopo l\'esecuzione di quell\'evento, l\'elaborazione <b>continua con l\'evento successivo</b> nella lista invece di fermarsi.\n\nQuesto permette a più eventi di essere eseguiti sullo stesso fotogramma.\n\n<b>Esempio:</b> la tua lista contiene l\'Evento A seguito dall\'Evento B. Se l\'Evento A continua ad essere rilevato e non ha <b>Continuare a eseguire</b> abilitato, verrà eseguito ogni fotogramma e l\'Evento B non avrà mai la possibilità di eseguirsi.\n\nAbilita <b>Continuare a eseguire</b> sull\'Evento A e entrambi gli eventi verranno controllati ogni fotogramma.\n\nÈ disponibile anche un tutorial interattivo per praticare questo concetto.</string>
+
+
+    <!-- Events reloading slideshow -->
+    <string name="tutorial_slideshow_events_reloading_title">Ricarica dell\'evento</string>
+    <string name="tutorial_slideshow_events_reloading_desc">Scopri come si comporta il ricaricamento di un evento nel tuo scenario</string>
+    <string name="tutorial_slideshow_events_reloading_step_1_text">Il parametro di ricarica dell\'evento ti consente di
+        saltare un evento per un determinato periodo di tempo una volta che è soddisfatto. \n\nUn evento in stato di
+        ricarica è ancora considerato abilitato: il ricaricamento e lo stato dell\'evento sono indipendenti. \n\nSe
+        l\'evento viene disabilitato mentre è in fase di ricarica, il timer di ricarica verrà azzerato, quindi il tempo
+        di attesa non si applica più quando l\'evento viene riabilitato.</string>
+
+
+    <!-- Counters value usages slideshow -->
+    <string name="tutorial_slideshow_counters_value_usages_title">Usare i valori dei contatori</string>
+    <string name="tutorial_slideshow_counters_value_usages_desc">Scopri i diversi modi per visualizzare e usare i valori dei contatori nel tuo scenario</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_1_text">Puoi mostrare il valore attuale di un
+        contatore all\'interno di un\'azione Notifica. Questo è utile per monitorare i progressi mentre il tuo
+        scenario è in esecuzione, o per visualizzare un riepilogo alla fine.\n\nPer inserire un contatore, premi
+        il pulsante Aggiungi contatore nella configurazione dell\'azione. Questo aggiunge un segnaposto come
+        <b>{counterName}</b> nel tuo testo. In fase di esecuzione, il segnaposto viene sostituito con il valore
+        attuale del contatore. Ad esempio, se un contatore chiamato <i>score</i> ha il valore 42, il testo
+        \"Punteggio attuale: {score}\" diventa \"Punteggio attuale: 42\".</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_2_text">Puoi anche inserire il valore di un contatore
+        in un\'azione Scrivi testo, in modo che il testo digitato includa il valore attuale nel momento in cui
+        l\'azione viene eseguita.\n\nIl segnaposto funziona allo stesso modo dell\'azione Notifica: premi il pulsante
+        Aggiungi contatore o digita <b>{counterName}</b> direttamente. Ad esempio, se un contatore chiamato
+        <i>score</i> ha il valore 42, il testo \"Il mio punteggio è {score}\" diventa
+        \"Il mio punteggio è 42\".</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_3_text">I valori dei contatori vengono registrati nel
+        rapporto di debug. Se qualcosa non funziona come previsto nel tuo scenario, catturare un rapporto di debug
+        ti mostrerà esattamente come sono cambiati i tuoi contatori nel tempo, rendendo più facile trovare il
+        problema.</string>
+
+</resources>

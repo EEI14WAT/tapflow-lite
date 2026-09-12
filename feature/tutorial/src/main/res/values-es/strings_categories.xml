@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_category_root_name">Tutoriales</string>
+    <string name="tutorial_category_root_desc_long">La automatización de Klick\'r se basa en lo que se muestra en tu
+        pantalla, lo que es bastante diferente de un autoclicker convencional basado en tiempo. Aprende aquí cómo
+        usarlo.</string>
+
+    <string name="tutorial_category_basics_name">Conceptos básicos de un Escenario</string>
+    <string name="tutorial_category_basics_desc_short">Aprende a usar cada elemento de un Escenario</string>
+    <string name="tutorial_category_basics_desc_long">Un Escenario es el elemento raíz de tu script de automatización.
+        Contiene una lista de Eventos de pantalla y una lista de Eventos de activación. Un Evento es una lista de
+        Condiciones que deben cumplirse para ejecutar una lista de Acciones.\n\n Aprende aquí a usar cada elemento de
+        un Escenario.</string>
+
+    <string name="tutorial_category_screen_condition_name">Condiciones de pantalla</string>
+    <string name="tutorial_category_screen_condition_desc_short">Verifica lo que se muestra en tu pantalla</string>
+    <string name="tutorial_category_screen_condition_desc_long">Una Condición de pantalla es la parte «cuándo» de tu
+        Evento de pantalla: cuando se cumplen las Condiciones de pantalla de un Evento, se ejecutan sus Acciones. Para
+        que se cumpla una Condición de pantalla, el contenido de la pantalla debe coincidir con un color, imagen, texto
+        o número.\n\n Aprende aquí a usarlas con casos de uso interactivos simples.</string>
+
+    <string name="tutorial_category_color_condition_name">Condiciones de color</string>
+    <string name="tutorial_category_color_condition_desc_short">Verifica si se muestra un color específico</string>
+    <string name="tutorial_category_color_condition_desc_long">Una Condición de color comprueba el color de un píxel
+        específico en tu pantalla y lo compara con un color objetivo. Es el tipo de condición más ligero, sin
+        procesamiento de imagen.\n\n Aprende aquí a usarla para reaccionar a cambios de color en tu pantalla.</string>
+
+    <string name="tutorial_category_image_condition_name">Condiciones de imagen</string>
+    <string name="tutorial_category_image_condition_desc_short">Verifica si se muestra una imagen específica</string>
+    <string name="tutorial_category_image_condition_desc_long">Una Condición de imagen captura una captura de pantalla
+        de una parte de tu pantalla y la busca posteriormente, ya sea en una posición exacta, en cualquier lugar de la
+        pantalla o dentro de un área definida. Un umbral controla qué tan estricta debe ser la coincidencia.\n\n
+        Aprende aquí a usarla para reaccionar a imágenes que aparecen en tu pantalla.</string>
+
+    <string name="tutorial_category_number_condition_name">Condiciones numéricas</string>
+    <string name="tutorial_category_number_condition_desc_short">Verifica si se muestra un número específico</string>
+    <string name="tutorial_category_number_condition_desc_long">Una Condición numérica lee un número mostrado en un área
+        definida de tu pantalla y lo compara con un valor fijo o un Contador mediante operadores como igual, mayor o
+        menor.\n\n Aprende aquí a usarla para reaccionar a valores numéricos en tu pantalla.</string>
+
+    <string name="tutorial_category_text_condition_name">Condiciones de texto</string>
+    <string name="tutorial_category_text_condition_desc_short">Verifica si se muestra texto específico</string>
+    <string name="tutorial_category_text_condition_desc_long">Una Condición de texto lee el texto mostrado en un área
+        definida de tu pantalla y comprueba si coincide con un valor dado.\n\n Aprende aquí a usarla para reaccionar
+        a texto que aparece en tu pantalla.</string>
+
+    <string name="tutorial_category_counters_name">Contadores</string>
+    <string name="tutorial_category_counters_desc_short">Rastrea y usa valores numéricos en tu Escenario</string>
+    <string name="tutorial_category_counters_desc_long">Un Contador es una variable numérica con nombre vinculada a tu
+        Escenario. Comienza en un valor predeterminado y puede ser leído por Condiciones o Acciones, y modificado por
+        la Acción Cambiar Contador.\n\n Aprende aquí a usar los Contadores para crear scripts de automatización más
+        inteligentes.</string>
+
+    <string name="tutorial_category_combine_conditions_name">Combinar condiciones</string>
+    <string name="tutorial_category_combine_conditions_desc_short">Activa eventos usando varias condiciones juntas</string>
+    <string name="tutorial_category_combine_conditions_desc_long">Cada Evento tiene un operador de condición: Y
+        requiere que se cumplan todas las condiciones, mientras que O requiere al menos una. Combinar tipos de
+        condiciones y operadores te permite gestionar escenarios complejos.\n\n Aprende aquí a combinar condiciones de
+        forma efectiva.</string>
+
+    <string name="tutorial_category_combine_event_name">Combinar Eventos</string>
+    <string name="tutorial_category_combine_event_desc_short">Coordina múltiples Eventos para un control avanzado</string>
+    <string name="tutorial_category_combine_event_desc_long">Klick\'r te permite coordinar múltiples Eventos para crear
+        flujos de automatización avanzados. Controlando el orden de evaluación y activando o desactivando Eventos en
+        tiempo de ejecución, puedes crear Escenarios complejos de varios pasos.\n\n Aprende aquí a combinar Eventos
+        eficazmente para tener el control total de tu automatización.</string>
+
+    <string name="tutorial_category_events_priority_name">Prioridad de los eventos</string>
+    <string name="tutorial_category_events_priority_desc_short">Controla la importancia de tus eventos</string>
+    <string name="tutorial_category_events_priority_desc_long">Los Eventos de Pantalla se evalúan por orden de prioridad
+        en cada ciclo de detección. Un Evento más arriba en la lista se comprueba antes que los Eventos más abajo, lo
+        que permite definir qué Evento tiene precedencia cuando varios podrían activarse al mismo tiempo.\n\n Aprende
+        aquí a establecer prioridades de Evento para ajustar el orden de ejecución de tu Escenario.</string>
+
+    <string name="tutorial_category_events_state_name">Estado de los Eventos</string>
+    <string name="tutorial_category_events_state_desc_short">Activa o desactiva Eventos dinámicamente</string>
+    <string name="tutorial_category_events_state_desc_long">Los Eventos pueden activarse o desactivarse en tiempo de
+        ejecución mediante la Acción Cambiar el estado del evento. Esto permite crear flujos de automatización de varios pasos donde
+        ciertos eventos solo están activos bajo condiciones específicas.\n\n Aprende aquí a controlar el estado de los
+        Eventos para crear Escenarios avanzados.</string>
+
+    <string name="tutorial_category_trigger_condition_name">Condiciones de activación</string>
+    <string name="tutorial_category_trigger_condition_desc_short">Verifica el estado del Escenario</string>
+    <string name="tutorial_category_trigger_condition_desc_long">Una Condición de activación es la parte «cuándo» de un
+        Evento de activación: se dispara basándose en señales no visuales como un temporizador que expira, un Contador
+        que alcanza un valor, o la recepción de un broadcast de Android.\n\n Aprende aquí a usarlas para crear flujos
+        de automatización basados en tiempo o en estado.</string>
+
+    <string name="tutorial_category_action_name">Acciones</string>
+    <string name="tutorial_category_action_desc_short">Ejecuta algo una vez que se cumplan tus condiciones</string>
+    <string name="tutorial_category_action_desc_long">Una Acción se ejecuta cuando se cumplen las Condiciones de un
+        Evento. Las Acciones van desde gestos (Click, Swipe) hasta control de flujo (ToggleEvent, ChangeCounter, Wait)
+        e interacciones del sistema (Intent, Notification, SystemAction, SetText).\n\n Aprende aquí a usar cada tipo de
+        Acción para crear tus scripts de automatización.</string>
+
+    <string name="tutorial_category_click_action_name">Clic</string>
+    <string name="tutorial_category_click_action_desc_short">Pulsa en una posición fija o sobre una condición detectada</string>
+    <string name="tutorial_category_click_action_desc_long">Una Acción Clic simula una pulsación en una coordenada fija
+        o en el centro de una Condición de imagen detectada. Puedes configurar la duración de la pulsación para simular
+        pulsaciones largas.\n\n Aprende aquí a usarla para interactuar con tu pantalla.</string>
+
+    <string name="tutorial_category_swipe_action_name">Deslizamiento</string>
+    <string name="tutorial_category_swipe_action_desc_short">Desliza de un punto a otro en la pantalla</string>
+    <string name="tutorial_category_swipe_action_desc_long">Una Acción Deslizamiento simula un gesto de arrastrar desde
+        una coordenada de inicio hasta una coordenada de fin. Puedes configurar la duración del deslizamiento para
+        controlar la velocidad del gesto.\n\n Aprende aquí a usarla para desplazar o arrastrar elementos en tu
+        pantalla.</string>
+
+    <string name="tutorial_category_pause_action_name">Esperar</string>
+    <string name="tutorial_category_pause_action_desc_short">Espera una duración antes de ejecutar la siguiente acción</string>
+    <string name="tutorial_category_pause_action_desc_long">Una Acción Esperar retrasa la ejecución durante una duración
+        configurada. Es útil para dar tiempo a la aplicación a reaccionar antes de la siguiente detección.\n\n Aprende
+        aquí a usarla para controlar el ritmo de tus scripts de automatización.</string>
+
+    <string name="tutorial_category_intent_action_name">Intención</string>
+    <string name="tutorial_category_intent_action_desc_short">Enviar una Intención Android a otra aplicación</string>
+    <string name="tutorial_category_intent_action_desc_long">Una Acción Intención envía una Intención Android, ya sea
+        como broadcast o para iniciar una Actividad o Servicio. Puedes adjuntar pares clave-valor para transmitir
+        datos.\n\n Aprende aquí a usarla para activar acciones en otras aplicaciones.</string>
+
+    <string name="tutorial_category_change_counter_action_name">Modificar contador</string>
+    <string name="tutorial_category_change_counter_action_desc_short">Establecer, sumar o restar un valor a un Contador</string>
+    <string name="tutorial_category_change_counter_action_desc_long">Una Acción Modificar Contador cambia una variable
+        Contador estableciéndola en un valor fijo, sumándole o restándole un valor. Los Contadores pueden ser leídos
+        luego por Condiciones u otras Acciones.\n\n Aprende aquí a usarla para gestionar el estado de tu
+        Escenario.</string>
+
+    <string name="tutorial_category_change_event_state_action_name">Cambiar estado del evento</string>
+    <string name="tutorial_category_change_event_state_action_desc_short">Activar, desactivar o alternar uno o más Eventos</string>
+    <string name="tutorial_category_change_event_state_action_desc_long">Una Acción Cambiar Estado del Evento activa,
+        desactiva o alterna uno o más Eventos en tiempo de ejecución. Esto permite crear flujos de varios pasos donde
+        los pasos anteriores condicionan los siguientes.\n\n Aprende aquí a usarla para controlar el flujo de tu
+        Escenario.</string>
+
+    <string name="tutorial_category_notification_action_name">Notificación</string>
+    <string name="tutorial_category_notification_action_desc_short">Publicar una notificación del sistema</string>
+    <string name="tutorial_category_notification_action_desc_long">Una Acción Notificación publica una notificación del
+        sistema Android con un título y mensaje personalizados. Es útil para alertar al usuario cuando se detecta una
+        condición específica.\n\n Aprende aquí a usarla para mostrar información mientras tu Escenario se ejecuta en
+        segundo plano.</string>
+
+    <string name="tutorial_category_system_action_name">Acción del sistema</string>
+    <string name="tutorial_category_system_action_desc_short">Invocar una acción de navegación Android global</string>
+    <string name="tutorial_category_system_action_desc_long">Una Acción del Sistema invoca una acción de navegación
+        Android global, como pulsar Atrás, Inicio o Recientes. Estas acciones no requieren coordenadas y actúan a
+        nivel del sistema.\n\n Aprende aquí a usarla para navegar por el dispositivo durante la
+        automatización.</string>
+
+    <string name="tutorial_category_write_text_action_name">Escribir texto</string>
+    <string name="tutorial_category_write_text_action_desc_short">Pegar texto en el campo de entrada activo</string>
+    <string name="tutorial_category_write_text_action_desc_long">Una Acción Escribir Texto pega una cadena configurada
+        en el campo de entrada actualmente enfocado mediante el servicio de accesibilidad. Es útil para rellenar
+        formularios o campos de búsqueda sin simular pulsaciones individuales.\n\n Aprende aquí a introducir texto
+        durante la automatización.</string>
+</resources>

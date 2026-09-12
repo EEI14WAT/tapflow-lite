@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2023 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="activity_tutorial_name">Tutorial</string>
+
+    <!-- Generics tutorial buttons -->
+    <string name="button_text_tutorial_start_game">Start game</string>
+    <string name="button_text_tutorial_next">Next</string>
+    <string name="button_text_tutorial_close">Close</string>
+
+    <!-- Completion dialog for all tutorials -->
+    <string name="dialog_title_tutorial_completed">Congratulations</string>
+    <string name="message_tutorial_completed">You have completed this tutorial!</string>
+    <string name="button_tutorial_completed_keep_playing">Keep toying around</string>
+    <string name="button_tutorial_completed_close">Close</string>
+
+    <!-- Click count tutorial game (do not translate text buttons here, they are needed for detection) -->
+    <string name="message_score">Player: %1$d</string>
+    <string name="message_high_score">Best: %1$d</string>
+    <string name="message_time_left">Time left: %1$d</string>
+    <string name="button_text_hello" translatable="false">Hello</string>
+    <string name="button_text_goodbye" translatable="false">Goodbye</string>
+    <string name="button_text_day" translatable="false">Day</string>
+    <string name="button_text_night" translatable="false">Night</string>
+
+    <!-- Timing tutorial game-->
+    <string name="message_click_count">Click count:\n%1$d/%2$d</string>
+    <string name="message_target_diff">Target:\n±%1$dms</string>
+    <string name="message_total_diff">Total:\n%1$sms</string>
+    <string name="message_last_diff">Last:\n%1$sms</string>
+</resources>

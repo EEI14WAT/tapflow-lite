@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_category_root_name">Обучение</string>
+    <string name="tutorial_category_root_desc_long">Автоматизация Klick\'r основана на том, что отображается на вашем
+        экране, что существенно отличается от обычных автокликеров, работающих по таймеру. Узнайте здесь, как ею
+        пользоваться.</string>
+
+    <string name="tutorial_category_basics_name">Основы сценария</string>
+    <string name="tutorial_category_basics_desc_short">Изучите использование каждого элемента сценария</string>
+    <string name="tutorial_category_basics_desc_long">Сценарий — это корневой элемент вашего скрипта автоматизации.
+        Он содержит список событий экрана и список триггерных событий. Событие — это список условий, которые
+        необходимо выполнить для запуска списка действий.\n\n Узнайте здесь, как использовать каждый элемент
+        сценария.</string>
+
+    <string name="tutorial_category_screen_condition_name">Условия экрана</string>
+    <string name="tutorial_category_screen_condition_desc_short">Проверяйте, что отображается на вашем экране</string>
+    <string name="tutorial_category_screen_condition_desc_long">Условие экрана — это часть «когда» события экрана:
+        когда условия экрана события выполнены, его действия запускаются. Чтобы условие экрана было выполнено,
+        содержимое экрана должно соответствовать заданному цвету, изображению, тексту или числу.\n\n Узнайте здесь,
+        как использовать их с простыми интерактивными примерами.</string>
+
+    <string name="tutorial_category_color_condition_name">Условия цвета</string>
+    <string name="tutorial_category_color_condition_desc_short">Проверяйте, отображается ли определённый цвет</string>
+    <string name="tutorial_category_color_condition_desc_long">Условие цвета проверяет цвет конкретного пикселя на
+        вашем экране и сравнивает его с целевым цветом. Это самый лёгкий тип условия без обработки изображений.\n\n
+        Узнайте здесь, как использовать его для реагирования на изменения цвета на экране.</string>
+
+    <string name="tutorial_category_image_condition_name">Условия изображения</string>
+    <string name="tutorial_category_image_condition_desc_short">Проверяйте, отображается ли определённое изображение</string>
+    <string name="tutorial_category_image_condition_desc_long">Условие изображения делает снимок части вашего экрана
+        и ищет его позже — на точной позиции, в любом месте экрана или в заданной области. Порог определяет точность
+        совпадения.\n\n Узнайте здесь, как использовать его для реагирования на изображения, появляющиеся на
+        экране.</string>
+
+    <string name="tutorial_category_number_condition_name">Числовые условия</string>
+    <string name="tutorial_category_number_condition_desc_short">Проверяйте, отображается ли определённое число</string>
+    <string name="tutorial_category_number_condition_desc_long">Числовое условие считывает число, отображённое в
+        заданной области экрана, и сравнивает его с фиксированным значением или счётчиком с помощью операторов: равно,
+        больше или меньше.\n\n Узнайте здесь, как использовать его для реагирования на числовые значения на
+        экране.</string>
+
+    <string name="tutorial_category_text_condition_name">Текстовые условия</string>
+    <string name="tutorial_category_text_condition_desc_short">Проверяйте, отображается ли определённый текст</string>
+    <string name="tutorial_category_text_condition_desc_long">Текстовое условие считывает текст, отображённый в
+        заданной области экрана, и проверяет, соответствует ли он заданному значению.\n\n Узнайте здесь, как
+        использовать его для реагирования на текст, появляющийся на экране.</string>
+
+    <string name="tutorial_category_counters_name">Счётчики</string>
+    <string name="tutorial_category_counters_desc_short">Отслеживайте и используйте числовые значения в сценарии</string>
+    <string name="tutorial_category_counters_desc_long">Счётчик — это именованная числовая переменная, привязанная к
+        вашему сценарию. Он начинается со значения по умолчанию и может быть прочитан условиями или действиями, а
+        также изменён действием «Изменить счётчик».\n\n Узнайте здесь, как использовать счётчики для создания более
+        умных скриптов автоматизации.</string>
+
+    <string name="tutorial_category_combine_conditions_name">Объединение условий</string>
+    <string name="tutorial_category_combine_conditions_desc_short">Запускайте события с помощью нескольких условий</string>
+    <string name="tutorial_category_combine_conditions_desc_long">Каждое событие имеет оператор условий: И требует
+        выполнения всех условий, тогда как ИЛИ требует хотя бы одного. Сочетание типов условий и операторов позволяет
+        справляться со сложными сценариями.\n\n Узнайте здесь, как эффективно объединять условия.</string>
+
+    <string name="tutorial_category_combine_event_name">Объединение событий</string>
+    <string name="tutorial_category_combine_event_desc_short">Координируйте несколько событий для сложной логики</string>
+    <string name="tutorial_category_combine_event_desc_long">Klick\'r позволяет координировать несколько Событий для
+        создания сложных потоков автоматизации. Управляя порядком оценки и включая или отключая События во время
+        выполнения, вы можете создавать комплексные многошаговые Сценарии.\n\n Узнайте здесь, как эффективно
+        объединять События для полного контроля над автоматизацией.</string>
+
+    <string name="tutorial_category_events_priority_name">Приоритет событий</string>
+    <string name="tutorial_category_events_priority_desc_short">Управляйте важностью ваших событий</string>
+    <string name="tutorial_category_events_priority_desc_long">Экранные события оцениваются в порядке приоритета в
+        каждом цикле обнаружения. Событие выше в списке проверяется раньше событий ниже, что позволяет определить,
+        какое Событие имеет приоритет, когда несколько событий могут сработать одновременно.\n\n Узнайте здесь, как
+        устанавливать приоритеты событий для точной настройки порядка выполнения вашего Сценария.</string>
+
+    <string name="tutorial_category_events_state_name">Состояние событий</string>
+    <string name="tutorial_category_events_state_desc_short">Включайте или отключайте события динамически</string>
+    <string name="tutorial_category_events_state_desc_long">События можно включать или отключать во время выполнения с
+        помощью действия Изменить состояние события. Это позволяет создавать многошаговые потоки автоматизации, где определённые
+        события активны только при конкретных условиях.\n\n Узнайте здесь, как управлять состоянием событий для
+        создания сложных сценариев.</string>
+
+    <string name="tutorial_category_trigger_condition_name">Триггерные условия</string>
+    <string name="tutorial_category_trigger_condition_desc_short">Проверяйте состояние сценария</string>
+    <string name="tutorial_category_trigger_condition_desc_long">Триггерное условие — это часть «когда» триггерного
+        события: оно срабатывает на основе невизуальных сигналов, таких как истечение таймера, достижение счётчиком
+        значения или получение Android broadcast.\n\n Узнайте здесь, как использовать их для создания потоков
+        автоматизации, основанных на времени или состоянии.</string>
+
+    <string name="tutorial_category_action_name">Действия</string>
+    <string name="tutorial_category_action_desc_short">Выполняйте что-то, когда условия выполнены</string>
+    <string name="tutorial_category_action_desc_long">Действие выполняется, когда условия события выполнены. Действия
+        варьируются от жестов (Click, Swipe) до управления потоком (ToggleEvent, ChangeCounter, Wait) и системных
+        взаимодействий (Intent, Notification, SystemAction, SetText).\n\n Узнайте здесь, как использовать каждый тип
+        действия для создания скриптов автоматизации.</string>
+
+    <string name="tutorial_category_click_action_name">Нажатие</string>
+    <string name="tutorial_category_click_action_desc_short">Нажмите в фиксированной позиции или на обнаруженное условие</string>
+    <string name="tutorial_category_click_action_desc_long">Действие «Нажатие» имитирует касание в фиксированной
+        координате или в центре обнаруженного условия изображения. Можно настроить длительность нажатия для
+        имитации долгих нажатий.\n\n Узнайте здесь, как использовать его для взаимодействия с экраном.</string>
+
+    <string name="tutorial_category_swipe_action_name">Свайп</string>
+    <string name="tutorial_category_swipe_action_desc_short">Проведите пальцем от одной точки к другой</string>
+    <string name="tutorial_category_swipe_action_desc_long">Действие «Свайп» имитирует жест перетаскивания от
+        начальной координаты до конечной. Можно настроить длительность свайпа для управления скоростью жеста.
+        \n\n Узнайте здесь, как использовать его для прокрутки или перетаскивания элементов на экране.</string>
+
+    <string name="tutorial_category_pause_action_name">Пауза</string>
+    <string name="tutorial_category_pause_action_desc_short">Ожидание перед выполнением следующего действия</string>
+    <string name="tutorial_category_pause_action_desc_long">Действие «Пауза» задерживает выполнение на настроенное
+        время. Это полезно, чтобы дать приложению время отреагировать перед следующим обнаружением.\n\n Узнайте
+        здесь, как использовать его для управления темпом скриптов автоматизации.</string>
+
+    <string name="tutorial_category_intent_action_name">Intent</string>
+    <string name="tutorial_category_intent_action_desc_short">Отправить Android Intent другому приложению</string>
+    <string name="tutorial_category_intent_action_desc_long">Действие «Intent» отправляет Android Intent — в виде
+        broadcast или для запуска Activity или Service. Можно прикрепить пары ключ-значение для передачи данных.
+        \n\n Узнайте здесь, как использовать его для запуска действий в других приложениях.</string>
+
+    <string name="tutorial_category_change_counter_action_name">Изменить счётчик</string>
+    <string name="tutorial_category_change_counter_action_desc_short">Установить, увеличить или уменьшить значение счётчика</string>
+    <string name="tutorial_category_change_counter_action_desc_long">Действие «Изменить счётчик» изменяет переменную
+        счётчика, устанавливая её в фиксированное значение, прибавляя или вычитая значение. Счётчики затем могут
+        читаться условиями или другими действиями.\n\n Узнайте здесь, как управлять состоянием сценария.</string>
+
+    <string name="tutorial_category_change_event_state_action_name">Изменить состояние события</string>
+    <string name="tutorial_category_change_event_state_action_desc_short">Включить, отключить или переключить одно или несколько событий</string>
+    <string name="tutorial_category_change_event_state_action_desc_long">Действие «Изменить состояние события»
+        включает, отключает или переключает одно или несколько событий во время выполнения. Это позволяет создавать
+        многошаговые потоки, где ранние шаги определяют последующие.\n\n Узнайте здесь, как управлять потоком
+        сценария.</string>
+
+    <string name="tutorial_category_notification_action_name">Уведомление</string>
+    <string name="tutorial_category_notification_action_desc_short">Опубликовать системное уведомление</string>
+    <string name="tutorial_category_notification_action_desc_long">Действие «Уведомление» публикует системное
+        уведомление Android с настраиваемым заголовком и сообщением. Полезно для оповещения пользователя при
+        обнаружении конкретного условия.\n\n Узнайте здесь, как использовать его, пока сценарий работает в
+        фоне.</string>
+
+    <string name="tutorial_category_system_action_name">Системное действие</string>
+    <string name="tutorial_category_system_action_desc_short">Вызвать глобальное действие навигации Android</string>
+    <string name="tutorial_category_system_action_desc_long">Действие «Системное» вызывает глобальное действие
+        навигации Android, например нажатие «Назад», «Домой» или «Недавние». Эти действия не требуют координат и
+        работают на системном уровне.\n\n Узнайте здесь, как навигировать по устройству во время
+        автоматизации.</string>
+
+    <string name="tutorial_category_write_text_action_name">Написать текст</string>
+    <string name="tutorial_category_write_text_action_desc_short">Вставить текст в активное поле ввода</string>
+    <string name="tutorial_category_write_text_action_desc_long">Действие «Написать текст» вставляет настроенную
+        строку в активное поле ввода через службу специальных возможностей. Полезно для заполнения форм или полей
+        поиска без симуляции отдельных нажатий клавиш.\n\n Узнайте здесь, как вводить текст во время
+        автоматизации.</string>
+</resources>

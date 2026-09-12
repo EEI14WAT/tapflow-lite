@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="activity_tutorial_name">チュートリアル</string>
+    <string name="message_score">プレイヤー: %1$d</string>
+    <string name="message_high_score">ベスト: %1$d</string>
+    <string name="message_time_left">残り時間: %1$d</string>
+    <string name="button_text_tutorial_start_game">ゲームを開始する</string>
+    <string name="button_text_tutorial_next">次</string>
+
+
+    <!-- Generic tutorial buttons -->
+    <string name="button_text_tutorial_close">閉じる</string>
+
+    <!-- Completion dialog -->
+    <string name="dialog_title_tutorial_completed">おめでとうございます</string>
+    <string name="message_tutorial_completed">このチュートリアルを完了しました！</string>
+    <string name="button_tutorial_completed_keep_playing">引き続き試してみる</string>
+    <string name="button_tutorial_completed_close">閉じる</string>
+
+    <!-- Timing tutorial game -->
+    <string name="message_click_count">クリック数:\n%1$d/%2$d</string>
+    <string name="message_target_diff">目標:\n±%1$dms</string>
+    <string name="message_total_diff">合計:\n%1$sms</string>
+    <string name="message_last_diff">前回:\n%1$sms</string>
+</resources>

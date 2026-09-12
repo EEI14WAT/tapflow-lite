@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_category_root_name">Навчальні матеріали</string>
+    <string name="tutorial_category_root_desc_long">Автоматизація Klick\'r базується на тому, що відображається на
+        вашому екрані, що суттєво відрізняється від звичайного автоклікера, заснованого на часі. Дізнайтеся тут, як
+        ним користуватися.</string>
+
+    <string name="tutorial_category_basics_name">Основи сценарію</string>
+    <string name="tutorial_category_basics_desc_short">Навчіться використовувати кожен елемент сценарію</string>
+    <string name="tutorial_category_basics_desc_long">Сценарій — це кореневий елемент вашого скрипту автоматизації.
+        Він містить список подій екрана та список тригерних подій. Подія — це список умов, які потрібно виконати, щоб
+        запустити список дій.\n\n Дізнайтеся тут, як використовувати кожен елемент сценарію.</string>
+
+    <string name="tutorial_category_screen_condition_name">Умови екрану</string>
+    <string name="tutorial_category_screen_condition_desc_short">Перевіряйте, що відображається на вашому екрані</string>
+    <string name="tutorial_category_screen_condition_desc_long">Умова екрану — це частина «коли» вашої події екрана:
+        коли умови екрану події виконані, її дії запускаються. Щоб умова екрану була виконана, вміст екрана повинен
+        відповідати заданому кольору, зображенню, тексту або числу.\n\n Дізнайтеся тут, як використовувати їх з
+        простими інтерактивними прикладами.</string>
+
+    <string name="tutorial_category_color_condition_name">Кольорові умови</string>
+    <string name="tutorial_category_color_condition_desc_short">Перевіряйте, чи відображається певний колір</string>
+    <string name="tutorial_category_color_condition_desc_long">Кольорова умова перевіряє колір конкретного пікселя на
+        вашому екрані та порівнює його з цільовим кольором. Це найлегший тип умови без обробки зображень.\n\n
+        Дізнайтеся тут, як використовувати її для реагування на зміни кольору на екрані.</string>
+
+    <string name="tutorial_category_image_condition_name">Умови зображення</string>
+    <string name="tutorial_category_image_condition_desc_short">Перевіряйте, чи відображається певне зображення</string>
+    <string name="tutorial_category_image_condition_desc_long">Умова зображення робить знімок екрана частини вашого
+        екрана та шукає його пізніше — на точній позиції, будь-де на екрані або в межах визначеної області. Поріг
+        контролює точність збігу.\n\n Дізнайтеся тут, як використовувати її для реагування на зображення, що
+        з\'являються на екрані.</string>
+
+    <string name="tutorial_category_number_condition_name">Числові умови</string>
+    <string name="tutorial_category_number_condition_desc_short">Перевіряйте, чи відображається певне число</string>
+    <string name="tutorial_category_number_condition_desc_long">Числова умова зчитує число, відображене у визначеній
+        області екрана, та порівнює його з фіксованим значенням або лічильником за допомогою операторів, таких як
+        рівно, більше або менше.\n\n Дізнайтеся тут, як використовувати її для реагування на числові значення на
+        екрані.</string>
+
+    <string name="tutorial_category_text_condition_name">Текстові умови</string>
+    <string name="tutorial_category_text_condition_desc_short">Перевіряйте, чи відображається певний текст</string>
+    <string name="tutorial_category_text_condition_desc_long">Текстова умова зчитує текст, відображений у визначеній
+        області екрана, та перевіряє, чи відповідає він заданому значенню.\n\n Дізнайтеся тут, як використовувати
+        її для реагування на текст, що з\'являється на екрані.</string>
+
+    <string name="tutorial_category_counters_name">Лічильники</string>
+    <string name="tutorial_category_counters_desc_short">Відстежуйте та використовуйте числові значення у своєму сценарії</string>
+    <string name="tutorial_category_counters_desc_long">Лічильник — це іменована числова змінна, прив\'язана до вашого
+        сценарію. Він починається зі стандартного значення і може зчитуватися умовами або діями, а також змінюватися
+        дією «Змінити лічильник».\n\n Дізнайтеся тут, як використовувати лічильники для створення розумніших скриптів
+        автоматизації.</string>
+
+    <string name="tutorial_category_combine_conditions_name">Об\'єднання умов</string>
+    <string name="tutorial_category_combine_conditions_desc_short">Запускайте події за допомогою кількох умов разом</string>
+    <string name="tutorial_category_combine_conditions_desc_long">Кожна подія має оператор умов: І вимагає виконання
+        всіх умов, тоді як АБО вимагає лише однієї. Поєднання типів умов та операторів дозволяє вирішувати складні
+        реальні сценарії.\n\n Дізнайтеся тут, як ефективно об\'єднувати умови.</string>
+
+    <string name="tutorial_category_combine_event_name">Комбінування подій</string>
+    <string name="tutorial_category_combine_event_desc_short">Координуйте кілька Подій для складної логіки</string>
+    <string name="tutorial_category_combine_event_desc_long">Klick\'r дозволяє координувати кілька Подій для створення
+        складних потоків автоматизації. Контролюючи порядок оцінювання та вмикаючи або вимикаючи Події під час
+        виконання, ви можете створювати комплексні багатоетапні Сценарії.\n\n Дізнайтеся тут, як ефективно
+        комбінувати Події для повного контролю над автоматизацією.</string>
+
+    <string name="tutorial_category_events_priority_name">Пріоритет подій</string>
+    <string name="tutorial_category_events_priority_desc_short">Контролюйте важливість ваших подій</string>
+    <string name="tutorial_category_events_priority_desc_long">Екранні події оцінюються в порядку пріоритету в кожному
+        циклі виявлення. Подія вища у списку перевіряється раніше за події нижче, що дозволяє визначити, яка Подія
+        має перевагу, коли кілька подій можуть спрацювати одночасно.\n\n Дізнайтеся тут, як встановлювати пріоритети
+        подій для точного налаштування порядку виконання вашого Сценарію.</string>
+
+    <string name="tutorial_category_events_state_name">Стан подій</string>
+    <string name="tutorial_category_events_state_desc_short">Вмикайте або вимикайте події динамічно</string>
+    <string name="tutorial_category_events_state_desc_long">Події можна вмикати або вимикати під час виконання за
+        допомогою дії Змінити стан події. Це дозволяє створювати багатоетапні потоки автоматизації, де певні події активні
+        лише за конкретних умов.\n\n Дізнайтеся тут, як керувати станом подій для створення складних
+        сценаріїв.</string>
+
+    <string name="tutorial_category_trigger_condition_name">Тригерні умови</string>
+    <string name="tutorial_category_trigger_condition_desc_short">Перевіряйте стан сценарію</string>
+    <string name="tutorial_category_trigger_condition_desc_long">Тригерна умова — це частина «коли» тригерної події:
+        вона спрацьовує на основі невізуальних сигналів, таких як спрацювання таймера, досягнення лічильником певного
+        значення або отримання Android broadcast.\n\n Дізнайтеся тут, як використовувати їх для створення потоків
+        автоматизації, заснованих на часі або стані.</string>
+
+    <string name="tutorial_category_action_name">Дії</string>
+    <string name="tutorial_category_action_desc_short">Виконайте щось, коли умови виконані</string>
+    <string name="tutorial_category_action_desc_long">Дія виконується, коли умови події виконані. Дії охоплюють жести
+        (Click, Swipe), керування потоком (ToggleEvent, ChangeCounter, Wait) та системні взаємодії (Intent,
+        Notification, SystemAction, SetText).\n\n Дізнайтеся тут, як використовувати кожен тип дії для створення своїх
+        скриптів автоматизації.</string>
+
+    <string name="tutorial_category_click_action_name">Натискання</string>
+    <string name="tutorial_category_click_action_desc_short">Натисніть у фіксованій позиції або на виявлену умову</string>
+    <string name="tutorial_category_click_action_desc_long">Дія «Натискання» імітує дотик у фіксованій координаті або
+        в центрі виявленої умови зображення. Можна налаштувати тривалість натискання для імітації довгих
+        натискань.\n\n Дізнайтеся тут, як використовувати її для взаємодії з екраном.</string>
+
+    <string name="tutorial_category_swipe_action_name">Свайп</string>
+    <string name="tutorial_category_swipe_action_desc_short">Проведіть пальцем від однієї точки до іншої</string>
+    <string name="tutorial_category_swipe_action_desc_long">Дія «Свайп» імітує жест перетягування від початкової
+        координати до кінцевої. Можна налаштувати тривалість свайпу для керування швидкістю жесту.\n\n Дізнайтеся
+        тут, як використовувати його для прокрутки або перетягування елементів на екрані.</string>
+
+    <string name="tutorial_category_pause_action_name">Чекати</string>
+    <string name="tutorial_category_pause_action_desc_short">Очікування перед виконанням наступної дії</string>
+    <string name="tutorial_category_pause_action_desc_long">Дія «Чекати» затримує виконання на налаштований час. Це
+        корисно, щоб дати застосунку час відреагувати перед наступним виявленням.\n\n Дізнайтеся тут, як
+        використовувати її для керування темпом скриптів автоматизації.</string>
+
+    <string name="tutorial_category_intent_action_name">Intent</string>
+    <string name="tutorial_category_intent_action_desc_short">Надіслати Android Intent іншому застосунку</string>
+    <string name="tutorial_category_intent_action_desc_long">Дія «Intent» надсилає Android Intent — у вигляді broadcast
+        або для запуску Activity чи Service. Можна додати пари ключ-значення для передачі даних.\n\n Дізнайтеся тут,
+        як використовувати її для запуску дій в інших застосунках.</string>
+
+    <string name="tutorial_category_change_counter_action_name">Змінити лічильник</string>
+    <string name="tutorial_category_change_counter_action_desc_short">Встановити, збільшити або зменшити значення лічильника</string>
+    <string name="tutorial_category_change_counter_action_desc_long">Дія «Змінити лічильник» змінює змінну лічильника,
+        встановлюючи її у фіксоване значення, додаючи або віднімаючи значення. Лічильники можуть зчитуватися умовами
+        або іншими діями.\n\n Дізнайтеся тут, як керувати станом сценарію.</string>
+
+    <string name="tutorial_category_change_event_state_action_name">Змінити стан події</string>
+    <string name="tutorial_category_change_event_state_action_desc_short">Увімкнути, вимкнути або перемкнути одну чи кілька подій</string>
+    <string name="tutorial_category_change_event_state_action_desc_long">Дія «Змінити стан події» вмикає, вимикає або
+        перемикає одну чи кілька подій під час виконання. Це дозволяє створювати багатокрокові потоки, де ранні кроки
+        визначають наступні.\n\n Дізнайтеся тут, як керувати потоком сценарію.</string>
+
+    <string name="tutorial_category_notification_action_name">Сповіщення</string>
+    <string name="tutorial_category_notification_action_desc_short">Опублікувати системне сповіщення</string>
+    <string name="tutorial_category_notification_action_desc_long">Дія «Сповіщення» публікує системне сповіщення
+        Android із настроюваним заголовком і повідомленням. Корисно для оповіщення користувача при виявленні
+        конкретної умови.\n\n Дізнайтеся тут, як використовувати його, поки сценарій працює у фоні.</string>
+
+    <string name="tutorial_category_system_action_name">Системна дія</string>
+    <string name="tutorial_category_system_action_desc_short">Викликати глобальну дію навігації Android</string>
+    <string name="tutorial_category_system_action_desc_long">Дія «Системна» викликає глобальну дію навігації Android,
+        наприклад натискання «Назад», «Додому» або «Останні». Ці дії не потребують координат і діють на рівні
+        системи.\n\n Дізнайтеся тут, як переміщатися пристроєм під час автоматизації.</string>
+
+    <string name="tutorial_category_write_text_action_name">Написати текст</string>
+    <string name="tutorial_category_write_text_action_desc_short">Вставити текст у активне поле введення</string>
+    <string name="tutorial_category_write_text_action_desc_long">Дія «Написати текст» вставляє налаштований рядок у
+        активне поле введення через службу спеціальних можливостей. Корисно для заповнення форм або полів пошуку без
+        симуляції окремих натискань клавіш.\n\n Дізнайтеся тут, як вводити текст під час автоматизації.</string>
+</resources>

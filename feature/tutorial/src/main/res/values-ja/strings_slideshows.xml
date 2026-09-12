@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_slideshow_button_next">次へ</string>
+    <string name="tutorial_slideshow_button_close">閉じる</string>
+
+
+    <!-- Image Condition Capture slideshow -->
+    <string name="tutorial_slideshow_image_condition_capture_title">画像キャプチャ</string>
+    <string name="tutorial_slideshow_image_condition_capture_desc">最適な画像キャプチャに関するヒント</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_1_text">画像条件のキャプチャを行う際は、
+        背景などの変化する部分を避ける必要があります。キャプチャは検出時に表示されるものと
+        できる限り近い見た目である必要があります。\n\n一致させたいターゲットにできるだけ近い位置でキャプチャするようにしてください。
+        ただし、検出に十分な詳細を保持してください。\n\n注意：キャプチャをピンチしてズームし、エリアを
+        より正確に制御することができます。</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_2_text">透明な領域を含む画像には注意が必要です。
+        透明な表面の背後にある背景が変化すると、検出アルゴリズムは色や形の変化を検出し、
+        検出されたとは見なしません。\n\n検出のための十分な静的な詳細を保持しながら、条件内の透明な部分は
+        避けるようにしてください。また、小さな透明領域での変化を補償するために、検出の許容範囲を変更することもできます。
+        \n\n一致させたいターゲット内にテキストがある場合は、テキスト条件の使用を検討してください。
+        テキスト条件は背景の変化ノイズの影響を受けにくいです。</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_3_text">画像検出は、多くのエッジを持つ対象に適用すると
+        より正確になります。画像が小さいほど速くなりますが、画像が小さすぎて詳細が不足すると
+        精度が低下します。新しい画像条件を作成する際はこの点を念頭に置いてください。\n\n非常に小さなものを検出しようとしている場合は、
+        代わりに1つまたは複数のカラー条件を使用することを検討してください。そのようなケースではより信頼性が高く、
+        はるかに高速です。</string>
+
+
+    <!-- Image Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_image_condition_area_title">検出エリア</string>
+    <string name="tutorial_slideshow_image_condition_area_desc">シナリオのパフォーマンスへの影響について学ぶ</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_1_text">画像条件を作成する際に、検出タイプを変更することで
+        画面上のどこで検出が行われるかを定義できます。\n\nデフォルトでは、新しい画像条件は常にキャプチャと同じ
+        位置で検出します。これが画像を検出する最も速い方法です。
+        \n\n検出する必要がある画像が複数の場所に表示される可能性がある場合は、他のオプションのいずれかを
+        使用する必要があります。</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_2_text">「エリア内」を選択すると、エリア選択
+        フィールドが有効になり、検出エリアを定義できます。\n\nデフォルトでは、エリアはキャプチャエリアと
+        同じになりますが、移動および拡張できます。エリアが大きいほど検出が遅くなるため、
+        画面の重要な部分のみを含めるようにしてください。</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_3_text">最後のオプション「画面全体」は検出エリアを
+        ディスプレイ全体に変更します。\n\nこれは最も遅い検出タイプであり、最終手段としてのみ使用してください。</string>
+
+
+    <!-- Text Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_text_condition_area_title">テキスト検出エリア</string>
+    <string name="tutorial_slideshow_text_condition_area_desc">最適なテキスト検出に関するヒント</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_1_text">画面上のテキストを検出する際は、検出中に
+        テキストをスキャンする検出エリアを定義する必要があります。\n\n静的なテキストを検出する場合は、
+        テキストに近く、その周囲に小さな余白を保った位置にエリアを設定してください。テキストがエリアの
+        境界に触れると、検出の信頼性が大幅に低下します。\n\n注意：非常に小さなテキストの場合は、
+        シナリオの検出品質を上げる必要があるかもしれません。高解像度にすることでそれらのテキストの
+        検出に役立ちます。</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_2_text">複数の位置に表示される可能性のあるテキストを
+        検出する場合は、できる限り小さな検出エリアを使用してください。検出エリアが大きいほど、検出は遅くなります。
+        \n\n異なる位置が分かっていてランダムでない場合は、非常に大きなエリアを持つ1つの条件よりも、
+        各位置に対して個別のテキスト条件を使用する方が速い場合があります。シナリオのタイミングを深く
+        最適化したい場合は、デバッグレポートを使用してタイミングをテストできます。</string>
+
+
+    <!-- Number Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_number_condition_area_title">数値検出エリア</string>
+    <string name="tutorial_slideshow_number_condition_area_desc">最適な数値検出に関するヒント</string>
+
+    <string name="tutorial_slideshow_number_condition_area_step_1_text">ここでのヒントはテキスト条件と同じです：
+        画面上の数値を検出する際は、検出中に数値をスキャンする検出エリアを定義する必要があります。
+        \n\n静的な数値を検出する場合は、数値に近く、その周囲に小さな余白を保った位置にエリアを設定してください。
+        数値がエリアの境界に触れると、検出の信頼性が大幅に低下します。\n\n注意：非常に小さな数値の場合は、
+        シナリオの検出品質を上げる必要があるかもしれません。高解像度にすることでそれらの数値の検出に役立ちます。 </string>
+
+    <!--Screen Condition type selection -->
+    <string name="tutorial_slideshow_screen_condition_type_title">画面条件の種類</string>
+    <string name="tutorial_slideshow_screen_condition_type_desc">用途に応じてどれを使うか学ぶ</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_1_text">カラー条件はKlick\'rで最も速く検出する方法です。
+        画面上のピクセルの色を確認するだけです。\n\nこの条件は、ボタンの色や進捗バーの完了などのシンプルなUI要素、
+        または小さな変化を検出しようとするときに便利です。</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_2_text">画像条件はカラー条件より遅いですが、
+        画面コンテンツの検出に柔軟性があります。小さなエリアで検出する場合の実行時間は非常に短いですが、
+        エリアが大きくなると大幅に増加する可能性があります。\n\nこの条件は、カードのコンテンツやアイコンなど、
+        明確な形状と色を検出しようとするときに便利です。</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_3_text">テキスト条件と数値条件はどちらも同じ検出プロセスを使用します。
+        \n\nテキスト検出は最も遅い検出タイプですが、画像検出とは異なり、透明度に影響されず、複雑な検出シーンでより高い精度を
+        実現します。実行時間は検出エリアのサイズとともに増加し、選択したアルファベットにも依存します。\n\nこの条件は、
+        テキストや数値がどのように表示されているかに関わらず検出しようとするときに便利です。</string>
+
+    <!-- Detection confidence slideshow -->
+    <string name="tutorial_slideshow_screen_condition_threshold_title">検出の信頼性</string>
+    <string name="tutorial_slideshow_screen_condition_threshold_desc">検出の信頼性に関するヒント</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_1_text">Klick\'rはプロセスを高速化し、バッテリーへの影響を
+        軽減するために、画面条件を検索する前に多くの前処理を行います。これにより、信頼性スコアとして表される結果の不確実性と
+        近似値が生じます。\n\n条件が期待通りに機能していることを確認するには、画面条件リストで条件にフォーカスしながら
+        再生矢印ボタンを押して個別にテストできます。</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_2_text">画面条件をテストすると、検出の信頼性スコアが表示され、
+        ここで許容差を直接変更することができます。これにより、誤検知を排除したり、許容される結果をより柔軟に設定したりできます。</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_3_text">検出結果は検出解像度にも影響されます。
+        シナリオダイアログで利用可能なこの設定では、Klick\'rが処理前に画面コンテンツをどれだけダウンスケールするかを変更できます。
+        \n\nこれはすべての画面条件の信頼性スコアに影響を与える可能性があり、解像度が高いほど検出が良くなりますが、
+        実行時間も遅くなります。</string>
+
+
+
+    <!-- Broadcast received slideshow -->
+    <string name="tutorial_slideshow_broadcast_received_title">ブロードキャスト受信時</string>
+    <string name="tutorial_slideshow_broadcast_received_desc">他のアプリからのブロードキャストを受け取る</string>
+
+    <string name="tutorial_slideshow_broadcast_received_step_1_text">Androidでは、アプリが自身の状態を他のアプリと共有したいとき、
+        Broadcast Intentを使用します。\n\n「ブロードキャスト受信時」条件を使うと、それらの状態を監視してKlick\'rのアクションで
+        反応することができます。Androidシステムの状態に関するデフォルト値がいくつか提供されていますが、ブロードキャスト条件は
+        Android開発の知識が必要なため、主に開発者向けであることに注意してください。</string>
+
+    <!-- Counter Reached slideshow -->
+    <string name="tutorial_slideshow_counter_reached_title">カウンター到達時</string>
+    <string name="tutorial_slideshow_counter_reached_desc">シナリオのカウンター値に反応する</string>
+
+    <string name="tutorial_slideshow_counter_reached_step_1_text">カウンターはシナリオ内で宣言された変数で、実行中に変更、
+        表示、または検証することができます。\n\n「カウンター到達時」条件を使うと、カウンターの現在値を確認してアクションを
+        実行できます。すべての数学的比較演算子が検証のカスタマイズに利用できます。\n\nカウンターはさまざまな方法で使用でき、
+        カウンターに関連する単一の条件やアクションだけでは正しく使いこなすには不十分なことがよくあります。カウンター機能を
+        カバーするインタラクティブなチュートリアルは、専用のセクションで利用できます。</string>
+
+    <!-- Pause Action slideshow -->
+    <string name="tutorial_slideshow_pause_action_title">待機アクション</string>
+    <string name="tutorial_slideshow_pause_action_desc">待機がアクションの実行と検出に与える影響を学ぶ</string>
+    <string name="tutorial_slideshow_pause_action_step_1_text">待機アクションはシナリオ全体を設定した時間だけ
+        一時停止します。その間、アクションは実行されず、画面の検出も行われません。\n\nよくある使い方は、アクション
+        リストの末尾に待機を追加することです。どこかをタップすると、タップされたアプリがそれを処理して結果を表示
+        するまでに時間がかかります。Klick\'r が再び画面を分析し始める前に、その瞬間を待ちたいことが多いでしょう。
+        \n\n2つのアクションの間に待機を入れることも有効ですが、リストの末尾に追加することの方が重要なケースが
+        多いです。</string>
+
+    <!-- Swipe Action slideshow -->
+    <string name="tutorial_slideshow_swipe_action_title">スワイプアクション</string>
+    <string name="tutorial_slideshow_swipe_action_desc">スワイプジェスチャーの実行方法を学ぶ</string>
+    <string name="tutorial_slideshow_swipe_action_step_1_text">スワイプアクションは開始位置から終了位置まで直線的な
+        ドラッグジェスチャーを実行します。両方の座標は固定されており、アクションの設定で指定します。\n\nデュレーション
+        はジェスチャーが開始から終了まで要する時間を制御します。短いデュレーションはより速いスワイプを生み出し、長い
+        デュレーションはよりゆっくりと制御されたスワイプを生み出します。</string>
+
+    <!-- Click Action Offset slideshow -->
+    <string name="tutorial_slideshow_click_action_offset_title">クリックオフセット</string>
+    <string name="tutorial_slideshow_click_action_offset_desc">検出された条件に対するクリック位置の調整方法を学ぶ</string>
+    <string name="tutorial_slideshow_click_action_offset_step_1_text">検出された条件をクリックする場合、デフォルトでは
+        クリックは検出された領域の中心に適用されます。\n\nクリックオフセットを使うと、その位置を条件の中心を基準に
+        X軸とY軸方向にピクセル単位で移動できます。タップしたい要素が検出された領域の中心の近くにあるが、厳密に
+        中心ではない場合に便利です。</string>
+
+    <!-- Click Action Target slideshow -->
+    <string name="tutorial_slideshow_click_action_target_title">クリックターゲット</string>
+    <string name="tutorial_slideshow_click_action_target_desc">クリックが適用される場所の設定方法を学ぶ</string>
+    <string name="tutorial_slideshow_click_action_target_step_1_text">クリックアクションは2種類の位置を対象にできます：
+        常に同じ固定位置、または検出された条件の位置です。\n\nアクション設定ダイアログのターゲットセレクターで
+        ターゲット指定の方法を選択してください。</string>
+    <string name="tutorial_slideshow_click_action_target_step_2_text">固定位置の場合、クリックは画面に何が表示されて
+        いるかに関係なく、常に同じ正確な座標で発生します。\n\nこれらの座標は回転に敏感であることに注意してください：
+        デバイスが回転すると、クリックが予期しない位置に当たったり、画面の端を超えてしまうことがあります。</string>
+    <string name="tutorial_slideshow_click_action_target_step_3_text">条件の位置の場合、クリックは検出された画像条件の
+        中心に適用され、画面上のどこに表示されてもターゲットを追跡します。\n\nANDオペレーターでは、すべての条件が
+        満たされる必要があるため、各画像条件には利用可能な位置があります。自由にどれかを選んでオフセットで
+        調整できます。</string>
+    <string name="tutorial_slideshow_click_action_target_step_4_text">ORオペレーターでは、最初に満たされた条件のみが
+        評価され、残りは無視されます。そのため、Klick\'r はどの条件が検出されるかを事前に知ることができません。
+        \n\n結果として、ORオペレーターでは特定の条件をターゲットとして選ぶことができません：クリックは常に実行時に
+        最初に検出された条件に適用されます。</string>
+
+    <!-- Combine Conditions Ordering slideshow -->
+    <string name="tutorial_slideshow_combine_conditions_ordering_title">条件の順序と速度</string>
+    <string name="tutorial_slideshow_combine_conditions_ordering_desc">条件の順序がイベントの確認速度に与える影響</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_1_text">リスト内の条件の順序はイベントの確認速度に影響します。\n\nAND
+        演算子を使用する場合、最初に満たされない条件が見つかった時点で確認が停止します。最も満たされにくい条件を先頭に置くことで、アプリが残りの条件を早くスキップできるようになり、イベントが速くなります。</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_2_text">OR
+        演算子を使用する場合、最初に満たされた条件が見つかった時点で確認が停止します。最も満たされやすい条件を先頭に置くことで、アプリが残りを確認せずに早く完了できます。\n\nどちらの場合も、最も重要な条件をリストの先頭に置くこ
+        とが、シナリオを速く保つシンプルな方法です。</string>
+
+
+    <!-- Events State Basics slideshow -->
+    <string name="tutorial_slideshow_events_state_basics_title">イベントの状態</string>
+    <string name="tutorial_slideshow_events_state_basics_desc">シナリオの実行中にイベントを有効・無効にする方法を学ぶ</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_1_text">シナリオ内のすべてのイベント（スクリーンイベントとトリガーイベント）には状態があります：<b>有効
+        </b>または<b>無効</b>です。\n\n有効の場合、イベントは通常どおり実行され、条件を確認します。無効の場合、存在しないかのように完全にスキップされます。\n\nデフォルトでは、すべてのイベントは有効な状態で開始さ
+        れます。イベント設定の<b>初期状態</b>フィールドで変更できます。</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_2_text">シナリオの実行中は、<b>イベント状態を変更</b>アクションを使って任意のイベントの状態を変更で
+        きます。このアクションにより、1つ以上のイベントを有効化・無効化、または切り替えることができます。\n\nこれにより多くのことが可能になります：次々とお互いをオンにするイベント、一度実行されたら自分でオフになるイベント、ま
+        たは同時に1つだけがアクティブなイベントのグループ。</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_3_text"><b>シナリオ内のすべてのイベントが無効になった</b>とき、シナリオは自動的に停止します。やるこ
+        とが何もなくなるため、Klick\'rが自動的に停止します。\n\nこれはシナリオを終了するシンプルな方法です：最後のイベントが役割を果たした後に他のすべてを無効にすれば、すべてが自動的に停止します。</string>
+
+
+    <!-- Actions List slideshow -->
+    <string name="tutorial_slideshow_actions_list_title">アクションリスト</string>
+    <string name="tutorial_slideshow_actions_list_desc">アクションリストの実行方法を学ぶ</string>
+    <string name="tutorial_slideshow_actions_list_step_1_text">アクションは順番に、一つずつ実行されます。&lt;&lt; と
+        &gt;&gt; ボタンを使うか、インデックス番号を直接タップしてアクションの順序を変更できます。\n\nアクションリストは
+        短く保つようにしましょう。通常のオートクリッカーはイベントごとに一か所をタップします——それが従うべきモデルです。一つの
+        イベントに多くのアクションを追加していると感じたら、それは作業を複数のイベントに分割すべきサインです。各イベントが
+        実際に画面に表示されているものに反応するようにしましょう。これが Klick\'r の「見て動く」哲学です：まず検出、それから
+        アクション。</string>
+
+    <!-- Write Text Action slideshow -->
+    <string name="tutorial_slideshow_write_text_action_title">テキスト入力アクション</string>
+    <string name="tutorial_slideshow_write_text_action_desc">フォーカスされた入力フィールドへのテキスト入力方法を学ぶ</string>
+    <string name="tutorial_slideshow_write_text_action_step_1_text">テキスト入力アクションが実行される前に、対象の入力
+        フィールドがすでにフォーカスされている必要があります——キーボードを表示するためにタップするのと同じです。\n\nこれを
+        実現するには、テキスト入力アクションの前にそのフィールドへのクリックアクションを追加してください。クリック後に
+        トランジションアニメーションが再生される場合は、間に待機アクションを入れるとフィールドの準備が整うのを確認するのに
+        役立ちます。\n\nアクションには「確定」オプションもあります：有効にすると、テキスト設定後に自動的に Enter が押され、
+        入力が確定または送信されます。</string>
+    <string name="tutorial_slideshow_write_text_action_step_2_text">書き込むテキストにカウンターの値を挿入できます。
+        アクション設定の「カウンターを追加」ボタンを押してカウンターを選択すると、テキストフィールドの現在のカーソル位置に
+        プレースホルダー <b>{カウンター名}</b> が挿入されます。\n\n実行時には、テキストがフィールドに貼り付けられる前に
+        すべての <b>{カウンター名}</b> プレースホルダーがカウンターの現在値に置き換えられます。例えば、<i>りんご</i>
+        という名前のカウンターの値が18の場合、「りんごが{りんご}個あります」は「りんごが18個あります」になります。</string>
+
+    <!-- System Action slideshow -->
+    <string name="tutorial_slideshow_system_action_title">システムアクション</string>
+    <string name="tutorial_slideshow_system_action_desc">Android のナビゲーションアクションを実行する方法を学ぶ</string>
+    <string name="tutorial_slideshow_system_action_step_1_text">システムアクションは Android の組み込みナビゲーション
+        アクションの一つを実行します：戻る、ホーム、または最近使用したアプリ。\n\nこれらは画面下部のナビゲーションボタンと
+        同じアクションです。座標は不要で、現在開いているアプリに関係なくシステムレベルで動作します。</string>
+
+    <!-- Change Counter Action slideshow -->
+    <string name="tutorial_slideshow_change_counter_action_title">カウンター変更アクション</string>
+    <string name="tutorial_slideshow_change_counter_action_desc">カウンターの値を変更する方法を学ぶ</string>
+    <string name="tutorial_slideshow_change_counter_action_step_1_text">カウンター変更アクションは、事前定義された静的な値
+        を使ってカウンターに操作を適用します。利用可能な操作は3つ：カウンターに値を加算する（+）、カウンターから減算する
+        （−）、またはカウンターをその値に設定する（=）。\n\nこれはカウンターを更新する最も一般的な方法です——例えば、条件が
+        検出されるたびに1を加えたり、目標達成時に0にリセットしたりします。</string>
+    <string name="tutorial_slideshow_change_counter_action_step_2_text">静的な値の代わりに、別のカウンターの現在値を
+        オペランドとして使用できます。同じ3つの操作（+、−、=）が適用されますが、量は設定時に固定されるのではなく、実行時に
+        選択されたカウンターから読み取られます。\n\nこれにより、カウンター同士が相互作用する動的なシナリオを構築できます。</string>
+
+    <!-- Notification Action slideshow -->
+    <string name="tutorial_slideshow_notification_action_title">通知アクション</string>
+    <string name="tutorial_slideshow_notification_action_desc">シナリオ中に通知を表示する方法を学ぶ</string>
+    <string name="tutorial_slideshow_notification_action_step_1_text">通知アクションは、お好みのタイトルとメッセージで
+        Android 通知を表示します。\n\n「カウンターを追加」ボタンを使うか、プレースホルダー <b>{カウンター名}</b> を直接
+        入力することで、通知テキストにカウンターの現在値を挿入できます。実行時にはカウンターの値に置き換えられます——例えば、
+        「りんごが{りんご}個あります」は「りんごが18個あります」になります。</string>
+    <string name="tutorial_slideshow_notification_action_step_2_text">通知の重要度レベルは、通知がどれほど目立つ形で
+        表示されるかを制御します。高い重要度レベルではヘッドアップバナーが表示されたり音が鳴ったりしますが、低いものは
+        通知トレイに静かに届きます。\n\n正確な動作はデバイスによって異なり、Klick\'r の Android 通知設定でさらに
+        カスタマイズできます。</string>
+
+    <!-- Toggle Event Action slideshow -->
+    <string name="tutorial_slideshow_toggle_event_action_title">イベント状態変更アクション</string>
+    <string name="tutorial_slideshow_toggle_event_action_desc">実行時にイベントを有効・無効にする方法を学ぶ</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_1_text">無効化されたイベントはシナリオループ中に完全に
+        スキップされます——その条件は一切チェックされず、アクションも実行されません。つまり、処理時間を全く消費しません。
+        \n\n使用していないイベントを無効化することはパフォーマンス向上に非常に効果的です。例えば、メニューフェーズとゲーム
+        フェーズを交互に行うシナリオでは、ゲームフェーズ中にメニュー関連のイベントをすべて無効化する（逆も同様）ことで、
+        常に関連するイベントだけをアクティブに保てます。</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_2_text">アクションを設定する際、シナリオ内のすべての
+        イベントの状態を一括変更するか、各イベントの新しい状態を個別に定義するかを選択できます。\n\n各イベントに対して
+        3つの状態変更が利用可能です：有効にする、無効にする、または現在の値からトグルする——有効なイベントは無効になり、
+        無効なイベントは有効になります。</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_3_text">シナリオ内のすべてのイベントが同時に無効になった
+        場合、実行するものが何もなくなるため、シナリオは自動的に停止します。\n\nこれを意図的に利用することで、目標達成後に
+        シナリオをクリーンに終了させることができます：すべてのイベントを無効にする最後のイベント状態変更アクションがシナリオ
+        を停止させます。</string>
+
+    <!-- Intent Action slideshow -->
+    <string name="tutorial_slideshow_intent_action_title">Intent アクション</string>
+    <string name="tutorial_slideshow_intent_action_desc">他のアプリケーションと通信する方法を学ぶ</string>
+    <string name="tutorial_slideshow_intent_action_step_1_text">Intent は Android でアプリが互いに通信する方法です。
+        Intent アクションを使うと、シナリオから直接このシステムを活用できます。\n\n使いやすくするための定義済みテンプレートが
+        用意されています。最も一般的なのは「アプリを起動」で、ランチャーからアイコンをタップしたときと全く同じように、デバイス
+        上の別のアプリを起動します。</string>
+    <string name="tutorial_slideshow_intent_action_step_2_text">「詳細設定」タブでは、生の Intent を手動で定義し、
+        アクション、カテゴリ、データ、extras を完全に制御できます。これは一般ユーザーには推奨されません——Intent の仕組みを
+        すでに知っている Android 開発者向けです。\n\n将来のアップデートでは、詳細設定に頼らずに一般的なユースケースを簡単に
+        設定できるよう、すぐに使えるテンプレートが追加される予定です。</string>
+
+
+    <!-- Event priority slideshow -->
+    <string name="tutorial_slideshow_events_priority_title">イベントの優先順位</string>
+    <string name="tutorial_slideshow_events_priority_desc">リスト内のイベントの順序が実行されるイベントに与える影響を学びます</string>
+    <string name="tutorial_slideshow_events_priority_step_1_text">画面からキャプチャされた各フレームは、イベントを<b>上から下に1つずつ</b>確認することで処理されます。\n\nイベントリスト内のイベントの位置が、そのイベントが実行される機会を得るタイミングを決定します。デフォルトでは、イベントの条件が満たされてアクションが実行されると、<b>そのフレームは処理済みとみなされます</b>。そのフレームの処理は停止し、次のフレームはリストの最初のイベントから再開します。\n\nつまり、デフォルトでは1フレームにつき1つのイベントしか実行できません。</string>
+    <string name="tutorial_slideshow_events_priority_step_2_text">この動作は、イベント設定の<b>実行を続ける</b>フィールドで変更できます。有効にすると、そのイベントが実行された後、処理が停止する代わりに<b>リストの次のイベントへ続きます</b>。\n\nこれにより、同じフレームで複数のイベントを実行できます。\n\n<b>例：</b>リストにイベントAの次にイベントBが含まれているとします。イベントAが継続して検出され、<b>実行を続ける</b>が有効でない場合、イベントAは毎フレーム実行され、イベントBは一度も実行される機会がありません。\n\nイベントAで<b>実行を続ける</b>を有効にすると、両方のイベントが毎フレーム確認されます。\n\nこの概念を練習するためのインタラクティブなチュートリアルも利用できます。</string>
+
+
+    <!-- Events reloading slideshow -->
+    <string name="tutorial_slideshow_events_reloading_title">イベントのリロード</string>
+    <string name="tutorial_slideshow_events_reloading_desc">シナリオ内でのイベントのリロードの動作について学ぶ</string>
+    <string name="tutorial_slideshow_events_reloading_step_1_text">イベントリロードパラメーターを使用すると、条件が
+        満たされた後、一定時間イベントをスキップできます。 \n\nリロード状態のイベントはまだ有効と見なされます：リロードと
+        イベントの状態は独立しています。 \n\nリロード中にイベントが無効化された場合、リロードタイマーはクリアされるため、
+        イベントが再度有効化されたときにクールダウンは適用されません。</string>
+
+
+    <!-- Counters value usages slideshow -->
+    <string name="tutorial_slideshow_counters_value_usages_title">カウンター値の使い方</string>
+    <string name="tutorial_slideshow_counters_value_usages_desc">シナリオでカウンターの値を表示・使用するさまざまな方法を学びましょう</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_1_text">通知アクションの中に、カウンターの現在値を表示できます。これはシナリオの実行中に進行状況を確認したり、終了時にまとめを表示したりするのに便利です。\n\nカウンターを挿入するには、アクション設定の「カウンターを追加」ボタンを押してください。これにより、テキストに <b>{counterName}</b> のようなプレースホルダーが追加されます。実行時には、このプレースホルダーがカウンターの実際の値に置き換えられます。例えば、<i>score</i> という名前のカウンターの値が42の場合、「現在のスコア: {score}」は「現在のスコア: 42」になります。</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_2_text">テキスト書き込みアクションにもカウンターの値を挿入できます。これにより、アクションが実行された時点の現在値がテキストに含まれます。\n\nプレースホルダーの使い方は通知アクションと同じです。「カウンターを追加」ボタンを押すか、<b>{counterName}</b> を直接入力してください。例えば、<i>score</i> という名前のカウンターの値が42の場合、「私のスコアは {score} です」は「私のスコアは 42 です」になります。</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_3_text">カウンターの値はデバッグレポートに記録されます。シナリオで予期しない動作が発生した場合は、デバッグレポートを取得することで、カウンターがどのように変化したかを正確に確認でき、問題の原因を見つけやすくなります。</string>
+
+</resources>

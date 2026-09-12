@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!--
+      - Tutorials categories
+      - Tutorials are ordered in categories. Categories can be displayed in two ways:
+      -  * as a header, when browsing a category
+      -  * as a list item, when browsing a category containing other categories
+      -
+      - For each category, we can have the following keys:
+      -  * "tutorial_category_[categoryName]_name":
+      -      The display name of the category (mandatory)
+      -  * "tutorial_category_[categoryName]_desc_short":
+      -      The description when displayed as list item (all categories but Root)
+      -  * "tutorial_category_[categoryName]_desc_long":
+      -      The description when displayed as category header (mandatory)
+    -->
+
+    <!-- Root category is never displayed as an item, so no need for short description -->
+    <string name="tutorial_category_root_name">Tutorials</string>
+    <string name="tutorial_category_root_desc_long">Klick\'r automation is based on what is displayed on your screen,
+        which is pretty different from your time-based regular autoclicker.\n\nLearn here how to use it.</string>
+
+    <string name="tutorial_category_basics_name">Scenario Basics</string>
+    <string name="tutorial_category_basics_desc_short">Learn how to use each Scenario element</string>
+    <string name="tutorial_category_basics_desc_long">A Scenario is the root element of your automation script. It
+        contains a list of ScreenEvents and a list of TriggerEvents.\nAn Event is a list of
+        ScreenConditions/TriggerConditions to fulfill in order to execute a list of Actions.\n\n Learn here how to use
+        each element of a Scenario.</string>
+
+    <string name="tutorial_category_screen_condition_name">Screen Conditions</string>
+    <string name="tutorial_category_screen_condition_desc_short">Verify what\'s displayed on your screen</string>
+    <string name="tutorial_category_screen_condition_desc_long">A Screen Condition is the \"when\" part of your Screen
+        Event: When an Event\'s Screen Conditions are fulfilled, then this Event\'s Actions are executed.\nFor a Screen
+        Condition to be fulfilled, the content of your device screen must match a given color, image, text or number.
+        \n\n Learn here how to use them with simple interactive use cases.</string>
+
+    <string name="tutorial_category_color_condition_name">Color Conditions</string>
+    <string name="tutorial_category_color_condition_desc_short">Verify if a specific color is displayed</string>
+    <string name="tutorial_category_color_condition_desc_long">A Color Condition checks the color of a specific pixel
+        on your screen and compares it to a target color. It is the lightest condition type, with no image
+        processing involved.\n\n Learn here how to use it to react to color changes on your screen.</string>
+
+    <string name="tutorial_category_image_condition_name">Image Conditions</string>
+    <string name="tutorial_category_image_condition_desc_short">Verify if a specific image is displayed</string>
+    <string name="tutorial_category_image_condition_desc_long">An Image Condition captures a screenshot of a part of
+        your screen and looks for it later, either at an exact position, anywhere on the screen, or within a defined
+        area. A threshold controls how strict the match must be.\n\n Learn here how to use it to react to images
+        appearing on your screen.</string>
+
+    <string name="tutorial_category_number_condition_name">Number Conditions</string>
+    <string name="tutorial_category_number_condition_desc_short">Verify if a specific number is displayed</string>
+    <string name="tutorial_category_number_condition_desc_long">A Number Condition reads a number displayed in a defined
+        area on your screen and compares it to a fixed value or a Counter using operators such as equal, greater
+        than, or less than.\n\n Learn here how to use it to react to numeric values displayed on your screen.</string>
+
+    <string name="tutorial_category_text_condition_name">Text Conditions</string>
+    <string name="tutorial_category_text_condition_desc_short">Verify if specific text is displayed</string>
+    <string name="tutorial_category_text_condition_desc_long">A Text Condition reads text displayed in a defined area
+        on your screen and checks whether it matches a given value.\n\n Learn here how to use it to react to text
+        appearing on your screen.</string>
+
+    <string name="tutorial_category_counters_name">Counters</string>
+    <string name="tutorial_category_counters_desc_short">Track and use numeric values in your Scenario.</string>
+    <string name="tutorial_category_counters_desc_long">A Counter is a named numeric variable scoped to your Scenario.
+        It starts at a default value and can be read by Conditions or Actions, and written by the
+        Change Counter Action.\n\n Learn here how to use Counters to build smarter automation scripts.</string>
+
+    <string name="tutorial_category_combine_conditions_name">Combine Conditions</string>
+    <string name="tutorial_category_combine_conditions_desc_short">Trigger events using multiple conditions together.
+    </string>
+    <string name="tutorial_category_combine_conditions_desc_long">Each Event has a condition operator:AND requires all
+        conditions to be fulfilled, while OR requires at least one. Mixing condition types and operators lets you handle
+        complex real-world scenarios.\n\n Learn here how to combine conditions effectively.</string>
+
+    <string name="tutorial_category_trigger_condition_name">Trigger Conditions</string>
+    <string name="tutorial_category_trigger_condition_desc_short">Verify the state of the Scenario</string>
+    <string name="tutorial_category_trigger_condition_desc_long">A Trigger Condition is the \"when\" part of a Trigger
+        Event: it fires based on non-visual signals such as a timer expiring, a Counter reaching a value, or an
+        Android broadcast being received.\n\n Learn here how to use them to build time-based or state-driven
+        automation flows.</string>
+
+    <string name="tutorial_category_action_name">Actions</string>
+    <string name="tutorial_category_action_desc_short">Execute something once your conditions are fulfilled</string>
+    <string name="tutorial_category_action_desc_long">An Action is executed when an Event\'s Conditions are fulfilled.
+        Actions range from gestures (Click, Swipe) to flow control (ToggleEvent, ChangeCounter, Wait) and system
+        interactions (Intent, Notification, SystemAction, SetText).\n\n Learn here how to use each Action type to
+        build your automation scripts.</string>
+
+    <string name="tutorial_category_click_action_name">Click</string>
+    <string name="tutorial_category_click_action_desc_short">Tap at a fixed position or on a matched condition</string>
+    <string name="tutorial_category_click_action_desc_long">A Click Action simulates a tap at a fixed coordinate or
+        at the center of a matched Condition. You can configure the press duration to simulate long presses.
+        \n\n Learn here how to use it to interact with your screen.</string>
+
+    <string name="tutorial_category_swipe_action_name">Swipe</string>
+    <string name="tutorial_category_swipe_action_desc_short">Slide from one point to another on the screen</string>
+    <string name="tutorial_category_swipe_action_desc_long">A Swipe Action simulates a drag gesture from a start
+        coordinate to an end coordinate. You can configure the swipe duration to control the speed of the gesture.
+        \n\n Learn here how to use it to scroll or drag elements on your screen.</string>
+
+    <string name="tutorial_category_pause_action_name">Wait</string>
+    <string name="tutorial_category_pause_action_desc_short">Wait for a duration before executing the next action</string>
+    <string name="tutorial_category_pause_action_desc_long">A Wait Action delays execution for a configured amount
+        of time. It is useful to insert a wait between two actions when the app needs time to react.
+        \n\n Learn here how to use it to pace your automation scripts.</string>
+
+    <string name="tutorial_category_intent_action_name">Intent</string>
+    <string name="tutorial_category_intent_action_desc_short">Send an Android Intent to another app or component</string>
+    <string name="tutorial_category_intent_action_desc_long">An Intent Action sends an Android Intent, either as a
+        broadcast or to start an Activity or Service. You can attach extra key-value pairs to pass data along with
+        the Intent.\n\n Learn here how to use it to trigger actions in other applications.</string>
+
+    <string name="tutorial_category_change_counter_action_name">Change Counter</string>
+    <string name="tutorial_category_change_counter_action_desc_short">Set, add, or subtract a value on a Counter</string>
+    <string name="tutorial_category_change_counter_action_desc_long">A Change Counter Action modifies a named Counter
+        variable by setting it to a fixed value, adding to it, or subtracting from it. Counters can then be read by
+        Conditions or other Actions.\n\n Learn here how to use it to manage state across your Scenario.</string>
+
+    <string name="tutorial_category_change_event_state_action_name">Change Event State</string>
+    <string name="tutorial_category_change_event_state_action_desc_short">Enable, disable, or toggle one or more Events</string>
+    <string name="tutorial_category_change_event_state_action_desc_long">A Change Event State Action enables, disables,
+        or toggles one or more Events at runtime. This lets you build multi-step flows where earlier steps gate later
+        ones.\n\n Learn here how to use it to control the flow of your Scenario.</string>
+
+    <string name="tutorial_category_notification_action_name">Notification</string>
+    <string name="tutorial_category_notification_action_desc_short">Post a system notification</string>
+    <string name="tutorial_category_notification_action_desc_long">A Notification Action posts an Android system
+        notification with a custom title and message. It is useful to alert the user when a specific condition is
+        detected.\n\n Learn here how to use it to surface information while your Scenario runs in the background.</string>
+
+    <string name="tutorial_category_system_action_name">System Action</string>
+    <string name="tutorial_category_system_action_desc_short">Invoke a global Android navigation action</string>
+    <string name="tutorial_category_system_action_desc_long">A System Action invokes a global Android navigation
+        action such as pressing Back, Home or Recent. These actions do not require a
+        coordinate and act at the system level.\n\n Learn here how to use it to navigate the device during automation.</string>
+
+    <string name="tutorial_category_write_text_action_name">Write Text</string>
+    <string name="tutorial_category_write_text_action_desc_short">Paste text into the focused input field</string>
+    <string name="tutorial_category_write_text_action_desc_long">A Write Text Action pastes a configured string into
+        the currently focused input field using the AccessibilityService. It is useful for filling forms or search
+        fields without simulating individual key presses.\n\n Learn here how to use it to enter text during automation.</string>
+
+    <string name="tutorial_category_combine_event_name">Combine Events</string>
+    <string name="tutorial_category_combine_event_desc_short">Use multiple events for complex logic control</string>
+    <string name="tutorial_category_combine_event_desc_long">Klick\'r lets you coordinate multiple Events to build
+        advanced automation flows. By controlling the order in which Events are evaluated and enabling or disabling
+        them at runtime, you can create complex, multi-step Scenarios.\n\n Learn here how to combine Events effectively
+        to take full control of your automation.</string>
+
+    <string name="tutorial_category_events_priority_name">Events priority</string>
+    <string name="tutorial_category_events_priority_desc_short">Control the importance of your events</string>
+    <string name="tutorial_category_events_priority_desc_long">Screen Events are evaluated in priority order during
+        each detection cycle. An Event higher in the list is checked before lower Events, letting you define which
+        Event take precedence when multiple Events could trigger at the same time.\n\n Learn here how to set Event
+        priorities to fine-tune the execution order of your Scenario.</string>
+
+    <string name="tutorial_category_events_state_name">Events state</string>
+    <string name="tutorial_category_events_state_desc_short">Enable or disable Events dynamically.</string>
+    <string name="tutorial_category_events_state_desc_long">Events can be enabled or disabled at runtime using the
+        Change Event State Action. This lets you build multistep automation flows where earlier steps gate later ones, or
+        where certain events are only active under specific conditions.\n\n Learn here how to control Event state to
+        build advanced Scenarios.</string>
+
+</resources>

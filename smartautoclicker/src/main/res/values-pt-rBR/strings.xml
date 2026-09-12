@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2023 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="activity_scenario_title">Cenários</string>
+    <string name="accessibility_service_description">Este aplicativo precisa deste serviço para injetar os cliques que você
+        criou em outros aplicativos assim que as condições forem detectadas.\n\nNenhum dado será coletado deste
+        aplicativo. Sinta-se à vontade para visitar nosso github, o código é open source!</string>
+
+    <!--
+      - Titles for the dialogs displayed from the activity.
+      - Regular Android dialog title characters size.
+      -->
+    <string name="dialog_title_add_scenario">Novo cenário</string>
+
+    <!--
+      - Text for menu items.
+      - Should be short and concise.
+      -->
+    <string name="menu_item_title_export">Exportar</string>
+    <string name="menu_item_title_import">Importar</string>
+    <string name="menu_item_title_select_all">Selecionar tudo</string>
+    <string name="menu_item_title_cancel">Cancelar</string>
+    <string name="menu_item_title_search">Pesquisar</string>
+    <string name="menu_item_title_settings">Configurações</string>
+
+
+    <string name="item_scenario_filter_by_name">Nome</string>
+    <string name="item_scenario_filter_by_recent">Recentes</string>
+    <string name="item_scenario_filter_by_most_used">Usos</string>
+
+    <string name="item_scenario_last_used_never">Nunca usado</string>
+    <plurals name="item_scenario_last_used_minutes">
+        <item quantity="one">há %1$d min.</item>
+        <item quantity="many">há %1$d min.</item>
+        <item quantity="other">há %1$d min.</item>
+    </plurals>
+    <plurals name="item_scenario_last_used_hours">
+        <item quantity="one">há %1$d hora</item>
+        <item quantity="many">há %1$d horas</item>
+        <item quantity="other">há %1$d horas</item>
+    </plurals>
+    <plurals name="item_scenario_last_used_days">
+        <item quantity="one">há %1$d dia</item>
+        <item quantity="many">há %1$d dias</item>
+        <item quantity="other">há %1$d dias</item>
+    </plurals>
+
+    <!--
+      - Text for items in a list or vertical layout.
+      -  * Title should be short and concise.
+      -  * Desc can have more space to describe the title
+      -  * Error have the same space as desc
+      -->
+    <string name="item_desc_dumb_scenario">A experiência regular do auto clicker.\nBasta colocar cliques e deslizes na tela.</string>
+    <string name="item_desc_dumb_scenario_max_duration">Parar após %1$s</string>
+    <string name="item_desc_dumb_scenario_max_duration_infinite">Sem duração máxima</string>
+    <string name="item_desc_dumb_scenario_repeat_count">Repetir %1$d vezes</string>
+    <string name="item_desc_dumb_scenario_repeat_infinite">Repetição infinita</string>
+    <string name="item_desc_smart_scenario">Use a detecção de imagem para criar casos de uso complexos.</string>
+    <string name="item_desc_smart_scenario_pro_mode">É necessário assistir a um anúncio ou comprar o modo profissional</string>
+    <string name="item_title_dumb_scenario">Simples</string>
+    <string name="item_title_smart_scenario">Inteligente</string>
+
+    <!--
+      - Empty list messages.
+      - Views handles any length here, but try to be concise.
+      -->
+    <string name="message_empty_scenario_list">Crie seu primeiro cenário e comece a automatizar tarefas no seu telefone</string>
+
+    <!--
+      - Messages.
+      - Views handles any length here, so no limitations.
+      -->
+    <string name="message_delete_scenario">Isso irá excluir %1$s. Você tem certeza?</string>
+
+
+    <!--
+      - Section titles.
+      - Should be short and concise.
+      -->
+    <!--
+      - Toast messages.
+      - Can be pretty long (2 lines).
+      -->
+    <string name="toast_denied_foreground_permission">Permissão de serviço em primeiro plano negada pelo usuário</string>
+
+    <!--
+      - TextButton content.
+      - Should be short and concise.
+      -->
+    <string name="button_text_create_scenario">Criar um cenário</string>
+
+    <!--
+      - Content description texts.
+      - They are use as accessibility texts for visually impaired people. They will not be displayed but spoken.
+      -->
+    <string name="content_desc_add_scenario">Criar um novo cenário</string>
+
+    <!-- Default name when creating a new scenario -->
+    <string name="default_scenario_name">Nome padrão</string>
+    <string name="message_empty_image_events_scenario_list">Nenhum evento de imagem</string>
+
+
+    <!-- Settings Activity  ======================================================================================== -->
+
+    <string name="activity_settings_title">Configurações</string>
+
+    <string name="field_show_scenario_filters_ui_title">Mostrar filtros de cenários</string>
+    <string name="field_show_scenario_filters_ui_desc">Exibir ou ocultar os filtros na tela da lista de cenários.</string>
+
+    <string name="field_legacy_action_ui_title">IU de ação herdada</string>
+    <string name="field_legacy_action_ui_desc">Altere a exibição da ação por uma lista. Útil para cenários complexos.</string>
+
+    <string name="field_legacy_notification_ui_title">IU de notificação herdada</string>
+    <string name="field_legacy_notification_ui_desc">Use os botões do sistema em vez dos botões de ícones na notificação.</string>
+
+    <string name="field_force_entire_screen_title">Forçar a tela inteira</string>
+    <string name="field_force_entire_screen_desc">Force o seletor de captura de tela a \"Tela inteira\". Pode não funcionar dependendo de seu dispositivo</string>
+
+    <string name="field_input_block_workaround_title">Desbloquear o toque</string>
+    <string name="field_input_block_workaround_desc">Em dispositivos Pixel com Android 15, o uso de um clicker automático pode bloquear a tela de toque.\nPara desbloqueá-la, você precisa tocar a tela com vários dedos ao mesmo tempo. Essa configuração tenta simular isso a cada 10s.</string>
+
+    <string name="field_privacy">Configurações de privacidade</string>
+    <string name="field_remove_ads">Remover anúncios</string>
+    <string name="field_troubleshooting">Solução de problemas</string>
+
+
+    <!-- Legacy condition migration dialog  ======================================================================== -->
+    <string name="dialog_condition_migration_title">Migração</string>
+
+    <string name="message_condition_migration_desc">O formato das imagens TapFlow Lite mudou e seu cenário precisa ser atualizado. Isso pode levar alguns minutos, dependendo do número de condições a serem migradas.</string>
+    <string name="message_condition_migration_count">%1$d Condições da imagem a migrar.</string>
+    <string name="message_condition_migration_success">Todas as condições de imagem foram migradas.</string>
+    <string name="message_condition_migration_error">Algumas condições não puderam ser migradas. Verifique seus cenários.</string>
+
+    <string name="button_condition_migration_start">Migrar</string>
+    <string name="button_condition_migration_running">Migração</string>
+    <string name="button_condition_migration_finished">OK</string>
+
+
+    <string name="dialog_title_backup">Backup</string>
+    <string name="message_backup">Crie ou importe um arquivo zip de cenários</string>
+    <string name="button_import">Importar</string>
+    <string name="button_export">Exportar</string>
+
+</resources>

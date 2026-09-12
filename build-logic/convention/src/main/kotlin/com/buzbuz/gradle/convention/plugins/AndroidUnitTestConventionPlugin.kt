@@ -1,0 +1,55 @@
+/*
+ * Copyright (C) 2026 Kevin Buzeau
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package com.buzbuz.gradle.convention.plugins
+
+import com.buzbuz.gradle.convention.extensions.androidLib
+import com.buzbuz.gradle.convention.extensions.getLibs
+import com.buzbuz.gradle.convention.extensions.testImplementation
+
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+import org.gradle.api.tasks.testing.Test
+import org.gradle.kotlin.dsl.dependencies
+import org.gradle.kotlin.dsl.withType
+
+class AndroidUnitTestConventionPlugin : Plugin<Project> {
+
+    override fun apply(target: Project): Unit = with(target) {
+        val libs = getLibs()
+
+        androidLib {
+            defaultConfig.testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+            testOptions.unitTests.isIncludeAndroidResources = true
+            testOptions.targetSdk = libs.versions.android.compileSdk
+        }
+
+        tasks.withType<Test>().configureEach {
+            failOnNoDiscoveredTests.set(false)
+        }
+
+        dependencies {
+            testImplementation(libs.getLibrary("junit"))
+            testImplementation(libs.getLibrary("androidx.test.core"))
+            testImplementation(libs.getLibrary("androidx.test.ext.junit"))
+            testImplementation(libs.getLibrary("kotlinx.coroutines.test"))
+            testImplementation(libs.getLibrary("mockito.core"))
+            testImplementation(libs.getLibrary("mockito.kotlin"))
+            testImplementation(libs.getLibrary("mockk.android"))
+            testImplementation(libs.getLibrary("robolectric"))
+        }
+    }
+}

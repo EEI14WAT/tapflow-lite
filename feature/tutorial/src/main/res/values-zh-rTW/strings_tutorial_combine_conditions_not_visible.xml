@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Two still targets press when both are visible tutorial -->
+    <string name="item_title_tutorial_combine_conditions_not_visible_target">條件可見性</string>
+    <string name="item_desc_tutorial_combine_conditions_not_visible_target">使用「可見性」選項，在目標不在螢幕上時觸發點擊</string>
+    <string name="message_game_tutorial_combine_conditions_not_visible_target">僅在紅色按鈕不可見時點擊藍色按鈕</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_1">新規則！藍色目標已停止移動，但只有在紅色目標不可見時才能點擊它。
+        \n\n啟動遊戲，看看你能否自己獲勝。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_2">再次看來，手動獲勝似乎不可能，所以讓我們使用 Klick\'r。
+        \n\n開啟場景設定選單，建立一個新的螢幕事件，並開始為遊戲目標新增條件。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_3">首先，我們需要一個條件來偵測紅色目標何時不在螢幕上。
+        \n\n建立一個新的圖像條件並擷取紅色目標。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_4">我們只想在紅色目標不可見時點擊，因此將「是否可見」選項設定為「否」。這樣，只有當紅色目標從螢幕上消失時，條件才會滿足。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_5">其他設定對我們的需求來說沒問題——繼續儲存這個條件。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_6">僅此條件就足以贏得遊戲，但在遊戲未執行時它也會觸發，這不太理想。
+        \n\n為了避免這種情況，讓我們將其與第二個條件搭配使用，該條件偵測藍色目標是否可見。
+        建立一個新的圖像條件並擷取藍色目標。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_7">對於此條件，我們要確認藍色目標可見，因此預設設定完全正確。儲存條件並返回事件以繼續。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_8">有多個條件時，條件運算子很重要。我們希望事件在藍色目標可見且紅色目標不可見時觸發，因此需要 AND 運算子；它已經是預設值了，所以一切正常。
+        \n\n現在建立一個新的點擊動作以繼續。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_9">我們要點擊藍色目標，因此選擇位置類型「依條件」，並選擇藍色目標的圖像條件。
+        \n\n完成後，儲存點擊動作，然後儲存事件和場景，並返回遊戲。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_10">啟動你的場景並開始遊戲以獲勝！
+        \n\n如果無效，請檢查條件是否正確擷取，以及點擊時長是否設定為 1ms。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_11">恭喜！你已學會使用「不可見」條件。請務必將其與至少一個其他條件結合使用，以避免在整個場景執行過程中意外觸發動作。</string>
+
+</resources>

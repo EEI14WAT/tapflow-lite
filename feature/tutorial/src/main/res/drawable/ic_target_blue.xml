@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960">
+
+  <!-- Outer blue ring -->
+  <path
+      android:fillColor="@color/tutorial_game_target_blue"
+      android:pathData="M20,480 a460,460 0 1,0 920,0 a460,460 0 1,0 -920,0"/>
+
+  <!-- White middle ring -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M170,480 a310,310 0 1,0 620,0 a310,310 0 1,0 -620,0"/>
+
+  <!-- Blue inner ring -->
+  <path
+      android:fillColor="@color/tutorial_game_target_blue"
+      android:pathData="M310,480 a170,170 0 1,0 340,0 a170,170 0 1,0 -340,0"/>
+
+  <!-- White center dot -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M410,480 a70,70 0 1,0 140,0 a70,70 0 1,0 -140,0"/>
+
+</vector>

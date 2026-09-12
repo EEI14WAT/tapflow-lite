@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title_permission_accessibility">無障礙服務</string>
+    <string name="dialog_title_permission_notification">通知</string>
+    <string name="dialog_title_permission_mandatory_denied">權限已拒絕</string>
+    <string name="dialog_title_permission_overlay">懸浮視窗</string>
+
+    <string name="message_permission_desc_overlay">TapFlow Lite 僅使用懸浮視窗權限，在您選擇自動化的應用程式上顯示自己的控制與編輯介面。您可隨時在 Android 設定中撤銷該權限；它不會用來顯示第三方廣告。</string>
+    <string name="message_permission_desc_accessibility">TapFlow Lite 使用 Android 無障礙服務來執行您設定的點擊、滑動和自動化控制。為實現這些功能，它可能存取視窗內容並派發手勢。無障礙內容僅在本機處理，不會傳輸給 EEI14WAT。\n\n您可以取消。沒有該權限時無法執行自動化；在支援的情況下仍可編輯情境。\n\n選擇「同意並繼續」後將開啟 Android 無障礙設定。</string>
+    <string name="message_permission_desc_notification">選用：於應用程式執行時顯示通知，便於返回情境選擇畫面。</string>
+    <string name="message_permission_mandatory_denied">此權限為 Klick\'r 所必要。未授予則無法正常運作。</string>
+
+    <string name="button_request_permission">同意並繼續</string>
+    <string name="button_deny">取消</string>
+</resources>

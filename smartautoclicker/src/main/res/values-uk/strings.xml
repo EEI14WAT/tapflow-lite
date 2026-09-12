@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2023 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="activity_scenario_title">Сценарії</string>
+    <string name="accessibility_service_description">Ця програма потребує цю службу для впровадження натискань, які ви
+        створили, в інші програми після виявлення умов.\n\nЗ цієї програми не буде зібрано жодних даних. Не соромтеся відвідати наш github, код має відкрите джерело!</string>
+
+    <!--
+      - Titles for the dialogs displayed from the activity.
+      - Regular Android dialog title characters size.
+      -->
+    <string name="dialog_title_add_scenario">Новий сценарій</string>
+
+    <!--
+      - Text for menu items.
+      - Should be short and concise.
+      -->
+    <string name="menu_item_title_export">Експорт</string>
+    <string name="menu_item_title_import">Імпорт</string>
+    <string name="menu_item_title_select_all">Вибрати все</string>
+    <string name="menu_item_title_cancel">Скасувати</string>
+    <string name="menu_item_title_search">Пошук</string>
+    <string name="menu_item_title_settings">Налаштування</string>
+
+    <string name="item_scenario_filter_by_name">Назва</string>
+    <string name="item_scenario_filter_by_recent">Останні</string>
+    <string name="item_scenario_filter_by_most_used">Використання</string>
+
+    <string name="item_scenario_last_used_never">Ніколи не використовувався</string>
+    <plurals name="item_scenario_last_used_minutes">
+        <item quantity="one">%1$d хв. тому</item>
+        <item quantity="few">%1$d хв. тому</item>
+        <item quantity="many">%1$d хв. тому</item>
+        <item quantity="other">%1$d хв. тому</item>
+    </plurals>
+    <plurals name="item_scenario_last_used_hours">
+        <item quantity="one">%1$d година тому</item>
+        <item quantity="few">%1$d години тому</item>
+        <item quantity="many">%1$d годин тому</item>
+        <item quantity="other">%1$d години тому</item>
+    </plurals>
+    <plurals name="item_scenario_last_used_days">
+        <item quantity="one">%1$d день тому</item>
+        <item quantity="few">%1$d дні тому</item>
+        <item quantity="many">%1$d днів тому</item>
+        <item quantity="other">%1$d дні тому</item>
+    </plurals>
+
+    <!--
+      - Text for items in a list or vertical layout.
+      -  * Title should be short and concise.
+      -  * Desc can have more space to describe the title
+      -  * Error have the same space as desc
+      -->
+    <string name="item_desc_dumb_scenario">Звичайний досвід автоклікера.\nПросто розміщуйте натискання та свайпи на екрані.</string>
+    <string name="item_desc_dumb_scenario_max_duration">Зупинити через %1$s</string>
+    <string name="item_desc_dumb_scenario_max_duration_infinite">Без максимальної тривалості</string>
+    <string name="item_desc_dumb_scenario_repeat_count">Повторити %1$d разів</string>
+    <string name="item_desc_dumb_scenario_repeat_infinite">Нескінченне повторення</string>
+    <string name="item_desc_smart_scenario">Використовуйте виявлення зображень для створення складних випадків використання.</string>
+    <string name="item_desc_smart_scenario_pro_mode">Потрібно переглянути рекламу або купити про-режим</string>
+    <string name="item_title_dumb_scenario">Простий</string>
+    <string name="item_title_smart_scenario">Розумний</string>
+
+    <!--
+      - Empty list messages.
+      - Views handles any length here, but try to be concise.
+      -->
+    <string name="message_empty_scenario_list">Створіть свій перший сценарій і почніть автоматизувати завдання на своєму телефоні</string>
+
+    <!--
+      - Messages.
+      - Views handles any length here, so no limitations.
+      -->
+    <string name="message_delete_scenario">Це видалить %1$s. Ви впевнені?</string>
+
+    <!--
+      - Section titles.
+      - Should be short and concise.
+      -->
+    <!--
+      - Toast messages.
+      - Can be pretty long (2 lines).
+      -->
+    <string name="toast_denied_foreground_permission">Користувач відхилив дозвіл на службу переднього плану</string>
+
+    <!--
+      - TextButton content.
+      - Should be short and concise.
+      -->
+    <string name="button_text_create_scenario">Створити сценарій</string>
+
+    <!--
+      - Content description texts.
+      - They are use as accessibility texts for visually impaired people. They will not be displayed but spoken.
+      -->
+    <string name="content_desc_add_scenario">Створити новий сценарій</string>
+
+
+    <!-- Default name when creating a new scenario -->
+    <string name="default_scenario_name">Назва за замовчуванням</string>
+    <string name="message_empty_image_events_scenario_list">Немає подій зображень</string>
+
+
+    <!-- Settings Activity  ======================================================================================== -->
+
+    <string name="activity_settings_title">Налаштування</string>
+
+    <string name="field_show_scenario_filters_ui_title">Показувати фільтри сценаріїв</string>
+    <string name="field_show_scenario_filters_ui_desc">Відображати або приховувати фільтри на екрані списку сценаріїв.</string>
+
+    <string name="field_legacy_action_ui_title">Застарілий інтерфейс дій</string>
+    <string name="field_legacy_action_ui_desc">Змінити відображення дії списком. Корисно для складних сценаріїв.</string>
+
+    <string name="field_legacy_notification_ui_title">Застарілий інтерфейс сповіщень</string>
+    <string name="field_legacy_notification_ui_desc">Використовувати системні кнопки замість іконних кнопок у сповіщенні.</string>
+
+    <string name="field_force_entire_screen_title">Примусово весь екран</string>
+    <string name="field_force_entire_screen_desc">Примусити селектор захоплення екрана до \"Весь екран\". Може не працювати в залежності від вашого пристрою</string>
+
+    <string name="field_input_block_workaround_title">Розблокувати сенсорний екран</string>
+    <string name="field_input_block_workaround_desc">На пристроях Pixel з Android 15 використання автоклікера може заблокувати сенсорний екран.\nЩоб розблокувати його, потрібно доторкнутися до екрана кількома пальцями одночасно. Це налаштування намагається імітувати це кожні 10 секунд.</string>
+
+    <string name="field_privacy">Налаштування приватності</string>
+    <string name="field_remove_ads">Видалити рекламу</string>
+    <string name="field_troubleshooting">Усунення несправностей</string>
+
+
+    <!-- Legacy condition migration dialog  ======================================================================== -->
+    <string name="dialog_condition_migration_title">Міграція</string>
+
+    <string name="message_condition_migration_desc">Формат зображень TapFlow Lite змінився, і ваш сценарій потрібно оновити. Це може зайняти кілька хвилин, залежно від кількості умов, які потрібно перенести.</string>
+    <string name="message_condition_migration_count">%1$d Умови зображення для міграції.</string>
+    <string name="message_condition_migration_success">Всі умови зображення перенесені.</string>
+    <string name="message_condition_migration_error">Деякі умови не вдалося перенести. Перевірте свої сценарії.</string>
+
+    <string name="button_condition_migration_start">Мігрувати</string>
+    <string name="button_condition_migration_running">Міграція</string>
+    <string name="button_condition_migration_finished">Добре</string>
+
+
+    <string name="dialog_title_backup">Резервна копія</string>
+    <string name="message_backup">Створіть або імпортуйте zip-архів сценаріїв</string>
+    <string name="button_import">Імпорт</string>
+    <string name="button_export">Експорт</string>
+
+</resources>

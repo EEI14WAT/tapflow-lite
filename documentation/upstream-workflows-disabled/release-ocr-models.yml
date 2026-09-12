@@ -1,0 +1,79 @@
+# Copyright (C) 2026 Kevin Buzeau
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+name: Release OCR Models
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release tag to attach assets to (e.g. recognition-models-1.0.0)'
+        required: true
+        default: 'recognition-models-1.0.0'
+
+jobs:
+  build:
+    name: Build OCR models
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve tag name
+        id: tag
+        run: |
+          if [[ "${{ github.ref_type }}" == "tag" ]]; then
+            tag="${{ github.ref_name }}"
+          else
+            tag="${{ inputs.tag_name }}"
+          fi
+          version="${tag#recognition-models-}"
+          echo "name=$tag" >> $GITHUB_OUTPUT
+          echo "version=$version" >> $GITHUB_OUTPUT
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install paddle2onnx (no-deps, bypasses onnx<=1.17 constraint)
+        run: pip install --no-deps paddle2onnx==2.1.0
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/ocr-models/requirements.txt
+
+      - name: Build language pack models
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/ocr-models/build_models.py --output output --mode language_pack
+
+      - name: Collect release artifacts
+        run: |
+          mkdir -p dist
+          find output/rec -maxdepth 1 -name "*.zip" -exec cp {} dist/ \;
+
+      - name: Publish release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          tag_name: ${{ steps.tag.outputs.name }}
+          name: "Text Recognition Models ${{ steps.tag.outputs.version }}"
+          body: |
+            Additional text recognition models used by Klick'r 4.0.0 and above.
+            Github/FDroid versions of the app will download the attached packages.
+          make_latest: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

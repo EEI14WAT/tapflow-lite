@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_slideshow_button_next">التالي</string>
+    <string name="tutorial_slideshow_button_close">إغلاق</string>
+
+
+    <!-- Image Condition Capture slideshow -->
+    <string name="tutorial_slideshow_image_condition_capture_title">التقاط الصورة</string>
+    <string name="tutorial_slideshow_image_condition_capture_desc">نصائح حول الالتقاط الأمثل للصور</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_1_text">عند الالتقاط لشرط صورة،
+        تحتاج إلى تجنب الأجزاء المتغيرة كالخلفية. يجب أن يبدو الالتقاط قريبًا قدر الإمكان مما
+        سيُعرض أثناء الكشف.\n\nحاول دائمًا الالتقاط بأقرب ما يمكن من الهدف الذي تريد مطابقته
+        مع الاحتفاظ بتفاصيل كافية للكشف.\n\nملاحظة: يمكنك القرص للتكبير على الالتقاط والتحكم بشكل أدق
+        في المنطقة.</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_2_text">كن حذرًا مع الصور التي تحتوي على مناطق شفافة.
+        إذا تغيرت الخلفية خلف السطح الشفاف، سيكتشف خوارزمية الكشف التغييرات
+        في اللون أو الشكل ولن تعتبرها مكتشفة. \n\nحاول تجنب الأجزاء الشفافة في شرطك
+        مع الاحتفاظ بتفاصيل ثابتة كافية للكشف. يمكنك أيضًا تغيير تسامح الكشف من أجل
+        التعويض عن التغييرات المحتملة في المناطق الشفافة الصغيرة. \n\nإذا كان هناك نص داخل الهدف الذي
+        تريد مطابقته، قد تفكر في استخدام شرط نصي، لأنها أقل تأثرًا بتغيير
+        ضوضاء الخلفية.</string>
+
+    <string name="tutorial_slideshow_image_condition_capture_step_3_text">يكون الكشف عن الصور أكثر دقة عند تطبيقه
+        على أشياء تحتوي على حواف كثيرة. كما أنه أسرع إذا كانت الصورة أصغر، لكنه سيفقد
+        الثقة إذا كانت الصورة صغيرة جدًا وتفتقر إلى التفاصيل. حاول أخذ ذلك في الاعتبار عند إنشاء شروط صور جديدة.\n\nإذا كنت تحاول اكتشاف أشياء صغيرة جدًا، قد ترغب في استخدام شرط لون واحد أو عدة شروط
+        بدلاً من ذلك، فهي أكثر موثوقية في مثل هذه الحالات وأسرع بكثير.</string>
+
+
+    <!-- Image Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_image_condition_area_title">منطقة الكشف</string>
+    <string name="tutorial_slideshow_image_condition_area_desc">تعرف على التأثير على أداء السيناريو الخاص بك</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_1_text">عند إنشاء شرط صورة، يمكنك تحديد
+        مكان حدوث الكشف على الشاشة عن طريق تغيير نوع الكشف.\n\nبشكل افتراضي، سيكتشف شرط الصورة الجديد دائمًا في نفس موقع الالتقاط. هذه هي الطريقة الأسرع لاكتشاف صورة.
+        \n\nإذا كانت الصورة التي تحتاج إلى اكتشافها يمكن عرضها في عدة أماكن، فستحتاج إلى استخدام أحد الخيارات الأخرى.</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_2_text">عند اختيار \"في منطقة\"، سيتمكن حقل تحديد المنطقة؛
+        مما يتيح لك تحديد منطقة الكشف.\n\nبشكل افتراضي، ستكون المنطقة هي نفس منطقة الالتقاط
+        ولكن يمكنك تحريكها وتوسيعها. كلما كانت المنطقة أكبر، كان الكشف أبطأ، لذا حاول فقط
+        تضمين الأجزاء المثيرة للاهتمام من الشاشة.</string>
+
+    <string name="tutorial_slideshow_image_condition_area_step_3_text">الخيار الأخير، \"الشاشة بأكملها\" سيغير
+        منطقة الكشف إلى العرض بأكمله. \n\nهذا هو نوع الكشف الأبطأ على الإطلاق ويجب استخدامه فقط
+        كملاذ أخير.</string>
+
+
+    <!-- Text Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_text_condition_area_title">منطقة كشف النص</string>
+    <string name="tutorial_slideshow_text_condition_area_desc">نصائح حول الكشف الأمثل عن النص</string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_1_text">عند اكتشاف نص على الشاشة، تحتاج إلى
+        تحديد منطقة كشف سيتم فحصها للنص أثناء الكشف. \n\nعند اكتشاف نص ثابت،
+        تريد أن تكون المنطقة قريبة من النص مع الاحتفاظ بهامش صغير حوله. لا ينبغي أن يلمس النص حدود
+        المنطقة وإلا ستنخفض ثقة الكشف بشكل ملحوظ. \n\nملاحظة: للنص الصغير جدًا،
+        قد تحتاج إلى زيادة جودة الكشف في السيناريو الخاص بك، لأن الدقة الأعلى ستساعد على اكتشاف
+        تلك النصوص. </string>
+
+    <string name="tutorial_slideshow_text_condition_area_step_2_text">عند اكتشاف نص يمكن أن يظهر في مواضع متعددة،
+        استخدم أصغر منطقة كشف ممكنة. كلما كانت منطقة الكشف أكبر، كان الكشف أبطأ.
+        \n\nإذا كانت المواضع المختلفة معروفة وغير عشوائية، قد يكون من الأسرع استخدام شروط نصية منفصلة
+        لكل موضع بدلاً من واحدة بمنطقة كبيرة جدًا. يمكنك اختبار توقيتاتك باستخدام تقرير التصحيح
+        إذا كنت تريد تحسينًا عميقًا لتوقيتات السيناريو الخاص بك.</string>
+
+
+    <!-- Number Condition Detection Area slideshow -->
+    <string name="tutorial_slideshow_number_condition_area_title">منطقة كشف الأرقام</string>
+    <string name="tutorial_slideshow_number_condition_area_desc">نصائح حول الكشف الأمثل عن الأرقام</string>
+
+    <string name="tutorial_slideshow_number_condition_area_step_1_text">النصائح هنا هي نفسها المتعلقة بشرط النص:
+        عند اكتشاف رقم على الشاشة، تحتاج إلى تحديد منطقة كشف سيتم فحصها بحثًا عن الأرقام أثناء الكشف.
+        \n\nعند اكتشاف رقم ثابت، تريد أن تكون المنطقة قريبة من الرقم مع الاحتفاظ بهامش صغير حوله. لا ينبغي أن يلمس الرقم
+        حدود المنطقة وإلا ستنخفض ثقة الكشف بشكل ملحوظ. \n\nملاحظة: للأرقام الصغيرة جدًا، قد تحتاج إلى
+        زيادة جودة الكشف في السيناريو الخاص بك، لأن الدقة الأعلى ستساعد على اكتشاف تلك الأرقام. </string>
+
+    <!-- Screen Condition type selection -->
+    <string name="tutorial_slideshow_screen_condition_type_title">أنواع شروط الشاشة</string>
+    <string name="tutorial_slideshow_screen_condition_type_desc">تعرف على أيها تستخدم حسب حالة الاستخدام الخاصة بك</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_1_text">شرط اللون هو أسرع طريقة للكشف مع Klick\'r.
+        يتحقق ببساطة من لون بكسل على شاشتك. \n\nهذا الشرط مناسب عند محاولة اكتشاف عناصر واجهة مستخدم بسيطة
+        مثل لون زر أو اكتمال شريط التقدم، أو التغييرات الصغيرة.</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_2_text">شرط الصورة أبطأ من شرط اللون،
+        لكنه يتيح مرونة أكبر لكشف محتوى الشاشة. وقت التنفيذ منخفض جدًا عند الكشف في منطقة صغيرة،
+        لكنه قد يزيد كثيرًا عندما تكون المنطقة أكبر. \n\nهذا الشرط مناسب عند محاولة اكتشاف أشكال وألوان
+        واضحة، مثل محتوى بطاقة أو أيقونة.</string>
+
+    <string name="tutorial_slideshow_screen_condition_type_step_3_text">تستخدم شروط النص وشروط الأرقام
+        نفس عملية الكشف. \n\nكشف النص هو أبطأ أنواع الكشف، لكن على عكس كشف الصور، فهو غير حساس للشفافية
+        ويتيح دقة أكبر في مشاهد الكشف المعقدة. يزيد وقت التنفيذ مع حجم منطقة الكشف ويعتمد أيضًا على
+        الأبجدية المحددة. \n\nهذا الشرط مناسب عند محاولة اكتشاف نص أو رقم بغض النظر عن طريقة عرضه.</string>
+
+    <!-- Detection confidence slideshow -->
+    <string name="tutorial_slideshow_screen_condition_threshold_title">ثقة الكشف</string>
+    <string name="tutorial_slideshow_screen_condition_threshold_desc">نصائح حول ثقة الكشف</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_1_text">يقوم Klick\'r بالكثير من المعالجة المسبقة
+        قبل البحث عن شرط الشاشة الخاص بك لتسريع العملية وتقليل استهلاك البطارية. هذا يخلق حالات عدم يقين
+        وتقريبات في النتائج تُعبَّر عنها كدرجة الثقة. \n\nلضمان عمل شروطك كما هو متوقع، يمكنك اختبارها
+        بشكل فردي بالضغط على زر السهم للتشغيل أثناء التركيز على شرط معين في قائمة شروط الشاشة.</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_2_text">عند اختبار شرط شاشة، سيتم عرض
+        درجة ثقة الكشف، ويمكنك تعديل الفرق المسموح به مباشرةً هنا، مما يتيح لك التخلص من النتائج
+        الإيجابية الخاطئة أو أن تكون أكثر مرونة مع النتائج المسموح بها.</string>
+
+    <string name="tutorial_slideshow_screen_condition_threshold_step_3_text">تتأثر نتائج الكشف أيضًا بدقة الكشف.
+        المتاح في مربع حوار السيناريو، يتيح لك تغيير مقدار تقليل دقة محتوى شاشتك قبل معالجته بواسطة Klick\'r.
+        \n\nيمكن أن يؤثر هذا على درجة الثقة لجميع شروط الشاشة لديك، إذ تعني الدقة الأعلى كشفًا أفضل،
+        لكنها تعني أيضًا وقت تنفيذ أبطأ.</string>
+
+
+
+    <!-- Broadcast received slideshow -->
+    <string name="tutorial_slideshow_broadcast_received_title">عند استقبال Broadcast</string>
+    <string name="tutorial_slideshow_broadcast_received_desc">استمع إلى broadcasts التطبيقات الأخرى</string>
+
+    <string name="tutorial_slideshow_broadcast_received_step_1_text">على Android، عندما تريد التطبيقات مشاركة حالتها
+        مع تطبيقات أخرى، تستخدم Broadcast Intent. \n\nمع شرط \"عند استقبال Broadcast\"، يمكنك مراقبة هذه الحالات
+        والتفاعل معها بإجراء في Klick\'r. يتم توفير بعض القيم الافتراضية لحالة نظام Android، لكن ضع في اعتبارك أن شروط
+        broadcast موجهة أكثر للمطورين، إذ يتطلب إتقانها معرفة بتطوير Android.</string>
+
+    <!-- Counter Reached slideshow -->
+    <string name="tutorial_slideshow_counter_reached_title">عند الوصول إلى عداد</string>
+    <string name="tutorial_slideshow_counter_reached_desc">تفاعل مع قيم عدادات السيناريو الخاص بك</string>
+
+    <string name="tutorial_slideshow_counter_reached_step_1_text">العدادات هي متغيرات معلنة في السيناريو الخاص بك
+        يمكن تعديلها أو عرضها أو التحقق منها أثناء تنفيذه. \n\nمع شرط \"عند الوصول إلى عداد\"، يمكنك التحقق من
+        القيمة الحالية لعداد لتشغيل الإجراءات. جميع عوامل المقارنة الرياضية متاحة لتخصيص التحقق. \n\nيمكن استخدام
+        العدادات بطرق مختلفة، واستخدام شرط أو إجراء واحد مرتبط بعداد غالبًا لا يكفي لاستخدامها بشكل صحيح. تتوفر
+        دروس تعليمية تفاعلية تغطي ميزة العداد في قسمها المخصص.</string>
+
+    <!-- Pause Action slideshow -->
+    <string name="tutorial_slideshow_pause_action_title">إجراء الانتظار</string>
+    <string name="tutorial_slideshow_pause_action_desc">تعلّم كيف يؤثر الانتظار على تنفيذ الإجراءات والاكتشاف</string>
+    <string name="tutorial_slideshow_pause_action_step_1_text">يوقف إجراء الانتظار السيناريو بأكمله للمدة
+        المحددة: خلال هذا الوقت، لا يُنفَّذ أي إجراء ولا يحدث أي اكتشاف للشاشة.\n\nمن أكثر حالات الاستخدام
+        شيوعًا إضافة انتظار في نهاية قائمة الإجراءات. عندما تنقر على مكان ما، يحتاج التطبيق إلى وقت
+        لمعالجة النقرة وعرض النتيجة — وعادةً ما تريد الانتظار حتى هذه اللحظة قبل أن يعود Klick\'r
+        لتحليل الشاشة.\n\nالانتظار بين إجراءين أيضًا صالح، لكن الإضافة في نهاية القائمة غالبًا ما
+        تكون الأهم.</string>
+
+    <!-- Swipe Action slideshow -->
+    <string name="tutorial_slideshow_swipe_action_title">إجراء السحب</string>
+    <string name="tutorial_slideshow_swipe_action_desc">تعلّم كيف يُنفَّذ إيماءة السحب</string>
+    <string name="tutorial_slideshow_swipe_action_step_1_text">يُنفِّذ إجراء السحب إيماءة سحب في خط مستقيم
+        من موضع البداية إلى موضع النهاية. كلتا الإحداثيتين ثابتتان ومحددتان في إعداد الإجراء.\n\nتتحكم
+        المدة في الوقت الذي يستغرقه الإيماءة من البداية إلى النهاية: مدة أقصر تُنتج سحبًا أسرع، بينما
+        مدة أطول تُنتج سحبًا أبطأ وأكثر تحكمًا.</string>
+
+    <!-- Click Action Offset slideshow -->
+    <string name="tutorial_slideshow_click_action_offset_title">إزاحة النقر</string>
+    <string name="tutorial_slideshow_click_action_offset_desc">تعلّم كيف تضبط موضع النقر على شرط مكتشف</string>
+    <string name="tutorial_slideshow_click_action_offset_step_1_text">عند النقر على شرط مكتشف، يُطبَّق النقر
+        افتراضيًا على مركز المنطقة المكتشفة.\n\nتتيح لك إزاحة النقر تحريك هذا الموضع بعدد ثابت من البكسلات
+        على المحورين X وY بالنسبة لمركز الشرط. هذا مفيد عندما يكون العنصر الذي تريد لمسه قريبًا من —
+        لكن ليس بالضبط في — مركز المنطقة المكتشفة.</string>
+
+    <!-- Click Action Target slideshow -->
+    <string name="tutorial_slideshow_click_action_target_title">هدف النقر</string>
+    <string name="tutorial_slideshow_click_action_target_desc">تعلّم كيف تُعدّ مكان تطبيق النقر</string>
+    <string name="tutorial_slideshow_click_action_target_step_1_text">يمكن لإجراء النقر أن يستهدف نوعين من
+        المواضع: موضع ثابت دائمًا متطابق، أو موضع شرط مكتشف.\n\nاختر طريقة التوجيه من منتقي الهدف في
+        مربع حوار إعداد الإجراء.</string>
+    <string name="tutorial_slideshow_click_action_target_step_2_text">مع الموضع الثابت، يحدث النقر دائمًا
+        عند نفس الإحداثيات الدقيقة بغض النظر عما يُعرض على الشاشة.\n\nتذكّر أن هذه الإحداثيات حساسة
+        للدوران: إذا دار الجهاز، قد ينتهي النقر في موضع غير متوقع أو حتى خارج حدود الشاشة.</string>
+    <string name="tutorial_slideshow_click_action_target_step_3_text">مع موضع الشرط، يُطبَّق النقر على مركز
+        شرط الصورة المكتشف، تتبعًا للهدف أينما ظهر على الشاشة.\n\nمع عامل التشغيل AND، يجب استيفاء جميع
+        الشروط، لذا فإن كل شرط صورة له موضع متاح. يمكنك اختيار أي منها بحرية وتحسينه بإزاحة.</string>
+    <string name="tutorial_slideshow_click_action_target_step_4_text">مع عامل التشغيل OR، يُقيَّم فقط الشرط
+        الأول المستوفى ويُتجاهل الباقي. لذلك لا يمكن لـ Klick\'r معرفة أي شرط سيُكتشف مسبقًا.\n\nبناءً
+        على ذلك، مع عامل التشغيل OR لا يمكنك اختيار شرط محدد كهدف: سيُطبَّق النقر دائمًا على أول شرط
+        مكتشف في وقت التشغيل، أيًّا كان.</string>
+
+    <!-- Combine Conditions Ordering slideshow -->
+    <string name="tutorial_slideshow_combine_conditions_ordering_title">ترتيب الشروط والسرعة</string>
+    <string name="tutorial_slideshow_combine_conditions_ordering_desc">كيف يؤثر ترتيب شروطك على سرعة فحص الحدث</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_1_text">يؤثر ترتيب الشروط في القائمة على سرعة فحص
+        الحدث.\n\nمع عامل التشغيل AND، يتوقف الفحص بمجرد العثور على أول شرط غير مستوفٍ. وضع الشروط الأقل احتمالاً أولاً
+        يتيح للتطبيق تخطي الباقي في وقت أبكر، مما يجعل حدثك أسرع.</string>
+
+    <string name="tutorial_slideshow_combine_conditions_ordering_step_2_text">مع عامل التشغيل OR، يتوقف الفحص بمجرد
+        العثور على أول شرط مستوفٍ. وضع الشروط الأكثر احتمالاً أولاً يتيح للتطبيق الانتهاء في وقت أبكر دون فحص
+        الباقي.\n\nفي كلتا الحالتين، وضع أهم شرط في أعلى القائمة طريقة بسيطة للحفاظ على سرعة السيناريو.</string>
+
+
+    <!-- Events State Basics slideshow -->
+    <string name="tutorial_slideshow_events_state_basics_title">حالة الأحداث</string>
+    <string name="tutorial_slideshow_events_state_basics_desc">تعلّم كيفية تفعيل الأحداث وتعطيلها
+        أثناء تشغيل السيناريو</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_1_text">كل حدث في السيناريو (أحداث الشاشة وأحداث
+        المُشغِّل) له حالة: إما <b>مُفعَّل</b> أو <b>مُعطَّل</b>.\n\nعند التفعيل، يعمل الحدث بشكل طبيعي ويفحص شروطه
+        كالمعتاد. عند التعطيل، يُتخطَّى كليًا كأنه غير موجود.\n\nبشكل افتراضي، يبدأ كل حدث مُفعَّلًا. يمكنك تغيير ذلك
+        من خلال حقل <b>الحالة الابتدائية</b> في إعدادات الحدث.</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_2_text">أثناء تشغيل السيناريو، يمكنك تغيير حالة أي حدث
+        باستخدام إجراء <b>تغيير حالة الحدث</b>. يتيح هذا الإجراء تفعيل أو تعطيل أو تبديل حالة حدث واحد أو أكثر.\n\nهذا
+        يفتح إمكانيات كثيرة: أحداث تُشغِّل بعضها البعض واحداً تلو الآخر، أحداث تُعطِّل نفسها بعد تشغيلها مرة واحدة، أو
+        مجموعات أحداث لا يكون فيها إلا حدث واحد نشطاً في الوقت نفسه.</string>
+
+    <string name="tutorial_slideshow_events_state_basics_step_3_text">عندما تكون <b>جميع الأحداث في السيناريو
+        مُعطَّلة</b>، يتوقف السيناريو من تلقاء نفسه. لا يوجد ما يجب فعله، فيتوقف Klick\'r تلقائيًا.\n\nهذه طريقة بسيطة
+        لإنهاء سيناريو: اجعل آخر حدث يُعطِّل جميع الأحداث الأخرى بعد إنجاز مهمته، وكل شيء سيتوقف تلقائيًا.</string>
+
+
+    <!-- Actions List slideshow -->
+    <string name="tutorial_slideshow_actions_list_title">قائمة الإجراءات</string>
+    <string name="tutorial_slideshow_actions_list_desc">تعلّم كيف يتم تنفيذ قائمة الإجراءات</string>
+    <string name="tutorial_slideshow_actions_list_step_1_text">تُنفَّذ الإجراءات بالترتيب، واحدًا تلو الآخر. يمكنك
+        تغيير ترتيب إجراء باستخدام زرَّي &lt;&lt; و &gt;&gt;، أو بالنقر مباشرة على رقم فهرسه.\n\nحاوِل أن تبقي
+        قوائم الإجراءات قصيرة. يُنفِّذ المُنقِّر التلقائي العادي إجراءً واحدًا لكل حدث — هذا هو النموذج الذي ينبغي
+        اتباعه. إذا وجدت نفسك تُضيف إجراءات كثيرة إلى حدث واحد، فهذا عادةً مؤشر على أن العمل ينبغي توزيعه على
+        أحداث متعددة، يستجيب كل منها لما يُعرض فعلاً على الشاشة. هذه هي فلسفة الرؤية والتصرف في Klick\'r: اكتشف
+        أولاً، ثم تصرف.</string>
+
+    <!-- Write Text Action slideshow -->
+    <string name="tutorial_slideshow_write_text_action_title">إجراء كتابة النص</string>
+    <string name="tutorial_slideshow_write_text_action_desc">تعلّم كيفية إدخال نص في حقل إدخال نشط</string>
+    <string name="tutorial_slideshow_write_text_action_step_1_text">قبل تشغيل إجراء كتابة النص، يجب أن يكون حقل
+        الإدخال الهدف في حالة تركيز بالفعل، تمامًا كما لو نقرت عليه لإظهار لوحة المفاتيح.\n\nلتحقيق ذلك، أضف إجراء
+        نقر على ذلك الحقل قبل إجراء كتابة النص. إذا ظهر تأثير انتقالي بعد النقر، فإن إجراء انتظار بينهما يمكن أن
+        يساعد في التأكد من جاهزية الحقل.\n\nيحتوي الإجراء أيضًا على خيار التحقق: عند تفعيله، سيضغط تلقائيًا على
+        Enter بعد تعيين النص، مما يؤكد أو يُرسل القيمة المُدخَلة.</string>
+    <string name="tutorial_slideshow_write_text_action_step_2_text">يمكنك إدراج قيمة عداد في النص المراد كتابته.
+        اضغط على زر إضافة عداد في تكوين الإجراء لاختيار عداد: سيُدرج العنصر النائب <b>{اسمالعداد}</b> في موضع
+        المؤشر الحالي في حقل النص.\n\nعند التشغيل، يُستبدل كل عنصر نائب <b>{اسمالعداد}</b> بالقيمة الحالية للعداد
+        قبل لصق النص في الحقل. على سبيل المثال، إذا كان عداد اسمه <i>تفاح</i> يساوي 18، فإن النص
+        \"عندي {تفاح} تفاحات\" سيصبح \"عندي 18 تفاحة\".</string>
+
+    <!-- System Action slideshow -->
+    <string name="tutorial_slideshow_system_action_title">إجراء النظام</string>
+    <string name="tutorial_slideshow_system_action_desc">تعلّم كيفية تشغيل إجراءات تنقل Android</string>
+    <string name="tutorial_slideshow_system_action_step_1_text">يُنفِّذ إجراء النظام أحد إجراءات التنقل المدمجة في
+        Android: رجوع أو الرئيسية أو التطبيقات الأخيرة.\n\nهذه هي نفس إجراءات أزرار التنقل في أسفل شاشتك. لا تتطلب
+        إحداثيات وتعمل على مستوى النظام، بغض النظر عن التطبيق المفتوح حاليًا.</string>
+
+    <!-- Change Counter Action slideshow -->
+    <string name="tutorial_slideshow_change_counter_action_title">إجراء تعديل العداد</string>
+    <string name="tutorial_slideshow_change_counter_action_desc">تعلّم كيفية تعديل قيمة عداد</string>
+    <string name="tutorial_slideshow_change_counter_action_step_1_text">يُطبِّق إجراء تعديل العداد عملية على عداد
+        باستخدام قيمة ثابتة محددة مسبقًا. ثلاث عمليات متاحة: جمع القيمة على العداد (+)، أو طرحها منه (−)، أو ضبط
+        العداد على تلك القيمة بالضبط (=).\n\nهذه هي الطريقة الأكثر شيوعًا لتحديث العداد — على سبيل المثال، إضافة 1
+        في كل مرة يُكتشف فيها شرط، أو إعادة ضبطه إلى 0 عند الوصول إلى هدف.</string>
+    <string name="tutorial_slideshow_change_counter_action_step_2_text">بدلاً من قيمة ثابتة، يمكنك استخدام القيمة
+        الحالية لعداد آخر كمعامل. تنطبق العمليات الثلاث ذاتها (+، −، =)، لكن المقدار يُقرأ من العداد المحدد في وقت
+        التشغيل بدلاً من تثبيته أثناء التكوين.\n\nيتيح لك هذا بناء سيناريوهات ديناميكية تتفاعل فيها العدادات مع
+        بعضها.</string>
+
+    <!-- Notification Action slideshow -->
+    <string name="tutorial_slideshow_notification_action_title">إجراء الإشعار</string>
+    <string name="tutorial_slideshow_notification_action_desc">تعلّم كيفية عرض إشعار أثناء تشغيل السيناريو</string>
+    <string name="tutorial_slideshow_notification_action_step_1_text">يعرض إجراء الإشعار إشعار Android بعنوان
+        ورسالة من اختيارك.\n\nيمكنك إدراج القيمة الحالية لعداد في نص الإشعار باستخدام زر إضافة عداد، أو بكتابة
+        العنصر النائب <b>{اسمالعداد}</b> مباشرةً. عند التشغيل يُستبدل بقيمة العداد — على سبيل المثال،
+        \"عندي {تفاح} تفاحات\" تصبح \"عندي 18 تفاحة\".</string>
+    <string name="tutorial_slideshow_notification_action_step_2_text">يتحكم مستوى أهمية الإشعار في مدى بروز
+        الإشعار عند عرضه. قد تُظهر المستويات الأعلى لافتة منبثقة وتُصدر صوتًا، بينما تصل المستويات الأدنى بصمت إلى
+        درج الإشعارات.\n\nيعتمد السلوك الدقيق على الجهاز ويمكن تخصيصه في إعدادات إشعارات Android الخاصة
+        بـ Klick\'r.</string>
+
+    <!-- Toggle Event Action slideshow -->
+    <string name="tutorial_slideshow_toggle_event_action_title">إجراء تغيير حالة الحدث</string>
+    <string name="tutorial_slideshow_toggle_event_action_desc">تعلّم كيفية تفعيل الأحداث وتعطيلها في وقت التشغيل</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_1_text">يُتخطَّى الحدث المُعطَّل كليًّا أثناء دورة
+        السيناريو — لا تُفحص شروطه قط ولا تُنفَّذ إجراءاته. هذا يعني أنه لا يستهلك أي وقت معالجة.\n\nتعطيل الأحداث
+        التي لا تستخدمها حاليًا طريقة رائعة لتحسين الأداء. على سبيل المثال، في سيناريو يتناوب بين مرحلة قائمة ومرحلة
+        لعبة، يُبقي تعطيل جميع أحداث القائمة أثناء مرحلة اللعبة (والعكس) الأحداث ذات الصلة فقط نشطةً في أي وقت.</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_2_text">عند تكوين الإجراء، يمكنك اختيار تغيير حالة جميع
+        أحداث السيناريو دفعةً واحدة، أو تحديد حالة جديدة لكل حدث على حدة.\n\nثلاثة تغييرات للحالة متاحة لكل حدث:
+        تفعيله أو تعطيله أو تبديله من قيمته الحالية — يصبح الحدث المُفعَّل مُعطَّلاً والمُعطَّل مُفعَّلاً.</string>
+    <string name="tutorial_slideshow_toggle_event_action_step_3_text">إذا انتهى الأمر بتعطيل جميع أحداث السيناريو
+        في الوقت ذاته، يتوقف السيناريو تلقائيًا إذ لم يعد هناك ما يُنفَّذ.\n\nيمكن استخدام هذا عمدًا كطريقة نظيفة
+        لإنهاء السيناريو عند الوصول إلى الهدف: إجراء تغيير حالة الحدث الأخير الذي يُعطِّل جميع الأحداث سيوقف
+        السيناريو.</string>
+
+    <!-- Intent Action slideshow -->
+    <string name="tutorial_slideshow_intent_action_title">إجراء Intent</string>
+    <string name="tutorial_slideshow_intent_action_desc">تعلّم كيفية التواصل مع التطبيقات الأخرى</string>
+    <string name="tutorial_slideshow_intent_action_step_1_text">Intent هو الطريقة التي تتواصل بها التطبيقات مع بعضها
+        على Android. يتيح لك إجراء Intent توظيف هذا النظام مباشرةً من سيناريوك.\n\nتتوفر مجموعة من القوالب المُعرَّفة
+        مسبقًا لتسهيل ذلك. الأكثر شيوعًا هو تشغيل تطبيق، الذي يُشغِّل تطبيقًا آخر على جهازك تمامًا كما لو نقرت
+        على أيقونته من مُشغِّل التطبيقات.</string>
+    <string name="tutorial_slideshow_intent_action_step_2_text">تتيح لك علامة التبويب المتقدمة تحديد Intent خام
+        يدويًا، مما يمنحك تحكمًا كاملاً في الإجراء والفئة والبيانات والإضافات. لا يُنصح بهذا للمستخدمين العاديين —
+        بل هو موجَّه لمطوري Android الذين يعرفون كيف تعمل Intents.\n\nستُضاف المزيد من القوالب الجاهزة في تحديثات
+        مستقبلية لتسهيل حالات الاستخدام الشائعة دون الحاجة إلى الخيارات المتقدمة.</string>
+
+
+    <!-- Event priority slideshow -->
+    <string name="tutorial_slideshow_events_priority_title">أولوية الأحداث</string>
+    <string name="tutorial_slideshow_events_priority_desc">تعرّف على كيفية تأثير ترتيب الأحداث في قائمتك على الأحداث التي يتم تنفيذها</string>
+    <string name="tutorial_slideshow_events_priority_step_1_text">تتم معالجة كل إطار من الشاشة بفحص أحداثك <b>واحداً تلو الآخر، من الأعلى إلى الأسفل</b>.\n\nيحدد موضع الحدث في قائمتك متى تتاح له فرصة التنفيذ. بشكل افتراضي، بمجرد استيفاء شروط الحدث وتنفيذ إجراءاته، <b>يُعتبر الإطار مكتملاً</b>. تتوقف المعالجة لذلك الإطار ويبدأ التالي من الحدث الأول في القائمة.\n\nهذا يعني أنه بشكل افتراضي لا يمكن تنفيذ سوى حدث واحد لكل إطار.</string>
+    <string name="tutorial_slideshow_events_priority_step_2_text">يمكنك تغيير هذا السلوك باستخدام حقل <b>استمر في التنفيذ</b> في إعدادات الحدث. عند تفعيله، بعد تنفيذ هذا الحدث، تستمر المعالجة <b>إلى الحدث التالي</b> في القائمة بدلاً من التوقف.\n\nهذا يتيح تنفيذ أحداث متعددة في نفس الإطار.\n\n<b>مثال:</b> تحتوي قائمتك على الحدث أ متبوعاً بالحدث ب. إذا استمر الكشف عن الحدث أ ولم يكن لديه <b>استمر في التنفيذ</b> مفعّلاً، فسيتم تنفيذه في كل إطار ولن يحظى الحدث ب بأي فرصة للتنفيذ.\n\nفعّل <b>استمر في التنفيذ</b> للحدث أ وسيتم فحص كلا الحدثين في كل إطار.\n\nيتوفر أيضاً درس تعليمي تفاعلي لممارسة هذا المفهوم.</string>
+
+
+    <!-- Events reloading slideshow -->
+    <string name="tutorial_slideshow_events_reloading_title">إعادة تحميل الحدث</string>
+    <string name="tutorial_slideshow_events_reloading_desc">تعرّف على كيفية تصرّف إعادة تحميل الحدث في سيناريوك</string>
+    <string name="tutorial_slideshow_events_reloading_step_1_text">يتيح لك معامل إعادة تحميل الحدث تخطّي حدث لفترة
+        زمنية محددة بمجرد تحقّقه. \n\nالحدث في حالة إعادة التحميل لا يزال يُعتبر مُفعَّلاً: إعادة التحميل وحالة
+        الحدث مستقلّتان. \n\nإذا تم تعطيل الحدث أثناء إعادة التحميل، سيتم مسح مؤقت إعادة التحميل، بحيث لا يُطبَّق
+        وقت الانتظار عند إعادة تفعيل الحدث.</string>
+
+
+    <!-- Counters value usages slideshow -->
+    <string name="tutorial_slideshow_counters_value_usages_title">استخدام قيم العدّاد</string>
+    <string name="tutorial_slideshow_counters_value_usages_desc">تعرّف على الطرق المختلفة لعرض واستخدام قيم العدّاد في السيناريو الخاص بك</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_1_text">يمكنك عرض القيمة الحالية للعدّاد داخل إجراء
+        الإشعار. يُفيد ذلك في متابعة التقدم أثناء تشغيل السيناريو، أو لعرض ملخص في النهاية.\n\nلإدراج عدّاد،
+        اضغط على زر «إضافة عدّاد» في إعدادات الإجراء. سيُضاف عنصر نائب مثل <b>{counterName}</b> إلى نصك.
+        أثناء التشغيل، يُستبدَل العنصر النائب بالقيمة الفعلية للعدّاد. مثلاً، إذا كان عدّاد باسم <i>score</i>
+        يساوي 42، فإن النص «النتيجة الحالية: {score}» يصبح «النتيجة الحالية: 42».</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_2_text">يمكنك أيضاً إدراج قيمة عدّاد في إجراء كتابة
+        النص، بحيث يتضمّن النص المكتوب القيمة الحالية لحظة تنفيذ الإجراء.\n\nيعمل العنصر النائب بنفس الطريقة
+        كما في إجراء الإشعار: اضغط على زر «إضافة عدّاد» أو اكتب <b>{counterName}</b> مباشرةً. مثلاً، إذا كان
+        عدّاد باسم <i>score</i> يساوي 42، فإن النص «نتيجتي هي {score}» يصبح «نتيجتي هي 42».</string>
+
+    <string name="tutorial_slideshow_counters_value_usages_step_3_text">تُسجَّل قيم العدّادات في تقرير التصحيح.
+        إذا لم يعمل شيء في السيناريو كما هو متوقع، فإن التقاط تقرير التصحيح سيُظهر لك بالضبط كيف تغيّرت
+        عداداتك عبر الزمن، مما يُسهّل العثور على المشكلة.</string>
+
+</resources>

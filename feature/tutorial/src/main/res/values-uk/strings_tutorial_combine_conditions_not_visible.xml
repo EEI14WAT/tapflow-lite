@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Two still targets press when both are visible tutorial -->
+    <string name="item_title_tutorial_combine_conditions_not_visible_target">Видимість умов</string>
+    <string name="item_desc_tutorial_combine_conditions_not_visible_target">Використовуйте параметр «Видимість», щоб
+        виконувати натискання, коли ціль відсутня на екрані</string>
+    <string name="message_game_tutorial_combine_conditions_not_visible_target">Натискайте синю кнопку лише тоді, коли
+        червона кнопка не видима</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_1">Нові правила! Синя ціль більше не
+        рухається, але натискати на неї потрібно лише тоді, коли червона ціль не видима на екрані.
+        \n\nЗапустіть гру і подивіться, чи зможете перемогти самостійно.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_2">Знову здається неможливим перемогти
+        вручну, тому скористаємося Klick\'r. \n\nВідкрийте меню налаштування сценарію, створіть нову Подію екрана
+        та почніть додавати умови для цілей гри.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_3">Спочатку нам потрібна умова, яка
+        перевіряє, коли червона ціль НЕ видима на екрані. \n\nСтворіть нову умову зображення та захопіть червону
+        ціль.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_4">Ми хочемо натискати лише тоді, коли
+        червона ціль не видима, тому встановіть параметр «Видимо» у значення Ні. Так умова виконуватиметься лише
+        коли червона ціль відсутня на екрані.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_5">Інші налаштування підходять для
+        нашого випадку — збережіть цю умову.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_6">Цієї умови самої по собі достатньо,
+        щоб виграти, але вона також спрацьовуватиме, коли гра не запущена, що небажано.
+        \n\nЩоб уникнути цього, доповнимо її другою умовою, яка перевіряє, чи видима синя ціль.
+        Створіть нову Умову зображення та захопіть синю ціль.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_7">Для цієї умови нам потрібно
+        переконатися, що синя ціль видима, тому стандартні налаштування повністю підходять. Збережіть умову та
+        поверніться до події, щоб продовжити.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_8">За наявності кількох умов оператор
+        умови важливий. Ми хочемо, щоб подія спрацьовувала, коли синя ціль видима І червона не видима, тому нам
+        потрібен оператор І; він вже встановлений за замовчуванням, тому все гаразд.
+        \n\nТепер створіть нову дію натискання, щоб продовжити.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_9">Ми хочемо натискати на синю ціль,
+        тому виберіть тип позиції «За умовою» та вкажіть Умову зображення синьої цілі.
+        \n\nКоли закінчите, збережіть натискання, потім подію та сценарій, і поверніться до гри.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_10">Запустіть сценарій і почніть гру,
+        щоб перемогти! \n\nЯкщо щось не працює, перевірте, що умови захоплені правильно і тривалість натискання
+        встановлена на 1 мс.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_11">Вітаємо! Ви навчилися використовувати
+        умову «Не видимо». Завжди поєднуйте її принаймні з однією іншою умовою, щоб не викликати дії ненавмисно
+        протягом усього сценарію.</string>
+
+</resources>

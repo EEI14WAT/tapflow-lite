@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Two still targets press when both are visible tutorial -->
+    <string name="item_title_tutorial_combine_conditions_not_visible_target">Visibilidad de condiciones</string>
+    <string name="item_desc_tutorial_combine_conditions_not_visible_target">Usa la opción Visibilidad para activar un
+        clic cuando un objetivo no está en pantalla</string>
+    <string name="message_game_tutorial_combine_conditions_not_visible_target">Pulsa el botón azul solo cuando el botón
+        rojo no sea visible</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_1">¡Nuevas reglas! El objetivo azul ha
+        dejado de moverse, pero solo debe pulsarse cuando el objetivo rojo no sea visible.
+        \n\nInicia el juego y comprueba si puedes ganar por ti mismo.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_2">Una vez más, parece imposible ganar
+        manualmente, así que usemos Klick\'r. \n\nAbre el menú de configuración del escenario, crea un nuevo Evento de
+        Pantalla y empieza a añadir condiciones para los objetivos del juego.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_3">Primero necesitamos una condición que
+        compruebe cuándo el objetivo rojo NO está visible en pantalla. \n\nCrea una nueva condición de imagen y captura
+        el objetivo rojo.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_4">Queremos pulsar solo cuando el objetivo
+        rojo no sea visible, así que pon la opción «Es visible» en No. De este modo, la condición solo se cumplirá
+        cuando el objetivo rojo no aparezca en pantalla.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_5">El resto de ajustes son correctos para
+        nuestro caso — adelante, guarda esta condición.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_6">Esta condición por sí sola es suficiente
+        para ganar el juego, pero también se activaría cuando el juego no está en marcha, lo que no es ideal.
+        \n\nPara evitarlo, combinémosla con una segunda condición que compruebe si el objetivo azul es visible.
+        Crea una nueva Condición de Imagen y captura el objetivo azul.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_7">Para esta condición queremos verificar
+        que el objetivo azul es visible, por lo que los valores predeterminados son todos correctos. Guarda la condición
+        y vuelve al Evento para continuar.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_8">Con varias condiciones, el operador de
+        condición importa. Queremos que el evento se active cuando el objetivo azul sea visible Y el rojo no lo sea,
+        así que necesitamos el operador Y; y ya es el valor predeterminado, así que todo está bien.
+        \n\nAhora crea una nueva acción de clic para continuar.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_9">Queremos pulsar sobre el objetivo azul,
+        así que selecciona el tipo de posición «En condición» y elige la Condición de Imagen del objetivo azul.
+        \n\nCuando hayas terminado, guarda el clic, luego tu evento y escenario, y vuelve al juego.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_10">¡Inicia tu escenario y lanza el juego
+        para ganar! \n\nSi no funciona, comprueba que tus condiciones están capturadas correctamente y que la duración
+        del clic está ajustada a 1 ms.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_11">¡Enhorabuena! Has aprendido a usar
+        una condición «No visible». Combínala siempre con al menos otra condición para evitar activar acciones de forma
+        involuntaria durante todo tu escenario.</string>
+
+</resources>

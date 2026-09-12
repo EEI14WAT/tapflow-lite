@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Two still targets press when both are visible tutorial -->
+    <string name="item_title_tutorial_combine_conditions_not_visible_target">Visibilità delle condizioni</string>
+    <string name="item_desc_tutorial_combine_conditions_not_visible_target">Usa l\'opzione Visibilità per attivare un
+        clic quando un obiettivo non è sullo schermo</string>
+    <string name="message_game_tutorial_combine_conditions_not_visible_target">Tocca il pulsante blu solo quando il
+        pulsante rosso non è visibile</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_1">Nuove regole! L\'obiettivo blu ha
+        smesso di muoversi, ma deve essere toccato solo quando l\'obiettivo rosso non è visibile.
+        \n\nAvvia il gioco e vedi se riesci a vincere da solo.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_2">Ancora una volta, sembra impossibile
+        vincere manualmente, quindi usiamo Klick\'r. \n\nApri il menu di configurazione dello scenario, crea un nuovo
+        Evento Schermo e inizia ad aggiungere condizioni per gli obiettivi del gioco.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_3">Prima di tutto, abbiamo bisogno di una
+        condizione che verifichi quando l\'obiettivo rosso NON è visibile sullo schermo. \n\nCrea una nuova condizione
+        immagine e acquisisci l\'obiettivo rosso.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_4">Vogliamo toccare solo quando l\'obiettivo
+        rosso non è visibile, quindi imposta l\'opzione «È visibile» su No. In questo modo la condizione sarà soddisfatta
+        solo quando l\'obiettivo rosso è assente dallo schermo.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_5">Le altre impostazioni vanno bene per il
+        nostro caso — vai avanti e salva questa condizione.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_6">Questa condizione da sola è sufficiente
+        per vincere il gioco, ma si attiverebbe anche quando il gioco non è in esecuzione, il che non è l\'ideale.
+        \n\nPer evitarlo, combiniamola con una seconda condizione che verifichi se l\'obiettivo blu è visibile.
+        Crea una nuova Condizione Immagine e acquisisci l\'obiettivo blu.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_7">Per questa condizione vogliamo
+        verificare che l\'obiettivo blu sia visibile, quindi le impostazioni predefinite sono tutte corrette. Salva la
+        condizione e torna all\'Evento per continuare.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_8">Con più condizioni, l\'operatore di
+        condizione è importante. Vogliamo che l\'evento si attivi quando l\'obiettivo blu è visibile E quello rosso non
+        lo è, quindi abbiamo bisogno dell\'operatore E; ed è già il valore predefinito, quindi siamo a posto.
+        \n\nOra crea una nuova azione di clic per continuare.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_9">Vogliamo toccare l\'obiettivo blu,
+        quindi seleziona il tipo di posizione «Su condizione» e scegli la Condizione Immagine dell\'obiettivo blu.
+        \n\nQuando hai finito, salva il clic, poi il tuo evento e scenario, e torna al gioco.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_10">Avvia il tuo scenario e lancia il
+        gioco per vincere! \n\nSe non funziona, verifica che le tue condizioni siano acquisite correttamente e che la
+        durata del clic sia impostata su 1 ms.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_11">Congratulazioni! Hai imparato a usare
+        una condizione «Non visibile». Combinala sempre con almeno un\'altra condizione per evitare di attivare azioni
+        involontariamente per tutta la durata del tuo scenario.</string>
+
+</resources>

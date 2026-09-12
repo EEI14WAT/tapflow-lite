@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960">
+
+  <!-- Red background circle -->
+  <path
+      android:fillColor="@color/tutorial_game_target_red"
+      android:pathData="M20,480 a460,460 0 1,0 920,0 a460,460 0 1,0 -920,0"/>
+
+  <!-- White 5-pointed star -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M480,150 L561,392 L820,392 L610,540 L687,780 L480,632 L273,780 L350,540 L140,392 L399,392 Z"/>
+
+</vector>

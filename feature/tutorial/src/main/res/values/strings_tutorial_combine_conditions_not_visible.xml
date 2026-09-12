@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Two still targets press when both are visible tutorial -->
+    <string name="item_title_tutorial_combine_conditions_not_visible_target">Condition visibility</string>
+    <string name="item_desc_tutorial_combine_conditions_not_visible_target">Use the Visibility option to trigger a click
+        when a target is not on screen</string>
+    <string name="message_game_tutorial_combine_conditions_not_visible_target">Click the blue button only when the red
+        button is not visible</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_1">New rules! The blue target has stopped
+        moving, but it should only be clicked when the red target is not visible.
+        \n\nStart the game and see if you can win on your own.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_2">Once again, this seems impossible to
+        win manually, so let\'s use Klick\'r. \n\nOpen the scenario configuration menu, create a new Screen Event, and
+        start adding conditions for the game targets.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_3">First, we need a condition that checks
+        when the red target is NOT visible on the screen. \n\nCreate a new image condition and capture the red target.
+    </string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_4">We want to click only when the red
+        target is not visible, so set the "Is visible" option to No. This way the condition will only be met when the
+        red target is absent from the screen.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_5">The other settings look good for our
+        needs — go ahead and save this condition.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_6">This condition alone is enough to win
+        the game, but it would also trigger while the game is not even running, which is not ideal. \n\nTo prevent that,
+        let\'s pair it with a second condition that checks whether the blue target is visible. Create a new Image
+        Condition and capture the blue target.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_7">For this condition, we want to check
+        that the blue target is visible, so the default settings are all correct. Save the condition and go back to the
+        Event to continue.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_8">With multiple conditions, the condition
+        operator matters. We want the event to trigger when the blue target is visible AND the red target is not, so the
+        AND operator is what we need; and it\'s already the default, so we\'re good.
+        \n\nNow create a new click action to continue.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_9">We want to click on the blue target,
+        so select the \"On Condition\" position type and pick the blue target Image Condition.
+        \n\nWhen you\'re done, save the click, then save your event and scenario, and head back to the game.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_10">Start your scenario and launch the
+        game to win! \n\nIf it doesn\'t work, double-check that your conditions are captured correctly and that the
+        click duration is set to 1ms.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_11">Congratulations! You\'ve learned how
+        to use a \"Not visible\" condition. Always combine it with at least one other condition to avoid triggering
+        actions unintentionally throughout your entire scenario.</string>
+
+</resources>

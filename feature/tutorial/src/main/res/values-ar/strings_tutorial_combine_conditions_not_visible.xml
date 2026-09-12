@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Two still targets press when both are visible tutorial -->
+    <string name="item_title_tutorial_combine_conditions_not_visible_target">رؤية الشروط</string>
+    <string name="item_desc_tutorial_combine_conditions_not_visible_target">استخدم خيار الرؤية لتشغيل نقرة عندما لا
+        يكون الهدف ظاهرًا على الشاشة</string>
+    <string name="message_game_tutorial_combine_conditions_not_visible_target">انقر على الزر الأزرق فقط عندما لا يكون
+        الزر الأحمر مرئيًا</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_1">قواعد جديدة! توقّف الهدف الأزرق عن
+        الحركة، لكن يجب النقر عليه فقط عندما يكون الهدف الأحمر غير مرئي.
+        \n\nابدأ اللعبة وانظر إن كنت تستطيع الفوز بمفردك.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_2">مرة أخرى، يبدو من المستحيل الفوز
+        يدويًا، لذا لنستخدم Klick\'r. \n\nافتح قائمة إعداد السيناريو، وأنشئ حدث شاشة جديد، وابدأ في إضافة شروط
+        لأهداف اللعبة.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_3">أولاً، نحتاج إلى شرط يتحقق من أن
+        الهدف الأحمر غير مرئي على الشاشة. \n\nأنشئ شرط صورة جديدًا والتقط الهدف الأحمر.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_4">نريد النقر فقط عندما يكون الهدف
+        الأحمر غير مرئي، لذا اضبط خيار «مرئي» على لا. بهذه الطريقة لن يتحقق الشرط إلا عندما يكون الهدف الأحمر
+        غائبًا عن الشاشة.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_5">الإعدادات الأخرى مناسبة لحالتنا —
+        تابع واحفظ هذا الشرط.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_6">هذا الشرط وحده كافٍ للفوز باللعبة،
+        لكنه سينشّط أيضًا عندما لا تكون اللعبة قيد التشغيل، وهذا غير مثالي.
+        \n\nلتجنب ذلك، سنقرنه بشرط ثانٍ يتحقق مما إذا كان الهدف الأزرق مرئيًا.
+        أنشئ شرط صورة جديدًا والتقط الهدف الأزرق.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_7">لهذا الشرط، نريد التحقق من أن الهدف
+        الأزرق مرئي، لذا الإعدادات الافتراضية كلها صحيحة. احفظ الشرط وارجع إلى الحدث للمتابعة.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_8">مع وجود شروط متعددة، يصبح مشغّل
+        الشروط مهمًا. نريد أن ينشّط الحدث عندما يكون الهدف الأزرق مرئيًا والهدف الأحمر غير مرئي، لذا نحتاج إلى
+        المشغّل و؛ وهو القيمة الافتراضية فعلاً، إذن كل شيء على ما يرام.
+        \n\nأنشئ الآن إجراء نقر جديدًا للمتابعة.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_9">نريد النقر على الهدف الأزرق، لذا
+        اختر نوع الموضع «على الشرط» وحدد شرط الصورة الخاص بالهدف الأزرق.
+        \n\nعند الانتهاء، احفظ النقر، ثم الحدث والسيناريو، وارجع إلى اللعبة.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_10">شغّل السيناريو وابدأ اللعبة
+        للفوز! \n\nإن لم ينجح ذلك، تحقق من أن شروطك تم التقاطها بشكل صحيح وأن مدة النقر مضبوطة على 1 مللي
+        ثانية.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_11">تهانينا! لقد تعلّمت استخدام شرط
+        «غير مرئي». احرص دائمًا على دمجه مع شرط آخر على الأقل لتجنب تشغيل الإجراءات عن غير قصد طوال مدة
+        سيناريوك.</string>
+
+</resources>

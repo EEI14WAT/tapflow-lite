@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2026 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string name="tutorial_category_root_name">教程</string>
+    <string name="tutorial_category_root_desc_long">Klick\'r 的自动化基于屏幕上显示的内容，这与基于时间的普通自动点击器大不相同。
+        在这里学习如何使用它。</string>
+
+    <string name="tutorial_category_basics_name">场景基础</string>
+    <string name="tutorial_category_basics_desc_short">学习如何使用场景中的每个元素</string>
+    <string name="tutorial_category_basics_desc_long">场景是自动化脚本的根元素。它包含屏幕事件列表和触发事件列表。事件是一系列需要
+        满足的条件，满足条件后将执行一系列动作。\n\n 在这里学习如何使用场景中的每个元素。</string>
+
+    <string name="tutorial_category_screen_condition_name">屏幕条件</string>
+    <string name="tutorial_category_screen_condition_desc_short">验证屏幕上显示的内容</string>
+    <string name="tutorial_category_screen_condition_desc_long">屏幕条件是屏幕事件中"何时"的部分：当事件的屏幕条件满足时，该事件的
+        动作将被执行。要满足屏幕条件，设备屏幕的内容必须与指定的颜色、图像、文本或数字匹配。\n\n 在这里通过简单的交互示例学习如何
+        使用它们。</string>
+
+    <string name="tutorial_category_color_condition_name">颜色条件</string>
+    <string name="tutorial_category_color_condition_desc_short">验证是否显示特定颜色</string>
+    <string name="tutorial_category_color_condition_desc_long">颜色条件检测屏幕上特定像素的颜色，并与目标颜色进行比较。这是最轻量的
+        条件类型，无需图像处理。\n\n 在这里学习如何使用它来响应屏幕上的颜色变化。</string>
+
+    <string name="tutorial_category_image_condition_name">图像条件</string>
+    <string name="tutorial_category_image_condition_desc_short">验证是否显示特定图像</string>
+    <string name="tutorial_category_image_condition_desc_long">图像条件截取屏幕的一部分，然后在屏幕上搜索它，可以在精确位置、屏幕任意
+        位置或定义的区域内搜索。阈值控制匹配的严格程度。\n\n 在这里学习如何使用它来响应屏幕上出现的图像。</string>
+
+    <string name="tutorial_category_number_condition_name">数字条件</string>
+    <string name="tutorial_category_number_condition_desc_short">验证是否显示特定数字</string>
+    <string name="tutorial_category_number_condition_desc_long">数字条件读取屏幕上特定区域显示的数字，并使用等于、大于或小于等运算符
+        将其与固定值或计数器进行比较。\n\n 在这里学习如何使用它来响应屏幕上显示的数值。</string>
+
+    <string name="tutorial_category_text_condition_name">文字条件</string>
+    <string name="tutorial_category_text_condition_desc_short">验证是否显示特定文字</string>
+    <string name="tutorial_category_text_condition_desc_long">文字条件读取屏幕上特定区域显示的文字，并检查是否与给定值匹配。\n\n
+        在这里学习如何使用它来响应屏幕上出现的文字。</string>
+
+    <string name="tutorial_category_counters_name">计数器</string>
+    <string name="tutorial_category_counters_desc_short">在场景中跟踪并使用数值</string>
+    <string name="tutorial_category_counters_desc_long">计数器是与场景绑定的命名数值变量。它从默认值开始，可以被条件或动作读取，
+        并通过更改计数器动作进行写入。\n\n 在这里学习如何使用计数器来构建更智能的自动化脚本。</string>
+
+    <string name="tutorial_category_combine_conditions_name">组合条件</string>
+    <string name="tutorial_category_combine_conditions_desc_short">使用多个条件组合触发事件</string>
+    <string name="tutorial_category_combine_conditions_desc_long">每个事件都有一个条件运算符：AND 要求满足所有条件，而 OR 只需满足
+        至少一个。混合使用条件类型和运算符可以应对复杂的现实场景。\n\n 在这里学习如何有效地组合条件。</string>
+
+    <string name="tutorial_category_combine_event_name">组合事件</string>
+    <string name="tutorial_category_combine_event_desc_short">协调多个事件以实现复杂的逻辑控制</string>
+    <string name="tutorial_category_combine_event_desc_long">Klick\'r 让你可以协调多个事件来构建高级自动化流程。通过控制事件的评估
+        顺序以及在运行时启用或禁用事件，你可以创建复杂的多步骤场景。\n\n 在这里学习如何有效地组合事件，从而完全掌控你的自动化流程。</string>
+
+    <string name="tutorial_category_events_priority_name">事件优先级</string>
+    <string name="tutorial_category_events_priority_desc_short">控制事件的重要程度</string>
+    <string name="tutorial_category_events_priority_desc_long">屏幕事件在每个检测周期中按优先级顺序进行评估。列表中较高位置的事件
+        会在较低位置的事件之前被检查，让你能够定义当多个事件可能同时触发时哪个事件优先。\n\n 在这里学习如何设置事件优先级，以精细
+        调整场景的执行顺序。</string>
+
+    <string name="tutorial_category_events_state_name">事件状态管理</string>
+    <string name="tutorial_category_events_state_desc_short">动态启用或禁用事件</string>
+    <string name="tutorial_category_events_state_desc_long">可以在运行时使用 "更改事件状态"动作启用或禁用事件。这让你能够构建多步骤
+        自动化流程，其中某些事件仅在特定条件下才处于活动状态。\n\n 在这里学习如何控制事件状态来构建高级场景。</string>
+
+    <string name="tutorial_category_trigger_condition_name">触发条件</string>
+    <string name="tutorial_category_trigger_condition_desc_short">验证场景的状态</string>
+    <string name="tutorial_category_trigger_condition_desc_long">触发条件是触发事件中"何时"的部分：它基于非视觉信号触发，例如计时器
+        到期、计数器达到某个值或收到 Android 广播。\n\n 在这里学习如何使用它们来构建基于时间或状态的自动化流程。</string>
+
+    <string name="tutorial_category_action_name">动作</string>
+    <string name="tutorial_category_action_desc_short">在条件满足时执行某些操作</string>
+    <string name="tutorial_category_action_desc_long">当事件的条件满足时，动作将被执行。动作涵盖手势（Click、Swipe）、流程控制
+        （ToggleEvent、ChangeCounter、Wait）和系统交互（Intent、Notification、SystemAction、SetText）。\n\n 在这里学习如何
+        使用每种动作类型来构建自动化脚本。</string>
+
+    <string name="tutorial_category_click_action_name">点击</string>
+    <string name="tutorial_category_click_action_desc_short">在固定位置或检测到的条件上点击</string>
+    <string name="tutorial_category_click_action_desc_long">点击动作在固定坐标或检测到的图像条件的中心模拟点击。可以配置按压时长以
+        模拟长按。\n\n 在这里学习如何使用它与屏幕进行交互。</string>
+
+    <string name="tutorial_category_swipe_action_name">滑动</string>
+    <string name="tutorial_category_swipe_action_desc_short">在屏幕上从一个点滑动到另一个点</string>
+    <string name="tutorial_category_swipe_action_desc_long">滑动动作模拟从起始坐标到终止坐标的拖拽手势。可以配置滑动时长来控制手势
+        速度。\n\n 在这里学习如何使用它来滚动或拖拽屏幕上的元素。</string>
+
+    <string name="tutorial_category_pause_action_name">等待</string>
+    <string name="tutorial_category_pause_action_desc_short">在执行下一个动作之前等待一段时间</string>
+    <string name="tutorial_category_pause_action_desc_long">等待动作在配置的时间内延迟执行。这对于在下次检测前给应用时间做出反应
+        很有用。\n\n 在这里学习如何使用它来控制自动化脚本的节奏。</string>
+
+    <string name="tutorial_category_intent_action_name">Intent</string>
+    <string name="tutorial_category_intent_action_desc_short">向其他应用发送 Android Intent</string>
+    <string name="tutorial_category_intent_action_desc_long">Intent 动作发送 Android Intent，可以作为广播或用于启动 Activity 或
+        Service。可以附加键值对来传递数据。\n\n 在这里学习如何使用它来触发其他应用中的操作。</string>
+
+    <string name="tutorial_category_change_counter_action_name">修改计数器</string>
+    <string name="tutorial_category_change_counter_action_desc_short">设置、增加或减少计数器的值</string>
+    <string name="tutorial_category_change_counter_action_desc_long">修改计数器动作通过设置固定值、加法或减法来更改计数器变量。计数器
+        随后可以被条件或其他动作读取。\n\n 在这里学习如何管理情景的状态。</string>
+
+    <string name="tutorial_category_change_event_state_action_name">更改事件状态</string>
+    <string name="tutorial_category_change_event_state_action_desc_short">启用、禁用或切换一个或多个事件</string>
+    <string name="tutorial_category_change_event_state_action_desc_long">更改事件状态动作在运行时启用、禁用或切换一个或多个事件。这使
+        你可以构建多步骤流程，前面的步骤控制后面的步骤。\n\n 在这里学习如何控制情景的流程。</string>
+
+    <string name="tutorial_category_notification_action_name">通知</string>
+    <string name="tutorial_category_notification_action_desc_short">发布系统通知</string>
+    <string name="tutorial_category_notification_action_desc_long">通知动作发布带有自定义标题和消息的 Android 系统通知。当检测到特定
+        条件时，它可用于提醒用户。\n\n 在这里学习如何在情景后台运行时显示信息。</string>
+
+    <string name="tutorial_category_system_action_name">系统动作</string>
+    <string name="tutorial_category_system_action_desc_short">调用全局 Android 导航操作</string>
+    <string name="tutorial_category_system_action_desc_long">系统动作调用全局 Android 导航操作，例如按返回、主页或最近任务。这些操作
+        不需要坐标，直接在系统层面生效。\n\n 在这里学习如何在自动化过程中导航设备。</string>
+
+    <string name="tutorial_category_write_text_action_name">写入文本</string>
+    <string name="tutorial_category_write_text_action_desc_short">将文本粘贴到活动输入框中</string>
+    <string name="tutorial_category_write_text_action_desc_long">写入文本动作通过无障碍服务将配置的字符串粘贴到当前获得焦点的输入框中。
+        它对于填写表单或搜索框非常有用，无需模拟逐个按键。\n\n 在这里学习如何在自动化过程中输入文本。</string>
+</resources>
